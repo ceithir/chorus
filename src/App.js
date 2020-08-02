@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import { Counter } from "./features/counter/Counter";
+import Game from "./Game";
 import "./App.css";
 
 const App = () => {
@@ -48,6 +49,7 @@ const App = () => {
           </a>
         </span>
       </header>
+      <Game />
     </div>
   );
 };
