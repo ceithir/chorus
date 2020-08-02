@@ -31,12 +31,7 @@ const Game = () => {
 
   return (
     <Section text={t("story.meeting.introduction")}>
-      <button
-        onClick={(e) => {
-          e.preventDefault();
-          dispatch(setSection("ceto"));
-        }}
-      >
+      <button onClick={() => dispatch(setSection("ceto"))}>
         {t("ui.next")}
       </button>
     </Section>
