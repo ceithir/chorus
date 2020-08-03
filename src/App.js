@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
+import "./App.css";
 import Game from "./Game";
 import { useTranslation } from "react-i18next";
-import "./App.css";
+import { Radio } from "antd";
 
 const supportedLanguages = ["en", "fr"];
 
@@ -9,19 +10,18 @@ const LanguageSelector = () => {
   const { i18n } = useTranslation();
 
   return (
-    <div>
+    <Radio.Group
+      onChange={(event) => i18n.changeLanguage(event.target.value)}
+      defaultValue={i18n.language}
+    >
       {supportedLanguages.map((language) => {
         return (
-          <button
-            key={language}
-            onClick={() => i18n.changeLanguage(language)}
-            disabled={language === i18n.language}
-          >
+          <Radio.Button key={language} value={language}>
             {language.toUpperCase()}
-          </button>
+          </Radio.Button>
         );
       })}
-    </div>
+    </Radio.Group>
   );
 };
 

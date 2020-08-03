@@ -3,10 +3,13 @@ import sanitizeHtml from "sanitize-html";
 import { useSelector, useDispatch } from "react-redux";
 import { selectSection, setSection } from "./features/navigation/reducer";
 import { useTranslation } from "react-i18next";
+import { Typography, Button } from "antd";
+
+const { Paragraph } = Typography;
 
 const Section = ({ text, children }) => {
   return (
-    <div>
+    <Paragraph>
       {text.split("\n").map((paragraph, index) => {
         return (
           <p
@@ -16,7 +19,7 @@ const Section = ({ text, children }) => {
         );
       })}
       {children}
-    </div>
+    </Paragraph>
   );
 };
 
@@ -31,9 +34,9 @@ const Game = () => {
 
   return (
     <Section text={t("story.meeting.introduction")}>
-      <button onClick={() => dispatch(setSection("ceto"))}>
+      <Button onClick={() => dispatch(setSection("ceto"))}>
         {t("ui.next")}
-      </button>
+      </Button>
     </Section>
   );
 };
