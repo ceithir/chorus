@@ -1,13 +1,18 @@
 import React from "react";
 import sanitizeHtml from "sanitize-html";
 import { useSelector, useDispatch } from "react-redux";
-import { selectSection, setSection } from "./features/navigation/reducer";
+import {
+  selectSection,
+  setSection,
+  selectSubSection,
+  nextSubSection,
+} from "./features/navigation/reducer";
 import { useTranslation } from "react-i18next";
 import { Typography, Button } from "antd";
 
 const { Paragraph } = Typography;
 
-const Section = ({ text, children }) => {
+const SubSection = ({ text }) => {
   return (
     <Paragraph>
       {text.split("\n").map((paragraph, index) => {
@@ -18,8 +23,37 @@ const Section = ({ text, children }) => {
           />
         );
       })}
-      {children}
     </Paragraph>
+  );
+};
+
+const Section = ({ text, children }) => {
+  const { t } = useTranslation();
+  const subSectionIndex = useSelector(selectSubSection);
+  const dispatch = useDispatch();
+
+  const subsections = text.split(/\n{2,}/);
+
+  const show = (list) => {
+    return list.map((text, index) => {
+      return <SubSection key={index.toString()} text={text} />;
+    });
+  };
+
+  if (subSectionIndex >= subsections.length - 1) {
+    return (
+      <div>
+        {show(subsections)}
+        {children}
+      </div>
+    );
+  }
+
+  return (
+    <div>
+      {show(subsections.filter((_, index) => index <= subSectionIndex))}
+      <Button onClick={() => dispatch(nextSubSection())}>{t("ui.next")}</Button>
+    </div>
   );
 };
 
