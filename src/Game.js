@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useImperativeHandle } from "react";
 import sanitizeHtml from "sanitize-html";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -8,7 +8,7 @@ import {
   nextSubSection,
 } from "./features/navigation/reducer";
 import { useTranslation } from "react-i18next";
-import { Typography, Card } from "antd";
+import { Typography, Card, Button } from "antd";
 
 const { Paragraph } = Typography;
 
@@ -27,9 +27,26 @@ const SubSection = ({ text }) => {
   );
 };
 
+const ContinueButton = React.forwardRef(({ action }, ref) => {
+  const buttonRef = useRef();
+  useImperativeHandle(ref, () => ({
+    click: () => {
+      buttonRef.current.focus();
+      buttonRef.current.click();
+    },
+  }));
+
+  return (
+    <Button ref={buttonRef} onClick={action}>
+      {">>>"}
+    </Button>
+  );
+});
+
 const Section = ({ text, children, next }) => {
   const subSectionIndex = useSelector(selectSubSection);
   const dispatch = useDispatch();
+  const continueRef = useRef();
 
   const subsections = text.split(/\n{2,}/);
 
@@ -48,14 +65,15 @@ const Section = ({ text, children, next }) => {
     );
   }
 
-  const onClick =
+  const action =
     subSectionIndex >= subsections.length - 1
       ? next
       : () => dispatch(nextSubSection());
 
   return (
-    <Card hoverable onClick={onClick}>
+    <Card hoverable onClick={() => continueRef.current.click()}>
       {show(subsections.filter((_, index) => index <= subSectionIndex))}
+      <ContinueButton ref={continueRef} action={action} />
     </Card>
   );
 };
