@@ -50,10 +50,10 @@ const Section = ({ text, children }) => {
   }
 
   return (
-    <div>
+    <>
       {show(subsections.filter((_, index) => index <= subSectionIndex))}
       <Button onClick={() => dispatch(nextSubSection())}>{t("ui.next")}</Button>
-    </div>
+    </>
   );
 };
 

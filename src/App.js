@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./App.css";
+import "./App.less";
 import Game from "./Game";
 import { useTranslation } from "react-i18next";
 import { Radio } from "antd";
@@ -32,10 +32,14 @@ const App = () => {
   }, [t]);
 
   return (
-    <div>
-      <LanguageSelector />
-      <Game />
-    </div>
+    <>
+      <header>
+        <LanguageSelector />
+      </header>
+      <main>
+        <Game />
+      </main>
+    </>
   );
 };
 

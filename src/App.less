@@ -1,0 +1,19 @@
+@import "~antd/dist/antd.less";
+
+header {
+  height: @layout-header-height;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 @padding-lg;
+}
+
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+
+  & > * {
+    margin-left: @padding-lg;
+    margin-right: @padding-lg;
+  }
+}
