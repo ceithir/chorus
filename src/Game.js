@@ -8,7 +8,7 @@ import {
   nextSubSection,
 } from "./features/navigation/reducer";
 import { useTranslation } from "react-i18next";
-import { Typography, Button } from "antd";
+import { Typography, Card } from "antd";
 
 const { Paragraph } = Typography;
 
@@ -27,8 +27,7 @@ const SubSection = ({ text }) => {
   );
 };
 
-const Section = ({ text, children }) => {
-  const { t } = useTranslation();
+const Section = ({ text, children, next }) => {
   const subSectionIndex = useSelector(selectSubSection);
   const dispatch = useDispatch();
 
@@ -40,20 +39,24 @@ const Section = ({ text, children }) => {
     });
   };
 
-  if (subSectionIndex >= subsections.length - 1) {
+  if (subSectionIndex >= subsections.length - 1 && !next) {
     return (
-      <div>
+      <Card>
         {show(subsections)}
         {children}
-      </div>
+      </Card>
     );
   }
 
+  const onClick =
+    subSectionIndex >= subsections.length - 1
+      ? next
+      : () => dispatch(nextSubSection());
+
   return (
-    <>
+    <Card hoverable onClick={onClick}>
       {show(subsections.filter((_, index) => index <= subSectionIndex))}
-      <Button onClick={() => dispatch(nextSubSection())}>{t("ui.next")}</Button>
-    </>
+    </Card>
   );
 };
 
@@ -66,13 +69,9 @@ const Game = () => {
     return <Section text={t("story.meeting.ceto")} />;
   }
 
-  return (
-    <Section text={t("story.meeting.introduction")}>
-      <Button onClick={() => dispatch(setSection("ceto"))}>
-        {t("ui.next")}
-      </Button>
-    </Section>
-  );
+  const next = () => dispatch(setSection("ceto"));
+
+  return <Section text={t("story.meeting.introduction")} next={next} />;
 };
 
 export default Game;
