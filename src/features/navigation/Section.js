@@ -1,4 +1,4 @@
-import React, { useRef, useImperativeHandle } from "react";
+import React, { useEffect, useRef, useImperativeHandle } from "react";
 import sanitizeHtml from "sanitize-html";
 import { useSelector, useDispatch } from "react-redux";
 import { selectSubSection, nextSubSection } from "./reducer";
@@ -10,6 +10,10 @@ import QueueAnim from "rc-queue-anim";
 const { Paragraph } = Typography;
 
 const SubSection = ({ text }) => {
+  useEffect(() => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  }, []);
+
   return (
     <Animate transitionName="fade" transitionAppear>
       <Paragraph>
