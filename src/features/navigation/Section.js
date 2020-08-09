@@ -3,6 +3,7 @@ import sanitizeHtml from "sanitize-html";
 import { useSelector, useDispatch } from "react-redux";
 import { selectSubSection, nextSubSection } from "./reducer";
 import { Typography, Card, Button } from "antd";
+import "./Section.less";
 
 const { Paragraph } = Typography;
 
@@ -37,38 +38,52 @@ const ContinueButton = React.forwardRef(({ action }, ref) => {
   );
 });
 
+const SectionCard = ({ children, ...props }) => {
+  return (
+    <Card className="avh-section" {...props}>
+      {children}
+    </Card>
+  );
+};
+
+const SubSections = ({ subsections }) => {
+  return (
+    <div className="avh-subsections">
+      {subsections.map((text, index) => {
+        return <SubSection key={index.toString()} text={text} />;
+      })}
+    </div>
+  );
+};
+
 const Section = ({ text, children, next }) => {
   const subSectionIndex = useSelector(selectSubSection);
   const dispatch = useDispatch();
   const continueRef = useRef();
 
   const subsections = text.split(/\n{2,}/);
+  const showAll = subSectionIndex >= subsections.length - 1;
 
-  const show = (list) => {
-    return list.map((text, index) => {
-      return <SubSection key={index.toString()} text={text} />;
-    });
-  };
-
-  if (subSectionIndex >= subsections.length - 1 && !next) {
+  if (showAll && !next) {
     return (
-      <Card>
-        {show(subsections)}
+      <SectionCard>
+        <SubSections subsections={subsections} />
         {children}
-      </Card>
+      </SectionCard>
     );
   }
 
-  const action =
-    subSectionIndex >= subsections.length - 1
-      ? next
-      : () => dispatch(nextSubSection());
+  const action = showAll ? next : () => dispatch(nextSubSection());
 
   return (
-    <Card hoverable onClick={() => continueRef.current.click()}>
-      {show(subsections.filter((_, index) => index <= subSectionIndex))}
-      <ContinueButton ref={continueRef} action={action} />
-    </Card>
+    <SectionCard hoverable onClick={() => continueRef.current.click()}>
+      <SubSections
+        subsections={subsections.filter((_, index) => index <= subSectionIndex)}
+      />
+      <div className="avh-controls">
+        <ContinueButton ref={continueRef} action={action} />
+      </div>
+    </SectionCard>
   );
 };
 
