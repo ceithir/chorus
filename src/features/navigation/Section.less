@@ -1,3 +1,5 @@
+@import "~antd/dist/antd.less";
+
 .avh-section {
   & > .ant-card-body {
     min-height: 400px;
@@ -9,6 +11,27 @@
     & > .avh-controls {
       display: flex;
       justify-content: flex-end;
+
+      & > .ant-btn {
+        &:focus {
+          animation: buttonGradient 2s linear infinite;
+        }
+      }
     }
+  }
+}
+
+@keyframes buttonGradient {
+  0% {
+    border-color: @blue-5;
+    color: @blue-5;
+  }
+  50% {
+    border-color: @blue-3;
+    color: @blue-3;
+  }
+  100% {
+    border-color: @blue-5;
+    color: @blue-5;
   }
 }
