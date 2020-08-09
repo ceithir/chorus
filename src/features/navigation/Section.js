@@ -4,21 +4,24 @@ import { useSelector, useDispatch } from "react-redux";
 import { selectSubSection, nextSubSection } from "./reducer";
 import { Typography, Card, Button } from "antd";
 import "./Section.less";
+import Animate from "rc-animate";
 
 const { Paragraph } = Typography;
 
 const SubSection = ({ text }) => {
   return (
-    <Paragraph>
-      {text.split("\n").map((paragraph, index) => {
-        return (
-          <p
-            key={index.toString()}
-            dangerouslySetInnerHTML={{ __html: sanitizeHtml(paragraph) }}
-          />
-        );
-      })}
-    </Paragraph>
+    <Animate transitionName="fade" transitionAppear>
+      <Paragraph>
+        {text.split("\n").map((paragraph, index) => {
+          return (
+            <p
+              key={index.toString()}
+              dangerouslySetInnerHTML={{ __html: sanitizeHtml(paragraph) }}
+            />
+          );
+        })}
+      </Paragraph>
+    </Animate>
   );
 };
 

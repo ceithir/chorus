@@ -3,6 +3,7 @@ import "./App.less";
 import Game from "./Game";
 import { useTranslation } from "react-i18next";
 import { Radio } from "antd";
+import "./transitions.less";
 
 const supportedLanguages = ["en", "fr"];
 
