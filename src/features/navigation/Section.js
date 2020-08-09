@@ -5,6 +5,7 @@ import { selectSubSection, nextSubSection } from "./reducer";
 import { Typography, Card, Button } from "antd";
 import "./Section.less";
 import Animate from "rc-animate";
+import QueueAnim from "rc-queue-anim";
 
 const { Paragraph } = Typography;
 
@@ -51,11 +52,13 @@ const SectionCard = ({ children, ...props }) => {
 
 const SubSections = ({ subsections }) => {
   return (
-    <div className="avh-subsections">
-      {subsections.map((text, index) => {
-        return <SubSection key={index.toString()} text={text} />;
-      })}
-    </div>
+    <QueueAnim className="avh-subsections" type={["top", "alpha"]}>
+      <div key={subsections[0].substring(0, 10)}>
+        {subsections.map((text, index) => {
+          return <SubSection key={index.toString()} text={text} />;
+        })}
+      </div>
+    </QueueAnim>
   );
 };
 
