@@ -57,11 +57,13 @@ const SectionCard = ({ children, ...props }) => {
 const SubSections = ({ subsections }) => {
   return (
     <QueueAnim className="avh-subsections" type={["top", "alpha"]}>
-      <div key={subsections[0].substring(0, 10)}>
-        {subsections.map((text, index) => {
-          return <SubSection key={index.toString()} text={text} />;
-        })}
-      </div>
+      <Animate transitionName="fade" transitionAppear>
+        <div key={subsections[0].substring(0, 10)}>
+          {subsections.map((text, index) => {
+            return <SubSection key={index.toString()} text={text} />;
+          })}
+        </div>
+      </Animate>
     </QueueAnim>
   );
 };
