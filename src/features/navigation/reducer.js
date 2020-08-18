@@ -5,6 +5,7 @@ const slice = createSlice({
   initialState: {
     section: "intro",
     subsection: 0,
+    instantText: false,
   },
   reducers: {
     setSection: (state, action) => {
@@ -14,11 +15,15 @@ const slice = createSlice({
     nextSubSection: (state) => {
       state.subsection++;
     },
+    toggleInstantText: (state) => {
+      state.instantText = !state.instantText;
+    },
   },
 });
 
-export const { setSection, nextSubSection } = slice.actions;
+export const { setSection, nextSubSection, toggleInstantText } = slice.actions;
 export const selectSection = (state) => state.navigation.section;
 export const selectSubSection = (state) => state.navigation.subsection;
+export const selectInstantText = (state) => state.navigation.instantText;
 
 export default slice.reducer;

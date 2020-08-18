@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useImperativeHandle } from "react";
 import sanitizeHtml from "sanitize-html";
 import { useSelector, useDispatch } from "react-redux";
-import { selectSubSection, nextSubSection } from "./reducer";
+import { selectSubSection, nextSubSection, selectInstantText } from "./reducer";
 import { Typography, Card, Button } from "antd";
 import "./Section.less";
 import Animate from "rc-animate";
@@ -9,25 +9,39 @@ import QueueAnim from "rc-queue-anim";
 
 const { Paragraph } = Typography;
 
-const SubSection = ({ text }) => {
+const StaticSubSectionText = ({ text }) => {
+  return (
+    <Paragraph>
+      {text.split("\n").map((paragraph, index) => {
+        return (
+          <p
+            key={index.toString()}
+            dangerouslySetInnerHTML={{ __html: sanitizeHtml(paragraph) }}
+          />
+        );
+      })}
+    </Paragraph>
+  );
+};
+
+const AnimatedSubsection = ({ text }) => {
   useEffect(() => {
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   }, []);
 
   return (
     <Animate transitionName="fade" transitionAppear>
-      <Paragraph>
-        {text.split("\n").map((paragraph, index) => {
-          return (
-            <p
-              key={index.toString()}
-              dangerouslySetInnerHTML={{ __html: sanitizeHtml(paragraph) }}
-            />
-          );
-        })}
-      </Paragraph>
+      <StaticSubSectionText text={text} />
     </Animate>
   );
+};
+
+const SubSection = ({ text }) => {
+  const instantText = useSelector(selectInstantText);
+
+  const Component = instantText ? StaticSubSectionText : AnimatedSubsection;
+
+  return <Component text={text} />;
 };
 
 const ContinueButton = React.forwardRef(({ action }, ref) => {
@@ -54,11 +68,31 @@ const SectionCard = ({ children, ...props }) => {
   );
 };
 
+const StaticSubSections = ({ id, subsections }) => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, [id]);
+
+  return (
+    <div className="avh-subsections">
+      {subsections.map((text, index) => {
+        return <SubSection key={index.toString()} text={text} />;
+      })}
+    </div>
+  );
+};
+
 const SubSections = ({ subsections }) => {
+  const instantText = useSelector(selectInstantText);
+  const id = subsections[0].substring(0, 32);
+  if (instantText) {
+    return <StaticSubSections id={id} subsections={subsections} />;
+  }
+
   return (
     <QueueAnim className="avh-subsections" type={["top", "alpha"]}>
       <Animate transitionName="fade" transitionAppear>
-        <div key={subsections[0].substring(0, 10)}>
+        <div key={id}>
           {subsections.map((text, index) => {
             return <SubSection key={index.toString()} text={text} />;
           })}
@@ -84,9 +118,10 @@ const SectionWithButton = ({ subsections, action }) => {
 const Section = ({ text, children, next }) => {
   const subSectionIndex = useSelector(selectSubSection);
   const dispatch = useDispatch();
+  const instantText = useSelector(selectInstantText);
 
   const subsections = text.split(/\n{2,}/);
-  const showAll = subSectionIndex >= subsections.length - 1;
+  const showAll = instantText || subSectionIndex >= subsections.length - 1;
 
   if (showAll) {
     if (children) {
