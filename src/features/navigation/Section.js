@@ -68,34 +68,44 @@ const SubSections = ({ subsections }) => {
   );
 };
 
-const Section = ({ text, children, next }) => {
-  const subSectionIndex = useSelector(selectSubSection);
-  const dispatch = useDispatch();
+const SectionWithButton = ({ subsections, action }) => {
   const continueRef = useRef();
-
-  const subsections = text.split(/\n{2,}/);
-  const showAll = subSectionIndex >= subsections.length - 1;
-
-  if (showAll && !next) {
-    return (
-      <SectionCard>
-        <SubSections subsections={subsections} />
-        {children}
-      </SectionCard>
-    );
-  }
-
-  const action = showAll ? next : () => dispatch(nextSubSection());
 
   return (
     <SectionCard hoverable onClick={() => continueRef.current.click()}>
-      <SubSections
-        subsections={subsections.filter((_, index) => index <= subSectionIndex)}
-      />
+      <SubSections subsections={subsections} />
       <div className="avh-controls">
         <ContinueButton ref={continueRef} action={action} />
       </div>
     </SectionCard>
+  );
+};
+
+const Section = ({ text, children, next }) => {
+  const subSectionIndex = useSelector(selectSubSection);
+  const dispatch = useDispatch();
+
+  const subsections = text.split(/\n{2,}/);
+  const showAll = subSectionIndex >= subsections.length - 1;
+
+  if (showAll) {
+    if (children) {
+      return (
+        <SectionCard>
+          <SubSections subsections={subsections} />
+          {children}
+        </SectionCard>
+      );
+    }
+
+    return <SectionWithButton subsections={subsections} action={next} />;
+  }
+
+  return (
+    <SectionWithButton
+      subsections={subsections.filter((_, index) => index <= subSectionIndex)}
+      action={() => dispatch(nextSubSection())}
+    />
   );
 };
 
