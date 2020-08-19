@@ -9,39 +9,42 @@ import QueueAnim from "rc-queue-anim";
 
 const { Paragraph } = Typography;
 
-const StaticSubSectionText = ({ text }) => {
-  return (
-    <Paragraph>
-      {text.split("\n").map((paragraph, index) => {
-        return (
-          <p
-            key={index.toString()}
-            dangerouslySetInnerHTML={{ __html: sanitizeHtml(paragraph) }}
-          />
-        );
-      })}
-    </Paragraph>
-  );
-};
+const FadeInAndScrollTo = ({ children }) => {
+  const instantText = useSelector(selectInstantText);
 
-const AnimatedSubsection = ({ text }) => {
   useEffect(() => {
+    if (instantText) {
+      return;
+    }
     window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-  }, []);
+  }, [instantText]);
+
+  if (instantText) {
+    return <>{children}</>;
+  }
 
   return (
     <Animate transitionName="fade" transitionAppear>
-      <StaticSubSectionText text={text} />
+      {children}
     </Animate>
   );
 };
 
 const SubSection = ({ text }) => {
-  const instantText = useSelector(selectInstantText);
-
-  const Component = instantText ? StaticSubSectionText : AnimatedSubsection;
-
-  return <Component text={text} />;
+  return (
+    <FadeInAndScrollTo>
+      <Paragraph>
+        {text.split("\n").map((paragraph, index) => {
+          return (
+            <p
+              key={index.toString()}
+              dangerouslySetInnerHTML={{ __html: sanitizeHtml(paragraph) }}
+            />
+          );
+        })}
+      </Paragraph>
+    </FadeInAndScrollTo>
+  );
 };
 
 const ContinueButton = React.forwardRef(({ action }, ref) => {
@@ -66,14 +69,6 @@ const ContinueButton = React.forwardRef(({ action }, ref) => {
     </Button>
   );
 });
-
-const SectionCard = ({ children, ...props }) => {
-  return (
-    <Card className="avh-section" {...props}>
-      {children}
-    </Card>
-  );
-};
 
 const StaticSubSections = ({ id, subsections }) => {
   useEffect(() => {
@@ -109,45 +104,52 @@ const SubSections = ({ subsections }) => {
   );
 };
 
-const SectionWithButton = ({ subsections, action }) => {
-  const continueRef = useRef();
-
-  return (
-    <SectionCard hoverable onClick={() => continueRef.current.click()}>
-      <SubSections subsections={subsections} />
-      <div className="avh-controls">
-        <ContinueButton ref={continueRef} action={action} />
-      </div>
-    </SectionCard>
-  );
-};
-
 const Section = ({ text, children, next }) => {
   const subSectionIndex = useSelector(selectSubSection);
   const dispatch = useDispatch();
   const instantText = useSelector(selectInstantText);
+  const continueRef = useRef();
 
   const subsections = text.split(/\n{2,}/);
-  const showAll = instantText || subSectionIndex >= subsections.length - 1;
-
-  if (showAll) {
-    if (children) {
-      return (
-        <SectionCard>
-          <SubSections subsections={subsections} />
-          {children}
-        </SectionCard>
-      );
+  const showAll = (() => {
+    if (instantText) {
+      return true;
     }
-
-    return <SectionWithButton subsections={subsections} action={next} />;
-  }
+    if (children) {
+      return subSectionIndex >= subsections.length;
+    }
+    return subSectionIndex >= subsections.length - 1;
+  })();
+  const visibleSubsections = (() => {
+    if (showAll) {
+      return subsections;
+    }
+    return subsections.filter((_, index) => index <= subSectionIndex);
+  })();
+  const action = (() => {
+    if (showAll) {
+      if (children) {
+        return;
+      }
+      return next;
+    }
+    return () => dispatch(nextSubSection());
+  })();
 
   return (
-    <SectionWithButton
-      subsections={subsections.filter((_, index) => index <= subSectionIndex)}
-      action={() => dispatch(nextSubSection())}
-    />
+    <Card
+      className="avh-section"
+      hoverable={!!action}
+      onClick={() => !!action && continueRef.current.click()}
+    >
+      <SubSections subsections={visibleSubsections} />
+      {showAll && <FadeInAndScrollTo>{children}</FadeInAndScrollTo>}
+      {!!action && (
+        <div className="avh-controls">
+          <ContinueButton ref={continueRef} action={action} />
+        </div>
+      )}
+    </Card>
   );
 };
 
