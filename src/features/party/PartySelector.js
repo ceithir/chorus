@@ -17,6 +17,7 @@ const PartyCard = ({ party, location, full, onClick }) => {
 
   return (
     <Card
+      data-location={location}
       title={t(`locations.${location}.title`)}
       hoverable={!full}
       onClick={() => {

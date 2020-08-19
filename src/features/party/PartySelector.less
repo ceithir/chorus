@@ -1,9 +1,21 @@
 @import "../../default.less";
 
 .avh-party-selector {
+  &.ant-list {
+    margin-top: @padding-lg;
+  }
+
   .ant-card {
     &.ant-card-hoverable {
-      border-color: @blue-4;
+      &[data-location="forest"] {
+        border-color: @green-6;
+      }
+      &[data-location="library"] {
+        border-color: @gold-6;
+      }
+      &[data-location="city"] {
+        border-color: @blue-6;
+      }
     }
 
     &:not(.ant-card-hoverable) {
@@ -22,6 +34,11 @@
 
       .ant-list {
         width: 100%;
+        &.ant-list-bordered {
+          border-left: 0;
+          border-right: 0;
+        }
+
         .ant-typography {
           margin-left: @padding-lg;
         }
