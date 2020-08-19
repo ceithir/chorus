@@ -1,0 +1,42 @@
+@import "../../default.less";
+
+.avh-party-selector {
+  .ant-card {
+    &.ant-card-hoverable {
+      border-color: @blue-4;
+    }
+
+    &:not(.ant-card-hoverable) {
+      background-color: @gray-2;
+    }
+
+    .ant-card-head-title {
+      font-style: italic;
+    }
+
+    .ant-card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+
+      .ant-list {
+        width: 100%;
+        .ant-typography {
+          margin-left: @padding-lg;
+        }
+      }
+
+      .ant-btn {
+        width: 50%;
+        margin: @padding-sm 0;
+
+        &:hover:enabled {
+          color: @btn-default-color;
+          background-color: @btn-default-bg;
+          border-color: @btn-default-border;
+        }
+      }
+    }
+  }
+}
