@@ -54,7 +54,14 @@ const ContinueButton = React.forwardRef(({ action }, ref) => {
   }));
 
   return (
-    <Button ref={buttonRef} onClick={action}>
+    <Button
+      ref={buttonRef}
+      onClick={(e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        action();
+      }}
+    >
       {">>>"}
     </Button>
   );
