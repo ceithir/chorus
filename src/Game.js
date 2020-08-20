@@ -11,7 +11,7 @@ import {
   KATRINA,
   TEKELI,
   CAMILLA,
-  MAHARAL,
+  RASHOMON,
 } from "./characters";
 
 const Game = () => {
@@ -27,15 +27,15 @@ const Game = () => {
       <Section text={t(`story.meeting.${section}`)}>
         <PartySelector
           character={section}
-          next={goTo(i >= meetingOrder.length ? MAHARAL : meetingOrder[i + 1])}
+          next={goTo(meetingOrder[i + 1] || RASHOMON)}
         />
       </Section>
     );
   }
 
   switch (section) {
-    case MAHARAL:
-      return <Section text={t("story.meeting.maharal")} />;
+    case RASHOMON:
+      return <Section text={t("story.meeting.rashomon")} />;
     default:
       return (
         <Section text={t("story.meeting.introduction")} next={goTo(CETO)} />
