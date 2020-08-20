@@ -18,6 +18,7 @@ import {
   CAMILLA,
   RASHOMON,
 } from "./characters";
+import { selectParty } from "./features/party/reducer";
 
 const Game = () => {
   const section = useSelector(selectSection);
@@ -26,9 +27,44 @@ const Game = () => {
   const goTo = (section) => () => dispatch(setSection(section));
   const goToChapter = (chapter) => () => dispatch(setChapter(chapter));
   const chapter = useSelector(selectChapter);
+  const forestParty = useSelector(selectParty("forest"));
 
   if (chapter === "forest") {
-    return <Section text={t("story.forest.introduction")} />;
+    const [scene, part] = section?.split(".") || ["introduction", "part-1"];
+
+    if (scene === "split") {
+      return <Section text={t("story.forest.split.dejanire")} />;
+    }
+
+    const next = (() => {
+      switch (part) {
+        case CAROLE:
+          return "split.dejanire";
+        case "part-3":
+          return forestParty.includes(CAROLE)
+            ? "introduction.carole"
+            : "split.dejanire";
+        case CAMILLA:
+          return "introduction.part-3";
+        case "part-2":
+          return forestParty.includes(CAMILLA)
+            ? "introduction.camilla"
+            : "introduction.part-3";
+        case CETO:
+          return "introduction.part-2";
+        default:
+          return forestParty.includes(CETO)
+            ? "introduction.ceto"
+            : "introduction.part-2";
+      }
+    })();
+
+    return (
+      <Section
+        text={t(`story.forest.introduction.${part}`)}
+        next={goTo(next)}
+      />
+    );
   }
 
   const meetingOrder = [CETO, ALECTO, CAROLE, KATRINA, TEKELI, CAMILLA];
