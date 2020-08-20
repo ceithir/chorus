@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  chapter: "meeting",
-  section: "intro",
+  chapter: null,
+  section: null,
   subsection: 0,
   instantText: false,
 };
