@@ -1,0 +1,24 @@
+@import "../../default.less";
+
+.avh-forest-selector {
+  .ant-radio-group {
+    margin-top: @padding-md;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & > * {
+      flex: 1 0 50%;
+      text-align: center;
+      margin: @padding-xss;
+      max-width: calc(50% - @padding-xss*2);
+    }
+
+    & > *:first-child,
+    & > *:last-child {
+      flex: 0 1 51%;
+      max-width: 51%;
+    }
+  }
+}

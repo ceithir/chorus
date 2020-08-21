@@ -19,6 +19,7 @@ import {
   RASHOMON,
 } from "./characters";
 import { selectParty } from "./features/party/reducer";
+import ForestSelector from "./features/forest/ForestSelector";
 
 const Game = () => {
   const section = useSelector(selectSection);
@@ -30,20 +31,26 @@ const Game = () => {
   const forestParty = useSelector(selectParty("forest"));
 
   if (chapter === "forest") {
-    const [scene, part] = section?.split(".") || ["introduction", "part-1"];
+    const PLANNING = "planning";
 
-    if (scene === "split") {
-      return <Section text={t("story.forest.split.dejanire")} />;
+    if (section === PLANNING) {
+      return (
+        <Section text={t("story.forest.planning")}>
+          <ForestSelector characters={forestParty} />
+        </Section>
+      );
     }
+
+    const [, part] = section?.split(".") || ["introduction", "part-1"];
 
     const next = (() => {
       switch (part) {
         case CAROLE:
-          return "split.dejanire";
+          return PLANNING;
         case "part-3":
           return forestParty.includes(CAROLE)
             ? "introduction.carole"
-            : "split.dejanire";
+            : PLANNING;
         case CAMILLA:
           return "introduction.part-3";
         case "part-2":

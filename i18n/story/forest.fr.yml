@@ -85,16 +85,14 @@ introduction:
     À une autre époque, avant que les armes conçues pour les blesser ne se retrouvent partout, rien n’aurait pu faire peur à une cheshire normalement constituée, leur nature quantique réduisant à une poignée d’anomalies plus bizarres encore les choses et les êtres capables de les affecter physiquement contre leur volonté.
 
     Cela les rendait parfois d’une suffisance irritante, mais Déjanire regrette mille fois leurs sourires hautains d’alors quand elle contemple les traits déformés par l’effroi de son assistante d’un jour.
-split:
-  dejanire: >-
-    Les explications terminées, Déjanire tape dans ses mains et chacun part alors dans une direction différente.
+planning: >-
+  Les explications terminées, Déjanire se met d'accord avec sa petite troupe sur la direction que chacune va explorer.
 
-    La façade nord de la forêt semble être la plus fréquentée par les promeneurs, avec un mélange de chemins dégagés et de déchets sur le bas-côté.
+  La façade nord de la forêt semble être la plus fréquentée par les promeneurs, avec un mélange de chemins dégagés et de déchets sur le bas-côté.
 
-    À l’ouest, les bois sont plus sauvages, épais et sombres, avec de grands arbres qui cachent le soleil et des sentiers sur laquelle la flore reprend ses droits.
+  À l’ouest, les bois sont plus sauvages, épais et sombres, avec de grands arbres qui cachent le soleil et des sentiers sur laquelle la flore reprend ses droits.
 
-    À l’est, la végétation haute est plus clairsemée, humide et spongieuse, avec de petites clairières qui se changent en mares après la pluie, et rien ne s’apparentant à un véritable chemin.
+  À l’est, la végétation haute est plus clairsemée, humide et spongieuse, avec de petites clairières qui se changent en mares après la pluie, et rien ne s’apparentant à un véritable chemin.
 
-    Au sud, la nature a été fortement remodelée par la civilisation, les sentiers sont bien droits, certains troncs affichent des indications kilométriques et les détails d’un parcours d’obstacles se découpent même nettement.
-
-    Déjanire elle-même se rend au :
+  Au sud, la nature a été fortement remodelée par la civilisation, les sentiers sont bien droits, certains troncs affichent des indications kilométriques et les détails d’un parcours d’obstacles se découpent même nettement.
+start: "Les explications terminées, Déjanire tape dans ses mains et chacun part alors dans une direction différente."

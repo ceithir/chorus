@@ -1,5 +1,10 @@
 forest:
   title: "Balade en forêt"
+  directions:
+    west: "Ouest"
+    east: "Est"
+    north: "Nord"
+    south: "Sud"
 library:
   title: "Un peu de lecture"
 city:
