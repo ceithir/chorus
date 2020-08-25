@@ -25,7 +25,7 @@ const FadeInAndScrollTo = ({ children }) => {
 
   return (
     <Animate transitionName="fade" transitionAppear>
-      {children}
+      <div>{children}</div>
     </Animate>
   );
 };
