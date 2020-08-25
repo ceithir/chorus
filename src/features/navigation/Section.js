@@ -104,6 +104,14 @@ const SubSections = ({ subsections }) => {
   );
 };
 
+const Controls = React.forwardRef(({ action }, ref) => {
+  return (
+    <div className="avh-controls">
+      <ContinueButton ref={ref} action={action} />
+    </div>
+  );
+});
+
 const Section = ({ text, children, next }) => {
   const subSectionIndex = useSelector(selectSubSection);
   const dispatch = useDispatch();
@@ -144,11 +152,7 @@ const Section = ({ text, children, next }) => {
     >
       <SubSections subsections={visibleSubsections} />
       {showAll && <FadeInAndScrollTo>{children}</FadeInAndScrollTo>}
-      {!!action && (
-        <div className="avh-controls">
-          <ContinueButton ref={continueRef} action={action} />
-        </div>
-      )}
+      {!!action && <Controls ref={continueRef} action={action} />}
     </Card>
   );
 };
