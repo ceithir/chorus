@@ -136,9 +136,6 @@ const Section = ({ text, children, next }) => {
   })();
   const action = (() => {
     if (showAll) {
-      if (children) {
-        return;
-      }
       return next;
     }
     return () => dispatch(nextSubSection());
