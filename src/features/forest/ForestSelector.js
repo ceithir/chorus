@@ -8,6 +8,8 @@ import { useTranslation } from "react-i18next";
 
 const { Text } = Typography;
 
+const directions = ["north", "west", "east", "south"];
+
 const ForestRoseWind = ({ character }) => {
   const forest = useSelector(selectForest());
   const dispatch = useDispatch();
@@ -20,23 +22,18 @@ const ForestRoseWind = ({ character }) => {
         onChange={(event) => {
           dispatch(sendTo({ character, direction: event.target.value }));
         }}
+        value={directions.find((direction) => forest[direction] === character)}
       >
-        {["north", "west", "east", "south"].map((direction) => {
-          const checked = forest[direction] === character;
+        {directions.map((direction) => {
           const disabled = (() => {
             if (character === CAROLE && direction === "south") {
               return true;
             }
-            return !checked && !!forest[direction];
+            return !!forest[direction] && forest[direction] !== character;
           })();
 
           return (
-            <Radio.Button
-              key={direction}
-              value={direction}
-              checked={checked}
-              disabled={disabled}
-            >
+            <Radio.Button key={direction} value={direction} disabled={disabled}>
               {t(`locations.forest.directions.${direction}`)}
             </Radio.Button>
           );
