@@ -20,6 +20,10 @@ import {
 } from "./characters";
 import { selectParty } from "./features/party/reducer";
 import ForestSelector from "./features/forest/ForestSelector";
+import { selectForest } from "./features/forest/reducer";
+import { Typography } from "antd";
+
+const { Paragraph } = Typography;
 
 const Game = () => {
   const section = useSelector(selectSection);
@@ -29,14 +33,27 @@ const Game = () => {
   const goToChapter = (chapter) => () => dispatch(setChapter(chapter));
   const chapter = useSelector(selectChapter);
   const forestParty = useSelector(selectParty("forest"));
+  const forest = useSelector(selectForest());
 
   if (chapter === "forest") {
     const PLANNING = "planning";
 
     if (section === PLANNING) {
+      const completed = forestParty.every((character) =>
+        Object.values(forest).includes(character)
+      );
+      const next = () => {
+        console.log("TODO");
+      };
+
       return (
-        <Section text={t("story.forest.planning")}>
+        <Section text={t("story.forest.planning")} next={completed && next}>
           <ForestSelector characters={forestParty} />
+          {completed && (
+            <Paragraph>
+              <p>{t("story.forest.split")}</p>
+            </Paragraph>
+          )}
         </Section>
       );
     }
