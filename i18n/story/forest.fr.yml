@@ -96,3 +96,206 @@ planning: >-
 
   Au sud, la nature a été fortement remodelée par la civilisation, les sentiers sont bien droits, certains troncs affichent des indications kilométriques et les détails d’un parcours d’obstacles se découpent même nettement.
 split: "Maintenant que tout le monde sait ce qu'il a à faire, Déjanire tape dans ses mains et chacune part alors dans une direction différente."
+exploration:
+  monster:
+    1:
+      default: >-
+        Dès le premier cri, ténu, étouffé par une muraille de végétation, Déjanire se met au grand galop, coupant court à travers les buissons et arbustes sans se soucier des dégâts qu’elle occasionne.
+
+        Son téléphone vibre, elle décroche sans s’arrêter.
+    2:
+      alecto: >-
+        La voix est paniquée, sur fond de chocs irréguliers :
+
+        – Au secours ! Y’a une bestiole qui tente de me manger !
+      camilla: >-
+        Au bout du fil, Camilla et son habituelle voix monocorde. Le ton paraît cependant plus forcé qu'à l’accoutumé :
+
+        – Déjanire ? Une créature biologique non-sentiente tente de m’infliger des dommages physiques. Vous serait-il possible de me venir en aide ?
+      katrina: >-
+        – Déj’ ? C’est Kat’. Mon corps est en train de se battre avec je sais pas trop quoi. Je peux pas être plus précise, désolé, ma tête a roulé par terre. Je suis coincé à regarder du mauvais côté pour le moment.
+    3:
+      default: >-
+        La chef d’expédition jette un œil au GPS qui lui indique la position de l’appel, corrige sa course, tente désespérément de prodiguer des conseils à l’utilité discutable :
+
+        – J’arrive ! Ne bouge pas ! Tiens-la à distance !
+
+        Après ce qui semble plusieurs éternités, Déjanire aperçoit enfin sa protégée, à terre entre deux arbres, au prise avec un béhir. Le genre de bestioles dangereuses dont on sait que ça existe dans la nature, qu’on a déjà vu en photo, en film ou même dans un zoo, mais qu’on suppose qu’on ne va jamais croiser en vrai. Comme un loup, un ankheg ou un ours.
+
+        Le serpentin lézard s’est enroulé autour de sa proie, la moitié de sa douzaine de pattes solidement enfoncées dans le sol, l’autre cherchant à bloquer le torse et les bras de son repas qui se débat avec vigueur.
+
+        L’instant suivant, un sabot s’écrase sur la tête de la bête. Quelques coups de pied supplémentaires lui font desserrer son étreinte, et l’animal se laisse glisser, bredouille, entre deux racines, retournant en sa tanière souterraine.
+
+        Déjanire reporte aussitôt son attention sur sa victime, se mettant à genoux pour l’aider à se relever :
+
+        – Ça va ?
+    4:
+      alecto: >-
+        Alecto hoche la tête, blanche comme un linge :
+
+        – Ça devrait aller. J’ai réussi à m'envoler à moitié avant qu’il soit totalement sur moi.
+      camilla: >-
+        Un long silence s’installe avant que Camilla ne réponde simplement :
+
+        – Oui.
+
+        Déjanire la regarde curieusement. Elle ne remarque effectivement aucune blessure, ni même d’ailleurs, maintenant qu’elle y fait attention, le moindre accroc à ses vêtements.
+
+        Une prudente politesse l’incite à ne pas chercher à en savoir plus.
+      katrina: >-
+        Katrina ramasse sa tête, la pose sur ses épaules, cligne des yeux, fait jouer les articulations de ses bras et jambes.
+
+        – Ça a l’air. Plus de peur que de mal.
+    5:
+      default: >-
+        Déjanire acquiese et plisse les genoux arrières, amenant sa croupe au niveau du sol :
+
+        – D’accord. Grimpe sur mon dos, je te ramène.
+
+        Une fois sa charge calée, elle saisit à nouveau son téléphone pour ordonner à tout le monde de retourner à la voiture, puis le duo repart au trot léger.
+
+        – Je suis vraiment désolée, s’excuse-t-elle d’une voix pâteuse. J’étais persuadé que le coin était sans danger. On n’a jamais eu aucun problème avec les filles les fois d’avant.
+    6:
+      alecto: >-
+        – Ce n’est rien. Les imprévus… arrivent.
+
+        Déjanire se retient de grimacer. Elle est à peu près certaine que cette généreuse donatrice potentielle ne reviendra plus jamais après un coup pareil. Encore une occasion de perdue. Elle aurait dû insister pour l’assigner à une tâche sans danger.
+
+        Mais est-ce que cela existe encore désormais ?
+      camilla: >-
+        – La faute est mienne. J’avais senti la bête, mais avais estimé à tort qu’elle ne présentait pas un danger pour mon intégrité.
+
+        Sentant la perplexité de Déjanire face à ce qu’elle raconte, elle ajoute :
+
+        – Les règles qui nous régissent sont complexes, même pour nous. Des erreurs d’interprétation surviennent parfois.
+      katrina: >-
+        – On organisait des sorties dans le coin dans le temps ?
+
+        – Pas ici. Mais je suis venue plusieurs fois avec Maharal et Céto depuis la réorg’.
+
+        – Désolé de te dire ça, mais y’a un biais dans la composition de ton équipe de reconnaissance. Vu votre gabarit à toutes les trois, mis à part un T. rex, je vois pas ce qui prendrait le risque de vous attaquer.
+
+        – Tu as sans doute raison. On a beaucoup la tête dans le guidon en ce moment, on s’aperçoit des évidences que trop tard.
+
+        – Je sais. Pas trop le choix. Pas ta faute. On fait avec.
+  alecto:
+    default: >-
+      Alecto s’était dit qu’aller cueillir des fleurs serait toujours plus enrichissant que de ranger des bouquins ou de nettoyer des antiquités. Maintenant qu’elle se trouve dans cette forêt dense, aux branches trop basses et nombreuses pour y voler correctement, et au sol trop traître pour quelqu’un à la bipédie acquise et non instinctive, elle regrette fortement son choix.
+
+      Progressant à pas lents entre les racines et les cailloux, elle n’a qu’une envie : que les minutes s’écoulent plus vite et que le calvaire prenne fin.
+  camilla:
+    default: >-
+      Camilla considère, perplexe, la série de choix qui l'ont amenée à ramasser des fleurs en solitaire alors qu’elle recherchait une expérience communautaire et sociale.
+
+      Elle attendait beaucoup des réactions des autres à une épreuve, même modérée, en dehors de leur milieu habituel. Cette séparation du groupe l’empêche malheureusement de goûter leurs émotions avec l’intensité qu’elle désirerait.
+
+      Néanmoins, étant, de par ses origines, presque incapable de discuter les consignes, et encore moins d’y désobéir, elle se plie à l’exercice avec application à défaut d’intérêt.
+    south: >-
+      « Je suis la porte, je suis la clé, je ramasse des fleurs. »
+
+      Camilla tourne, sans se presser, son visage éternellement inexpressif vers celle qui vient de parler. L’une des présences parasites qu’elle n’avait pas su identifier a donc décidé de se manifester.
+
+      Si elle en croit ses sens principaux, il s’agit d’une pulsante boule de foudre animée d’une volonté propre. Si elle se force à employer la vue, c’est une anthropomorphe en survêtement aux longs poils  hérissés par l’électricité qui l’auréole.
+
+      Raiju. Au grand jeu, ce sont à peine des pions.
+
+      – Nous connaissons-nous ?
+
+      – Pas personnellement, mais j’ai des amies dans la Yog-Sothotherie. Et de façon générale, je m’inquiète quand il leur prend l’envie de traîner dans les bois. Qu’est-ce tu fabriques ici ?
+
+      – Je ramasse des fleurs.
+
+      La nouvelle venue soupire, amorce un pas en avant, et se retrouve en un éclair presque nez à nez avec son interlocutrice.
+
+      – On va éviter le petit jeu des questions équivoques et des réponses impénétrables, d’accord ? Je veux juste savoir si je peux finir mon jogging en paix, ou si le coin va partir en sucette très bientôt, avec implication des gros bonnets et tout le tintouin.
+
+      L’atmosphère devient littéralement électrique en réponse au mouvement d’humeur de l’inconnue, et toute la forêt autour d’elle réagit en conséquence. L’herbe et les feuilles se plient, poussées par un vent magnétique, les insectes s’enfuient.
+
+      Camilla, elle, reste parfaitement impassible. Et explique dans le détail, de son habituelle voix monocorde, les raisons de sa présence, reprenant presque mot pour mot les discours de Rashomon et Déjanire.
+
+      Sa réponse lui vaut une moue dubitative, suivie d’un haussement d’épaules.
+
+      – Je suis pas sûre de comprendre le grand dessein cosmique derrière tout cela, mais okay, ça a effectivement l’air sans danger. Bon amusement.
+
+      Un flash, un mouvement presque aussi rapide que la lumière, et en un instant, la sportive est… toujours au même endroit, la main de Camilla négligemment posée sur son épaule :
+
+      – Du temps a été perdu. Du temps doit être rendu.
+
+      Toute sa superbe envolée, la raiju acquiesce la gorge sèche :
+
+      – Je t’aide à ramasser tes fleurs, et tu effaces mon addition ?
+
+      – Ces conditions sont acceptables.
+  carole:
+    default: >-
+      Carole cueille distraitement quelques fleurs, l’esprit ailleurs.
+
+      Comme titre pour sa vidéo, pourquoi pas « Dans la forêt : Moi contre les garous ! » ?
+
+      Un peu hyperbolique, mais elle a fait bien pire. Introduction dynamique avec des images grandiloquentes de cosmologie et d’autres à la limite du gore de bestioles poilues pas très gentilles.
+
+      Puis, évidemment, parler de soi, beaucoup, expliquer en long, en large, et en travers pourquoi ce qu’elle, elle, a fait est important.
+
+      Probablement exagérer ce qu’il faut le danger de se balader seule dans les bois. Ça la mettra en valeur et ça distraira son audience des dangers réels de son quotidien.
+
+      Elle aura pas besoin de se forcer beaucoup en plus, elle a pas mal les nerfs à vif pour de vrai en dépit de sa nature quantique – non les ronces, pas la peine d’insister, je vais pas opter pour l’une des versions de moi qui vous a marché dedans – en songeant à ce qui pourrait se terrer ici.
+
+      Va peut-être même falloir minimiser en fait, et rajouter une blague nulle ou deux pour relâcher la tension. Son public veut de l’émotion, mais il ne veut pas surtout réellement ressentir son malaise. On doit rester dans de la fausse terreur pour enfants.
+
+      Et va peut-être aussi falloir penser à ramasser un peu plus de fleurs que ça quand même, histoire d’éviter un bouche-à-oreille désagréable de plus.
+    east: >-
+      Dans la clairière, au cœur d’un rond de sorcière, les fées dansent, invisibles aux yeux des créatures physiques.
+
+      – Bonjour. Je cherche ces plantes-là. Vous sauriez où je pourrais les trouver ?
+
+      Enfin, de la plupart des créatures physiques. Réprimant un soupir, la plus ancienne des fées fournit à l’intruse au livre grand ouvert les renseignements qu’elle désire, sachant pertinemment que c’est encore le moyen le plus rapide de s’en débarrasser.
+  ceto:
+    default: >-
+      Céto n’est pas du genre à laisser son environnement lui dicter ce qu’elle doit faire, et c’est également vrai quand il s’agit de tracer son chemin à travers bois.
+
+      Là où quelqu’un de moins imposant, ou n’ayant pas ses facilité à conserver son équilibre, ou pourvu d’une peau plus fragile, aurait choisi de contourner ce buisson de ronces, ce rocher moussu, ce fossé abrupt, elle continue tout droit, laissant derrière elle une large trace sinueuse caractéristique.
+
+      N’ayant pas à se soucier du terrain, ni d’ailleurs de la faune qui se carapate à son approche, elle peut consacrer toute son attention à chercher les plantes demandées.
+  dejanire:
+    default: >-
+      Déjarine explore les bois au petit trot, toujours aussi nerveuse, s’efforçant de se concentrer exclusivement sur sa tâche. Peine perdue tant les soucis se bousculent dans sa tête.
+
+      Toutefois, ce n’est pas la première fois qu’elle vient en ces lieux chercher des plantes, et l’expérience et les réflexes acquis compensent son manque d’attention.
+    south: >-
+      Déjanire est déjà venue dans ces bois plusieurs fois. C’est également une grande nerveuse, perpétuellement à l’affût du moindre détail allant de travers.
+
+      Aussi a-t-elle vite compris que quelque chose n’allait pas. Des brindilles cramées en surface. Une légère odeur d’ozone. De courts flashs lumineux lumineux à la limite de son champ de vision. Quelque chose ou quelqu’un de fulgurant se balade dans le coin.
+
+      Impossible de savoir si cela n’a aucun rapport avec elle, si c’est là pour la surveiller, ou même pour faire du mal à elle ou à une de ses protégées. Dans tous les cas, c’est là, et son esprit obsédé par ce fait ne se concentre qu’à grand peine sur la cueillette initialement prévue.
+  katrina:
+    default: >-
+      Katrina n'arrive même plus à se souvenir quand pour la dernière fois l'association a réalisé une activité en-dehors de la ville. En fait, elle a même un doute sur depuis combien de temps elle-même n’était pas sortie de la cité. Trop longtemps.
+
+      Aussi, apprécie-t-elle particulièrement cette balade en solitaire dans les bois, loin du béton et des caméras, et qui plus est pour la bonne cause.
+    east: >-
+      Dans la clairière, au cœur d’un rond de sorcière, les fées dansent, invisibles aux yeux des créatures physiques.
+
+      – Bonjour. Je cherche ces plantes-là. Vous sauriez où je pourrais les trouver ?
+
+      Enfin, de la plupart des créatures physiques. Réprimant un soupir, la plus ancienne des fées fournit à l’intruse au livre grand ouvert les renseignements qu’elle désire, sachant pertinemment que c’est encore le moyen le plus rapide de s’en débarrasser.
+  tekeli:
+    default: >-
+      Sitôt à l’écart du groupe, Tekeli étend un pseudopode et engloutit tour à tour chacun des échantillons de son herbier. Les fleurs séchées sont avalées dans la masse liquide, soigneusement goûtées, puis recrachées entre les pages.
+
+      Elle abandonne ensuite à moitié son apparence humanoïde, ses jambes se fondant en une masse informe couverte de centaines de petites protubérances, lui donnant des airs de créature mi-humaine mi-limace.
+
+      Elle commence alors à se déplacer dans le bois, lentement mais sûrement, en contractant sa partie inférieure, sentant la terre et la végétation dans ses moindres détails à travers sa poreuse membrane à nue, s’arrêtant pour la cueillette dès qu’elle repère une saveur similaire à celles recherchées.
+
+      Certains débris s’enfoncent parfois plus loin qu’ils ne devraient, mais ils sont aussitôt rejetés par la fonction biologique idoine de son organisme.
+
+      De fait, c’est de garder sa moitié supérieure sous forme humanoïde qui lui demande un effort. Si elle s’écoutait, elle se laisserait couler paisiblement sous l’aspect d’un gros blob. Mais elle a besoin de conserver des mains avec des doigts gantés pour cueillir proprement les fleurs sans les abîmer ou les noyer.
+    west: >-
+      Tekeli revient à l’heure dite, gênée, sans son panier, une poignée de fleurs à la main.
+
+      – Désolée, j’ai eu un accident.
+
+      – Que s’est-il passé ? s’enquière Déjanire, inquiète.
+
+      – Oh, un gros serpent-lézard m’a attaqué, je me suis glissée entre ses anneaux, mais j’ai perdu toute ma récolte au passage. Je suis vraiment désolée, j’aurais dû faire plus attention.
+
+      – Tu n’as vraiment pas à t’excuser pour ça. Maintenant, raconte-moi lentement cette histoire de serpent.
