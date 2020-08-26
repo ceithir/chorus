@@ -1,6 +1,11 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { selectSection, setSection } from "../navigation/reducer";
+import {
+  selectSection,
+  setSection,
+  selectStep,
+  nextStep,
+} from "../navigation/reducer";
 import { useTranslation } from "react-i18next";
 import Section from "../navigation/Section";
 import { CETO, CAROLE, CAMILLA } from "../../characters";
@@ -16,8 +21,10 @@ const Forest = () => {
   const dispatch = useDispatch();
   const { t } = useTranslation();
   const goTo = (section) => () => dispatch(setSection(section));
+  const stepUp = () => dispatch(nextStep());
   const forestParty = useSelector(selectParty("forest"));
   const forest = useSelector(selectForest());
+  const step = useSelector(selectStep);
 
   const PLANNING = "planning";
 
@@ -41,31 +48,33 @@ const Forest = () => {
     );
   }
 
-  const [, part] = section?.split(".") || ["introduction", "part-1"];
+  const introduction = (() => {
+    let parts = ["part-1"];
 
-  const next = (() => {
-    switch (part) {
-      case CAROLE:
-        return PLANNING;
-      case "part-3":
-        return forestParty.includes(CAROLE) ? "introduction.carole" : PLANNING;
-      case CAMILLA:
-        return "introduction.part-3";
-      case "part-2":
-        return forestParty.includes(CAMILLA)
-          ? "introduction.camilla"
-          : "introduction.part-3";
-      case CETO:
-        return "introduction.part-2";
-      default:
-        return forestParty.includes(CETO)
-          ? "introduction.ceto"
-          : "introduction.part-2";
+    if (forestParty.includes(CETO)) {
+      parts.push("ceto");
     }
+
+    parts.push("part-2");
+
+    if (forestParty.includes(CAMILLA)) {
+      parts.push("camilla");
+    }
+
+    parts.push("part-3");
+
+    if (forestParty.includes(CAROLE)) {
+      parts.push("carole");
+    }
+
+    return parts;
   })();
 
   return (
-    <Section text={t(`story.forest.introduction.${part}`)} next={goTo(next)} />
+    <Section
+      text={t(`story.forest.introduction.${introduction[step]}`)}
+      next={!!introduction[step + 1] ? stepUp : goTo(PLANNING)}
+    />
   );
 };
 

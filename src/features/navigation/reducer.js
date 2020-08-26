@@ -5,6 +5,7 @@ const initialState = {
   section: null,
   subsection: 0,
   instantText: false,
+  step: 0,
 };
 
 const slice = createSlice({
@@ -14,6 +15,7 @@ const slice = createSlice({
     setSection: (state, action) => {
       state.section = action.payload;
       state.subsection = initialState.subsection;
+      state.step = initialState.step;
     },
     nextSubSection: (state) => {
       state.subsection++;
@@ -25,6 +27,10 @@ const slice = createSlice({
       state.chapter = action.payload;
       state.section = initialState.section;
       state.subsection = initialState.subsection;
+      state.step = initialState.step;
+    },
+    nextStep: (state) => {
+      state.step++;
     },
   },
 });
@@ -34,10 +40,12 @@ export const {
   nextSubSection,
   toggleInstantText,
   setChapter,
+  nextStep,
 } = slice.actions;
 export const selectSection = (state) => state.navigation.section;
 export const selectSubSection = (state) => state.navigation.subsection;
 export const selectInstantText = (state) => state.navigation.instantText;
 export const selectChapter = (state) => state.navigation.chapter;
+export const selectStep = (state) => state.navigation.step;
 
 export default slice.reducer;
