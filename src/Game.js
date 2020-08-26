@@ -18,12 +18,7 @@ import {
   CAMILLA,
   RASHOMON,
 } from "./characters";
-import { selectParty } from "./features/party/reducer";
-import ForestSelector from "./features/forest/ForestSelector";
-import { selectForest } from "./features/forest/reducer";
-import { Typography } from "antd";
-
-const { Paragraph } = Typography;
+import Forest from "./features/forest/Forest";
 
 const Game = () => {
   const section = useSelector(selectSection);
@@ -32,63 +27,9 @@ const Game = () => {
   const goTo = (section) => () => dispatch(setSection(section));
   const goToChapter = (chapter) => () => dispatch(setChapter(chapter));
   const chapter = useSelector(selectChapter);
-  const forestParty = useSelector(selectParty("forest"));
-  const forest = useSelector(selectForest());
 
   if (chapter === "forest") {
-    const PLANNING = "planning";
-
-    if (section === PLANNING) {
-      const completed = forestParty.every((character) =>
-        Object.values(forest).includes(character)
-      );
-      const next = () => {
-        console.log("TODO");
-      };
-
-      return (
-        <Section text={t("story.forest.planning")} next={completed && next}>
-          <ForestSelector characters={forestParty} />
-          {completed && (
-            <Paragraph>
-              <p>{t("story.forest.split")}</p>
-            </Paragraph>
-          )}
-        </Section>
-      );
-    }
-
-    const [, part] = section?.split(".") || ["introduction", "part-1"];
-
-    const next = (() => {
-      switch (part) {
-        case CAROLE:
-          return PLANNING;
-        case "part-3":
-          return forestParty.includes(CAROLE)
-            ? "introduction.carole"
-            : PLANNING;
-        case CAMILLA:
-          return "introduction.part-3";
-        case "part-2":
-          return forestParty.includes(CAMILLA)
-            ? "introduction.camilla"
-            : "introduction.part-3";
-        case CETO:
-          return "introduction.part-2";
-        default:
-          return forestParty.includes(CETO)
-            ? "introduction.ceto"
-            : "introduction.part-2";
-      }
-    })();
-
-    return (
-      <Section
-        text={t(`story.forest.introduction.${part}`)}
-        next={goTo(next)}
-      />
-    );
+    return <Forest />;
   }
 
   const meetingOrder = [CETO, ALECTO, CAROLE, KATRINA, TEKELI, CAMILLA];
