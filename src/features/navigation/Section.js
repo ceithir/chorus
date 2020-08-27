@@ -1,13 +1,15 @@
-import React, { useEffect, useRef, useImperativeHandle } from "react";
+import React, { useEffect, useRef, useImperativeHandle, useState } from "react";
 import sanitizeHtml from "sanitize-html";
 import { useSelector, useDispatch } from "react-redux";
 import { selectSubSection, nextSubSection, selectInstantText } from "./reducer";
-import { Typography, Card, Button } from "antd";
+import { Typography, Card, Button, Drawer } from "antd";
 import "./Section.less";
 import Animate from "rc-animate";
 import QueueAnim from "rc-queue-anim";
+import { useTranslation } from "react-i18next";
+import Profile from "../characters/Profile";
 
-const { Paragraph } = Typography;
+const { Paragraph, Text } = Typography;
 
 const FadeInAndScrollTo = ({ children }) => {
   const instantText = useSelector(selectInstantText);
@@ -112,11 +114,43 @@ const Controls = React.forwardRef(({ action }, ref) => {
   );
 });
 
-const Section = ({ text, children, next }) => {
+const CharacterHeader = ({ character, showRecord, setShowRecord }) => {
+  const { t } = useTranslation();
+  const open = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    setShowRecord(true);
+  };
+  const close = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    setShowRecord(false);
+  };
+
+  return (
+    <>
+      <Text>{t(`characters.${character}.name`)}</Text>
+      <Button shape="circle" size="small" onClick={open}>
+        ?
+      </Button>
+      <Drawer
+        placement={"bottom"}
+        visible={showRecord}
+        onClose={close}
+        height={"auto"}
+      >
+        <Profile character={character} />
+      </Drawer>
+    </>
+  );
+};
+
+const Section = ({ text, children, next, character }) => {
   const subSectionIndex = useSelector(selectSubSection);
   const dispatch = useDispatch();
   const instantText = useSelector(selectInstantText);
   const continueRef = useRef();
+  const [showRecord, setShowRecord] = useState(false);
 
   const subsections = text.split(/\n{2,}/);
   const showAll = (() => {
@@ -145,7 +179,17 @@ const Section = ({ text, children, next }) => {
     <Card
       className="avh-section"
       hoverable={!!action}
-      onClick={() => !!action && continueRef.current.click()}
+      onClick={() => !!action && !showRecord && continueRef.current.click()}
+      title={
+        character && (
+          <CharacterHeader
+            character={character}
+            showRecord={showRecord}
+            setShowRecord={setShowRecord}
+          />
+        )
+      }
+      data-character={character}
     >
       <SubSections subsections={visibleSubsections} />
       {showAll && <FadeInAndScrollTo>{children}</FadeInAndScrollTo>}

@@ -55,7 +55,11 @@ const Game = () => {
       );
     default:
       return (
-        <Section text={t("story.meeting.introduction")} next={goTo(CETO)} />
+        <Section
+          text={t("story.meeting.introduction")}
+          next={goTo(CETO)}
+          character={RASHOMON}
+        />
       );
   }
 };

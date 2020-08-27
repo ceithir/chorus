@@ -1,0 +1,38 @@
+profile:
+  nature:
+    title: "Nature"
+    flesh: "Biologique"
+    dream: "Rlyehienne"
+    mixed: "À reclasser (était Biologique/Rlyehienne)"
+    half-fay: "Biologique/Féérique"
+    stone: "Minérale"
+  humanoid:
+    title: "Similarité à l'humain"
+    class-1: "Classe 1 (peut se faire passer pour un humain)"
+    class-2: "Classe 2 (diffère de l'humain par des caractéristiques tertiaires difficiles à masquer)"
+    class-3: "Classe 3 (silhouette en partie humanoïde seulement)"
+    class-7: "Classe 7 (non-humanoïde pouvant simuler une forme humanoïde)"
+  impetus:
+    title: "Indice de motivation"
+    good: "Vert"
+    average: "Orange"
+    bad: "Rouge"
+  bookishness:
+    title: "Corruption 451"
+    none: "Nulle"
+    low: "Faible"
+    medium: "Intermédiaire"
+    high: "Élevée"
+  appearance:
+    title: "Particularités physiques pour identification"
+    oni:
+      name: "Oni"
+      features: "Cornes, potentiellement coupées courtes, sur le front"
+  of-note:
+    title: "À prendre en compte en cas d'intervention"
+  job:
+    title: "Occupation"
+  links:
+    see_more: "(voir fiche : <strong>{{species}}</strong>)"
+    see_all: "Voir la fiche complète"
+    error: "Vous n'avez pas les permissions nécessaires pour consulter cette fiche."
