@@ -3,7 +3,7 @@ profile:
     title: "Nature"
     flesh: "Biologique"
     dream: "Rlyehienne"
-    mixed: "À reclasser (était Biologique/Rlyehienne)"
+    mixed: "À reclasser (précédemment : Biologique/Rlyehienne)"
     half-fay: "Biologique/Féérique"
     stone: "Minérale"
   humanoid:
@@ -17,9 +17,10 @@ profile:
     good: "Vert"
     average: "Orange"
     bad: "Rouge"
+    degraded: "Rouge (précédemment : Vert)"
   bookishness:
     title: "Corruption 451"
-    none: "Nulle"
+    null: "Négligeable"
     low: "Faible"
     medium: "Intermédiaire"
     high: "Élevée"
@@ -34,6 +35,24 @@ profile:
     gorgon:
       name: "Gorgone"
       features: "Vit en symbiose avec une colonie de serpents nichés dans son organisme. La pétrification tient du mythe."
+    harpy:
+      name: "Harpie"
+      features: "Couverte de plumes. Bras couplés à des ailes fonctionnelles."
+    catgirl:
+      name: "Nekomimi"
+      features: "Quelques attributs félins superficiels, le plus souvent vestigiaux."
+    cheshire:
+      name: "Cheshire"
+      features: "Ubiquité quantique (position dans l'espace non déterministe)"
+    dullahan:
+      name: "Dullahan"
+      features: "Peut librement détacher sa tête de son corps"
+    slime:
+      name: "Slime"
+      features: "Sorte d'amibe géante capable de se déformer pour se doter de « bras » et d'un « visage »."
+    mask:
+      name: "Masque"
+      features: "Voir fiche"
   of-note:
     title: "À prendre en compte en cas d'intervention"
   job:

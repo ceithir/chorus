@@ -1,7 +1,15 @@
 import React from "react";
 import { Typography, List, Tooltip } from "antd";
 import { useTranslation, Trans } from "react-i18next";
-import { RASHOMON, CETO } from "../../characters";
+import {
+  RASHOMON,
+  CETO,
+  ALECTO,
+  CAROLE,
+  KATRINA,
+  TEKELI,
+  CAMILLA,
+} from "../../characters";
 import "./Profile.less";
 
 const { Title, Link } = Typography;
@@ -15,7 +23,7 @@ const profiles = {
     humanoid: "class-2",
     species: ["oni"],
     impetus: "average",
-    bookishness: "medium",
+    bookishness: "low",
   },
   [CETO]: {
     nature: "flesh",
@@ -23,6 +31,41 @@ const profiles = {
     species: ["lamia", "gorgon"],
     impetus: "average",
     bookishness: "high",
+  },
+  [ALECTO]: {
+    nature: "flesh",
+    humanoid: "class-3",
+    species: ["harpy"],
+    impetus: "good",
+    bookishness: "medium",
+  },
+  [CAROLE]: {
+    nature: "mixed",
+    humanoid: "class-1",
+    species: ["catgirl", "cheshire"],
+    impetus: "degraded",
+    bookishness: "low",
+  },
+  [KATRINA]: {
+    nature: "half-fay",
+    humanoid: "class-1",
+    species: ["dullahan"],
+    impetus: "average",
+    bookishness: "medium",
+  },
+  [TEKELI]: {
+    nature: "mixed",
+    humanoid: "class-7",
+    species: ["slime"],
+    impetus: "good",
+    bookishness: "null",
+  },
+  [CAMILLA]: {
+    nature: "dream",
+    humanoid: "class-1",
+    species: ["mask"],
+    impetus: "good",
+    bookishness: "null",
   },
 };
 

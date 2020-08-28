@@ -1,9 +1,21 @@
 alecto:
   name: "Alecto"
+  profile:
+    job: "Consultante"
+    appearance: "Épilation totale des plumes au-delà de la nuque pour donner un aspect plus humain au visage."
+    of-note: "Autorisation nécessaire avant toute intervention"
 camilla:
   name: "Camilla"
+  profile:
+    job: "Inconnue"
+    appearance: "Aucune information (autorisation de dévoilement non obtenue)"
+    of-note: "Autorisation nécessaire avant toute intervention"
 carole:
   name: "Carole"
+  profile:
+    job: "Vidéaste"
+    appearance: "Cheveux teints dans des couleurs extrêmement vives"
+    of-note: "Prévoir comme pour une non-euclidienne"
 ceto:
   name: "Céto"
   profile:
@@ -14,6 +26,10 @@ dejanire:
   name: "Déjanire"
 katrina:
   name: "Katrina"
+  profile:
+    job: "Coiffeuse"
+    appearance: "Aucun signe particulier personnel utilisable"
+    of-note: "L'étendue des capacités psychopompes du sujet n'a pu être mesurée"
 maharal:
   name: "Maharal"
 rashomon:
@@ -24,5 +40,9 @@ rashomon:
     of-note: "Excellente connaissance des rouages de la Sécurité"
 tekeli:
   name: "Tekeli"
+  profile:
+    job: "Agent administratif"
+    appearance: "Marquée avec un colorant bleu turquoise"
+    of-note: "Neutralisable uniquement via la chimie ou les températures extrêmes"
 placeholder:
   name: "..."
