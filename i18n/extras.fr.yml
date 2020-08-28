@@ -28,6 +28,12 @@ profile:
     oni:
       name: "Oni"
       features: "Cornes, potentiellement coupées courtes, sur le front"
+    lamia:
+      name: "Lamia"
+      features: "Une unique queue préhensible en lieu de jambes. Peau squameuse. Mâchoire de carnivore avec crocs à venin."
+    gorgon:
+      name: "Gorgone"
+      features: "Vit en symbiose avec une colonie de serpents nichés dans son organisme. La pétrification tient du mythe."
   of-note:
     title: "À prendre en compte en cas d'intervention"
   job:

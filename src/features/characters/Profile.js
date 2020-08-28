@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, List, Tooltip } from "antd";
 import { useTranslation, Trans } from "react-i18next";
-import { RASHOMON } from "../../characters";
+import { RASHOMON, CETO } from "../../characters";
 
 const { Title, Link } = Typography;
 
@@ -15,6 +15,13 @@ const profiles = {
     species: ["oni"],
     impetus: "average",
     bookishness: "medium",
+  },
+  [CETO]: {
+    nature: "flesh",
+    humanoid: "class-3",
+    species: ["lamia", "gorgon"],
+    impetus: "average",
+    bookishness: "high",
   },
 };
 

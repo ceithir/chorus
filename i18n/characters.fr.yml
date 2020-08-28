@@ -6,6 +6,10 @@ carole:
   name: "Carole"
 ceto:
   name: "Céto"
+  profile:
+    job: "Enseignante"
+    appearance: "Petite et fluette (par rapport à la moyenne de sa catégorie ; reste classée en très grande taille)"
+    of-note: "Venin"
 dejanire:
   name: "Déjanire"
 katrina:

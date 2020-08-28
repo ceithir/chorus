@@ -36,7 +36,7 @@ const Game = () => {
   const i = meetingOrder.indexOf(section);
   if (i > -1) {
     return (
-      <Section text={t(`story.meeting.${section}`)}>
+      <Section text={t(`story.meeting.${section}`)} character={meetingOrder[i]}>
         <PartySelector
           character={section}
           next={goTo(meetingOrder[i + 1] || RASHOMON)}
@@ -51,6 +51,7 @@ const Game = () => {
         <Section
           text={t("story.meeting.rashomon")}
           next={goToChapter("forest")}
+          character={RASHOMON}
         />
       );
     default:
