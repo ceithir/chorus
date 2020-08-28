@@ -134,10 +134,10 @@ const CharacterHeader = ({ character, showRecord, setShowRecord }) => {
         ?
       </Button>
       <Drawer
-        placement={"bottom"}
+        placement={"left"}
         visible={showRecord}
         onClose={close}
-        height={"auto"}
+        width={"min(100%, 512px)"}
       >
         <Profile character={character} />
       </Drawer>

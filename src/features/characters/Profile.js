@@ -2,6 +2,7 @@ import React from "react";
 import { Typography, List, Tooltip } from "antd";
 import { useTranslation, Trans } from "react-i18next";
 import { RASHOMON, CETO } from "../../characters";
+import "./Profile.less";
 
 const { Title, Link } = Typography;
 
@@ -107,7 +108,7 @@ const dataSource = ({ character, t, i18n }) => {
                           }}
                         />
                       </FakeLink>
-                      {" / "}
+                      <br />
                     </React.Fragment>
                   );
                 })}
@@ -126,7 +127,7 @@ const Profile = ({ character }) => {
   const { t, i18n } = useTranslation();
 
   return (
-    <>
+    <div className="avh-character-profile">
       <Title level={3}>{t(`characters.${character}.name`)}</Title>
       <List
         dataSource={dataSource({ character, t, i18n })}
@@ -137,7 +138,7 @@ const Profile = ({ character }) => {
         )}
       />
       <FakeLink>{t("extras.profile.links.see_all")}</FakeLink>
-    </>
+    </div>
   );
 };
 
