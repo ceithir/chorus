@@ -5,6 +5,7 @@ import {
   setSection,
   selectStep,
   nextStep,
+  setChapter,
 } from "../navigation/reducer";
 import { useTranslation } from "react-i18next";
 import Section from "../navigation/Section";
@@ -73,7 +74,11 @@ const Forest = () => {
       <Section
         text={adventures[step]["text"]}
         character={adventures[step]["character"]}
-        next={!!adventures[step + 1] ? stepUp : () => console.log("TODO")}
+        next={
+          !!adventures[step + 1]
+            ? stepUp
+            : () => dispatch(setChapter("library"))
+        }
       />
     );
   }

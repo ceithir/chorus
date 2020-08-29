@@ -19,17 +19,21 @@ import {
   RASHOMON,
 } from "./characters";
 import Forest from "./features/forest/Forest";
+import Library from "./features/library/Library";
 
 const Game = () => {
   const section = useSelector(selectSection);
   const dispatch = useDispatch();
   const { t } = useTranslation();
   const goTo = (section) => () => dispatch(setSection(section));
-  const goToChapter = (chapter) => () => dispatch(setChapter(chapter));
   const chapter = useSelector(selectChapter);
 
   if (chapter === "forest") {
     return <Forest />;
+  }
+
+  if (chapter === "library") {
+    return <Library />;
   }
 
   const meetingOrder = [CETO, ALECTO, CAROLE, KATRINA, TEKELI, CAMILLA];
@@ -50,7 +54,7 @@ const Game = () => {
       return (
         <Section
           text={t("story.meeting.rashomon")}
-          next={goToChapter("forest")}
+          next={() => dispatch(setChapter("forest"))}
           character={RASHOMON}
         />
       );
