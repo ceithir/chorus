@@ -7,5 +7,19 @@ forest:
     south: "Sud"
 library:
   title: "Un peu de lecture"
+  books:
+    mystery: "Policier"
+    fantasy: "Fantasy, tome 1"
+    mimic: "Fantasy, tome 2"
+    romance: "Romance"
+    coffee: "« Beau livre »"
+    science: "Traité"
+  quality:
+    bad:
+      short: "Ouvrages à bâcler"
+      long: "Pour tenir les délais, {{name}} se contente de parcourir les ouvrages rapidement. Des détails peuvent lui échapper."
+    good:
+      short: "Ouvrages à peaufiner"
+      long: "Assez de lectrices chevronnées sont présentes pour permettre à {{name}} de prendre le temps de faire les choses bien pour ces ouvrages."
 city:
   title: "Visite du patrimoine"
