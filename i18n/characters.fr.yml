@@ -24,6 +24,10 @@ ceto:
     of-note: "Venin"
 dejanire:
   name: "Déjanire"
+  profile:
+    job: "Pharmacienne"
+    appearance: "Tics nerveux prononcés"
+    of-note: "Rien de particulier à signaler"
 katrina:
   name: "Katrina"
   profile:
@@ -32,6 +36,10 @@ katrina:
     of-note: "L'étendue des capacités psychopompes du sujet n'a pu être mesurée"
 maharal:
   name: "Maharal"
+  profile:
+    job: "Bibliothècaire"
+    appearance: "Enveloppe minérale ; couches profondes rigidifiées par l'âge"
+    of-note: "Artillerie lourde nécessaire"
 rashomon:
   name: "Rashomon"
   profile:

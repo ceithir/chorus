@@ -9,6 +9,8 @@ import {
   KATRINA,
   TEKELI,
   CAMILLA,
+  DEJANIRE,
+  MAHARAL,
 } from "../../characters";
 import "./Profile.less";
 
@@ -66,6 +68,20 @@ const profiles = {
     species: ["mask"],
     impetus: "good",
     bookishness: "null",
+  },
+  [DEJANIRE]: {
+    nature: "flesh",
+    humanoid: "class-3",
+    species: ["centaur"],
+    impetus: "bad",
+    bookishness: "high",
+  },
+  [MAHARAL]: {
+    nature: "composite",
+    humanoid: "class-7",
+    species: ["elemental", "golem"],
+    impetus: "average",
+    bookishness: "high",
   },
 };
 

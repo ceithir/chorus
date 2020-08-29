@@ -5,7 +5,7 @@ profile:
     dream: "Rlyehienne"
     mixed: "À reclasser (précédemment : Biologique/Rlyehienne)"
     half-fay: "Biologique/Féérique"
-    stone: "Minérale"
+    composite: "Composite"
   humanoid:
     title: "Similarité à l'humain"
     class-1: "Classe 1 (peut se faire passer pour un humain)"
@@ -49,10 +49,19 @@ profile:
       features: "Peut librement détacher sa tête de son corps"
     slime:
       name: "Slime"
-      features: "Sorte d'amibe géante capable de se déformer pour se doter de « bras » et d'un « visage »."
+      features: "Sorte d'amibe géante capable de se déformer pour se doter de « bras », de « jambes » et d'un « visage »."
     mask:
       name: "Masque"
       features: "Voir fiche"
+    centaur:
+      name: "Centaure"
+      features: "Six membres : Deux bras et quatre jambes (se déplace comme un quadrupède)"
+    elemental:
+      name: "Élémentaire"
+      features: "Ensemble de matériaux inertes animés par un cœur thaumaturgique. Cherche souvent à imiter les formes de vie biologiques"
+    golem:
+      name: "Golem"
+      features: "Élémentaire abritant (littéralement) des écrits dans son cœur"
   of-note:
     title: "À prendre en compte en cas d'intervention"
   job:
