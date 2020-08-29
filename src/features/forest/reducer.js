@@ -2,12 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const slice = createSlice({
   name: "forest",
-  initialState: {
-    north: null,
-    south: null,
-    west: null,
-    east: null,
-  },
+  initialState: {},
   reducers: {
     sendTo: (state, action) => {
       const { character, direction } = action.payload;
