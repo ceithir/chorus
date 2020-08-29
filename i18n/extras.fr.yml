@@ -34,7 +34,7 @@ profile:
       features: "Une unique queue préhensible en lieu de jambes. Peau squameuse. Mâchoire de carnivore avec crocs à venin."
     gorgon:
       name: "Gorgone"
-      features: "Vit en symbiose avec une colonie de serpents nichés dans son organisme. La pétrification tient du mythe."
+      features: "Vit en symbiose avec une colonie de serpents nichés dans son organisme"
     harpy:
       name: "Harpie"
       features: "Couverte de plumes. Bras couplés à des ailes fonctionnelles."
@@ -61,7 +61,7 @@ profile:
       features: "Ensemble de matériaux inertes animés par un cœur thaumaturgique. Cherche souvent à imiter les formes de vie biologiques"
     golem:
       name: "Golem"
-      features: "Élémentaire abritant (littéralement) des écrits dans son cœur"
+      features: "Abrite (littéralement) des écrits dans son cœur"
   of-note:
     title: "À prendre en compte en cas d'intervention"
   job:
