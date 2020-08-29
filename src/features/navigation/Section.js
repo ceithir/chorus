@@ -141,14 +141,15 @@ const Section = ({ text, children, next, character }) => {
     }
     return () => dispatch(nextSubSection());
   })();
+  const canClickOnWholeCard = !!action && (!showAll || !children);
 
   return (
     <div data-character={character}>
       {character && <CharacterHeader character={character} />}
       <Card
         className="avh-section"
-        hoverable={!!action}
-        onClick={() => !!action && continueRef.current.click()}
+        hoverable={canClickOnWholeCard}
+        onClick={() => canClickOnWholeCard && continueRef.current.click()}
       >
         <SubSections subsections={visibleSubsections} />
         {showAll && <FadeInAndScrollTo>{children}</FadeInAndScrollTo>}
