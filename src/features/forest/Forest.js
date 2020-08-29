@@ -8,7 +8,14 @@ import {
 } from "../navigation/reducer";
 import { useTranslation } from "react-i18next";
 import Section from "../navigation/Section";
-import { CETO, CAROLE, CAMILLA, ALECTO, KATRINA } from "../../characters";
+import {
+  CETO,
+  CAROLE,
+  CAMILLA,
+  ALECTO,
+  KATRINA,
+  DEJANIRE,
+} from "../../characters";
 import { selectParty } from "../party/reducer";
 import ForestSelector from "./ForestSelector";
 import { selectForest } from "./reducer";
@@ -38,29 +45,34 @@ const Forest = () => {
         if (!character) {
           return "";
         }
-        if (
-          direction === "west" &&
-          [ALECTO, CAMILLA, KATRINA].includes(character)
-        ) {
-          const tree = `${root}.monster`;
+        const text = (() => {
+          if (
+            direction === "west" &&
+            [ALECTO, CAMILLA, KATRINA].includes(character)
+          ) {
+            const tree = `${root}.monster`;
 
-          return Object.keys(t(tree, { returnObjects: true }))
-            .map((index) => {
-              return t(`${tree}.${index}.${character}`, {
-                defaultValue: t(`${tree}.${index}.default`),
-              });
-            })
-            .join("\n\n");
-        }
+            return Object.keys(t(tree, { returnObjects: true }))
+              .map((index) => {
+                return t(`${tree}.${index}.${character}`, {
+                  defaultValue: t(`${tree}.${index}.default`),
+                });
+              })
+              .join("\n\n");
+          }
 
-        const key = `story.forest.exploration.${character}.${direction}`;
-        const fallbackKey = `story.forest.exploration.${character}.default`;
-        return t(key, { defaultValue: t(fallbackKey) });
+          const key = `story.forest.exploration.${character}.${direction}`;
+          const fallbackKey = `story.forest.exploration.${character}.default`;
+          return t(key, { defaultValue: t(fallbackKey) });
+        })();
+
+        return { character, text };
       })
       .filter(Boolean);
     return (
       <Section
-        text={adventures[step]}
+        text={adventures[step]["text"]}
+        character={adventures[step]["character"]}
         next={!!adventures[step + 1] ? stepUp : () => console.log("TODO")}
       />
     );
@@ -87,30 +99,32 @@ const Forest = () => {
   }
 
   const introduction = (() => {
-    let parts = ["part-1"];
+    let parts = [{ key: "part-1", character: DEJANIRE }];
 
     if (forestParty.includes(CETO)) {
-      parts.push("ceto");
+      parts.push({ key: "ceto", character: CETO });
     }
 
-    parts.push("part-2");
+    parts.push({ key: "part-2", character: DEJANIRE });
 
     if (forestParty.includes(CAMILLA)) {
-      parts.push("camilla");
+      parts.push({ key: "camilla", character: CAMILLA });
     }
 
-    parts.push("part-3");
+    parts.push({ key: "part-3", character: DEJANIRE });
 
     if (forestParty.includes(CAROLE)) {
-      parts.push("carole");
+      parts.push({ key: "carole", character: CAROLE });
     }
 
     return parts;
   })();
+  const current = introduction[step];
 
   return (
     <Section
-      text={t(`story.forest.introduction.${introduction[step]}`)}
+      text={t(`story.forest.introduction.${current["key"]}`)}
+      character={current["character"]}
       next={!!introduction[step + 1] ? stepUp : goTo(PLANNING)}
     />
   );
