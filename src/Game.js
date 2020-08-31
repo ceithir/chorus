@@ -20,6 +20,7 @@ import {
 } from "./characters";
 import Forest from "./features/forest/Forest";
 import Library from "./features/library/Library";
+import City from "./features/city/City";
 
 const Game = () => {
   const section = useSelector(selectSection);
@@ -27,6 +28,10 @@ const Game = () => {
   const { t } = useTranslation();
   const goTo = (section) => () => dispatch(setSection(section));
   const chapter = useSelector(selectChapter);
+
+  if (chapter === "city") {
+    return <City />;
+  }
 
   if (chapter === "forest") {
     return <Forest />;

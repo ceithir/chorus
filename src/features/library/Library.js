@@ -5,6 +5,7 @@ import {
   setSection,
   selectStep,
   nextStep,
+  setChapter,
 } from "../navigation/reducer";
 import { useTranslation } from "react-i18next";
 import Section from "../navigation/Section";
@@ -34,6 +35,18 @@ const Library = () => {
 
   const PLANNING = "planning";
   const READING = "reading";
+
+  const nextChapter = () => dispatch(setChapter("city"));
+
+  if (section === CAMILLA) {
+    return (
+      <Section
+        text={t("story.library.camilla")}
+        character={CAMILLA}
+        next={nextChapter}
+      />
+    );
+  }
 
   if (section === READING) {
     const results = (() => {
@@ -90,11 +103,21 @@ const Library = () => {
         }
       }).filter(Boolean);
     })();
+
+    const next = (() => {
+      if (results[step + 1]) {
+        return stepUp;
+      }
+      if (party.includes(CAMILLA)) {
+        return goTo(CAMILLA);
+      }
+      return nextChapter;
+    })();
     return (
       <Section
         text={results[step]["text"]}
         character={results[step]["character"]}
-        next={!!results[step + 1] ? stepUp : () => console.log("TODO")}
+        next={next}
       />
     );
   }
