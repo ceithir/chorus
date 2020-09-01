@@ -6,7 +6,6 @@ import {
   selectChapter,
   setChapter,
 } from "./features/navigation/reducer";
-import { useTranslation } from "react-i18next";
 import Section from "./features/navigation/Section";
 import PartySelector from "./features/party/PartySelector";
 import {
@@ -25,7 +24,6 @@ import City from "./features/city/City";
 const Game = () => {
   const section = useSelector(selectSection);
   const dispatch = useDispatch();
-  const { t } = useTranslation();
   const goTo = (section) => () => dispatch(setSection(section));
   const chapter = useSelector(selectChapter);
 
@@ -45,7 +43,7 @@ const Game = () => {
   const i = meetingOrder.indexOf(section);
   if (i > -1) {
     return (
-      <Section text={t(`story.meeting.${section}`)} character={meetingOrder[i]}>
+      <Section text={`story.meeting.${section}`} character={meetingOrder[i]}>
         <PartySelector
           character={section}
           next={goTo(meetingOrder[i + 1] || RASHOMON)}
@@ -58,7 +56,7 @@ const Game = () => {
     case RASHOMON:
       return (
         <Section
-          text={t("story.meeting.rashomon")}
+          text={"story.meeting.rashomon"}
           next={() => dispatch(setChapter("forest"))}
           character={RASHOMON}
         />
@@ -66,7 +64,7 @@ const Game = () => {
     default:
       return (
         <Section
-          text={t("story.meeting.introduction")}
+          text={"story.meeting.introduction"}
           next={goTo(CETO)}
           character={RASHOMON}
         />

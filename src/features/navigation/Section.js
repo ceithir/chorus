@@ -7,6 +7,7 @@ import "./Section.less";
 import Animate from "rc-animate";
 import QueueAnim from "rc-queue-anim";
 import CharacterHeader from "../characters/CharacterHeader";
+import { useTranslation } from "react-i18next";
 
 const { Paragraph } = Typography;
 
@@ -113,13 +114,15 @@ const Controls = React.forwardRef(({ action }, ref) => {
   );
 });
 
-const Section = ({ text, children, next, character }) => {
+const Section = ({ text, children, next, character, translated = false }) => {
   const subSectionIndex = useSelector(selectSubSection);
   const dispatch = useDispatch();
   const instantText = useSelector(selectInstantText);
   const continueRef = useRef();
+  const { t } = useTranslation();
 
-  const subsections = text.split(/\n{2,}/);
+  const translatedText = translated ? text : t(text, { name: character });
+  const subsections = translatedText.split(/\n{2,}/);
   const showAll = (() => {
     if (instantText) {
       return true;

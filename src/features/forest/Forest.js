@@ -64,7 +64,7 @@ const Forest = () => {
 
           const key = `story.forest.exploration.${character}.${direction}`;
           const fallbackKey = `story.forest.exploration.${character}.default`;
-          return t(key, { defaultValue: t(fallbackKey) });
+          return t(key, { defaultValue: t(fallbackKey, { name: character }) });
         })();
 
         return { character, text };
@@ -79,6 +79,7 @@ const Forest = () => {
             ? stepUp
             : () => dispatch(setChapter("library"))
         }
+        translated={true}
       />
     );
   }
@@ -90,7 +91,7 @@ const Forest = () => {
 
     return (
       <Section
-        text={t("story.forest.planning")}
+        text={"story.forest.planning"}
         next={completed && goTo(EXPLORATION)}
       >
         <ForestSelector characters={forestParty} />
@@ -128,7 +129,7 @@ const Forest = () => {
 
   return (
     <Section
-      text={t(`story.forest.introduction.${current["key"]}`)}
+      text={`story.forest.introduction.${current["key"]}`}
       character={current["character"]}
       next={!!introduction[step + 1] ? stepUp : goTo(PLANNING)}
     />
