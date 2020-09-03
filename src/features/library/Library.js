@@ -84,7 +84,7 @@ const Library = () => {
             return false;
         }
       })();
-      return key && { text: `story.library.books.${key}`, name: character };
+      return key && { text: `story.library.books.${key}`, character };
     }).filter(Boolean);
 
     const next = (() => {
