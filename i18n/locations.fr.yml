@@ -23,3 +23,9 @@ library:
       long: "Assez de lectrices chevronnées sont présentes pour permettre à {{name}} de prendre le temps de faire les choses bien pour ces ouvrages."
 city:
   title: "Visite du patrimoine"
+  locations:
+    poor: "Cité dortoir"
+    old: "Quartier historique"
+    rich: "Zone résidentielle"
+    supermarket: "Centre commercial"
+    bank: "Quartier d'affaires"
