@@ -94,3 +94,154 @@ alecto: >-
   Enfin, tant qu’elle réussit à trouver à sa place des financements pour les projets de plus en plus déments que la Sécurité entreprend. Pourquoi autant d’hélicos alors qu’il ne reste presque plus d’aériens dans cette ville ?
 
   On se reconcentre. On est en week-end. Et on essaye d’avoir un sens moral.
+locations:
+  poor:
+    intro: >-
+      – Le voilà.
+
+      La concierge a conduit la bénévole devant ce qui ressemble fort à un container maritime abandonné au pied des barres d’immeubles, un imposant cube de tôle couvert de graffitis. Un gros cadenas verrouille ostensiblement l’unique porte.
+
+      – Le bosquet est dedans. Ils l’ont enfermé là y’a quelque chose comme six mois, sous prétexte qu’il y avait eu des dégradations et qu’il fallait s’assurer qu’il soit bien protégé.
+
+      – Vous avez la clé ?
+
+      – Non. Et j’ai aucune idée de qui peut bien l’avoir. Ah, et y’a une alarme, des fois que vous seriez tentée.
+    carole: >-
+      – Il me faut aller de l’autre côté de cette porte. Mais si je vais de l’autre côté, l’autre côté, ce sera ce côté. Donc, d’une certaine façon, je suis déjà de l’autre côté.
+
+      La concierge la laisse déblatérer à sa guise, ayant déjà eu affaire à la logique absurde de schrodingues.
+
+      – Et d’ailleurs, je suis de l’autre côté.
+
+      Et effectivement, elle l’est.
+    tekeli: >-
+      La porte n’est pas étanche, loin de là. C’est un jeu d’enfant pour Tekeli de se laisser couler dans l’interstice entre son rebord inférieur et le sol, et de reprendre forme de l’autre côté.
+    success: >-
+      S’il n’a jamais dû être exceptionnellement beau, un simple platane sur lequel on aurait greffé une branche d’arbre-monde, le bosquet fait dorénavant véritablement peine à voir : à peine éclairé par la lumière qui passe à travers le plafond grillagé, attaqué par des champignons qui prolifèrent dans l’humidité de cette cage où l’eau réussit à se glisser mais pas à s’évacuer.
+
+      Les bandelettes révèlent, sans surprise, que la protection qu’assure l’arbre est tout juste médiocre, largement en-dessous du seuil attendu.
+
+      L’observatrice ressort comme elle était entrée.
+
+      – Y’a pas moyen de le sortir de là ? L’arbre va vraiment crever si on le laisse enfermé là-dedans.
+
+      – Je m’en doute bien. Et croyez bien qu’on vous a pas attendu pour tenter de se débarrasser de ce parpaing de mes deux. Mais il s’avère que la Sécurité apprécie moyennement qu’on rejette leurs idées géniales. Donc va falloir faire autrement à moins que vous ne vouliez qu’on se retrouve toutes les deux au poste.
+
+      Un coup de fil à Rashomon plus tard, il est décidé de simplement sauver les meubles en glissant des chiffons imbibés de fongicide sous la porte, que la bénévole passe-muraille utilise ensuite pour alléger l’arbre de ses parasites. La terre est également remuée et aérée en la retournant comme se peut à la main.
+
+      C’est pas génial, mais c’est mieux que rien, et c’est toujours un sursis.
+    failure: >-
+      Malgré tous ses efforts, {{name}} ne parvient pas à trouver une solution pour contourner le problème et s'en retourne dépitée.
+  old:
+    intro: >-
+      Pour comprendre ce quartier, il faut revenir à sa fondation, et donc à celle de la ville, deux millénaires auparavant.
+
+      À l’époque, c’est ici que les dirigeants d’alors avaient planté la graine de l’arbre-monde qui devait assurer leur sérénité. Et pendant des siècles, ce fut le cas, la ville et son protecteur végétal grandissant ensemble peu à peu jusqu’à devenir le centre névralgique de la région.
+
+      Les relais existaient déjà à l’époque, mais tenaient plus d’un anarchique bricolage qu’autre chose, chaque religion et corps de métier se transmettant des secrets pas forcément très malins à ce sujet.
+
+      Les choses s’améliorèrent quand l’évolution de la technologie permit de mieux comprendre ces phénomènes. Et empirèrent quand, le mysticisme disparu, le seigneur des lieux réalisa qu’il pouvait monnayer l’accès à son arbre-monde, chaque relais devant maintenant être autorisé et s’acquitter d’une redevance.
+
+      Une longue guerre d’influence plus tard, et la ville se retrouva avec deux arbres-mondes, l’ancien, ici, et une jeune pousse, dans ce qui est aujourd’hui le centre-ville. Chacun sous le contrôle d’une famille noble rivale, imposant sa loi sur son domaine.
+
+      Les affrontements se terminèrent par la destruction de l’arbre de ce quartier, et le déménagement de tous les centres du pouvoir vers leur emplacement actuel.
+
+      Le faubourg isolé est alors devenu un quartier pauvre, a même été indépendant de la ville principale pendant un certain temps, pour finalement être réhabilité comme endroit touristique lors du dernier siècle. Et il porte bien sûr les marques de toutes ces transformations.
+
+      En particulier, le seigneur avait interdit l’implantation d’un relais en remplacement de l’arbre-monde détruit. Un relais pirate fut donc créé, caché au fond d’un puits désaffecté, en expérimentant avec des plantes très résistantes pour compenser les conditions difficiles.
+
+      C’est toujours lui qui assure la protection du quartier aujourd’hui. Il y a même un écriteau devant le puits pour préciser ce fait. Et une grille, pour empêcher les gens de tomber dedans.
+
+      La gardienne vous l’ouvre.
+
+      « Bon courage. Personne n’est descendu là-dedans depuis des années. Trop dangereux. »
+
+      Les échelons métalliques rouillés qui descendent vers les profondeurs n’incitent effectivement pas à la confiance. Surtout que certains semblent manquer.
+    alecto: >-
+      Une vie de pratique en milieu urbain a appris à Alecto à décoller et à atterrir avec très peu d’élan, presque à la verticale, ainsi qu’à planer dans des espaces étroits et bas de plafond.
+
+      Elle exécute un début de chute contrôlée dans le puits, en laissant les échelons à portée de main, remonte en battant des ailes pour vérifier qu’elle a bien la place de manœuvrer, puis, rassurée, se laisse planer jusqu’au fond.
+    tekeli: >-
+      Tekeli étend un long pseudopode aplati vers l’échelon suivant, accroissant l’adhésivité de son membre pour s’assurer une prise solide sur la surface irrégulière. Puis elle passe au suivant, et descend ainsi lentement, prudemment.
+
+      Elle pourrait probablement s’accrocher au mur lui-même et se passer complètement de l’échelle en poussant ses capacités à leurs limites, mais elle n’a aucune raison de s’épuiser inutilement ainsi, d’autant que cela lui rappelle de mauvais souvenirs de cours de sport.
+    success: >-
+      Le fond du puits est envahi par une plante difforme, un méli-mélo de racines et de branches tordues qui a poussé comme il a pu dans cet espace restreint pour capter un maximum de lumière et d’eau.
+
+      C’est le relais maison de ce quartier, et il est étonnamment vigoureux à défaut d’être joli.
+
+      Toutefois, il est aussi couvert d’une couche de pièces de monnaie, de cannettes écrasées, de mégots de cigarette, bref de tout ce qui a pu être balancé à travers la grille du puits au cours de la décennie passée, et cette gangue directement collée au bois réduit son efficacité.
+
+      La bénévole remonte chercher des outils d’entretien et des sacs-poubelles, et le grand nettoyage commence.
+    failure: >-
+      Malgré tous ses efforts, {{name}} ne parvient pas à trouver une solution pour contourner le problème et s'en retourne dépitée.
+  rich: >-
+    Le quartier résidentiel moderne est une succession de petits pavillons tous construits sur le même modèle et différenciés à la marge, par la couleur des volets, le modèle du portail du jardin, la présence de fleurs sous les fenêtres.
+
+    Son relais spirituel prend la forme d’un épais marronnier au centre du rond-point qui en défend l’accès. Personne ne semble s’en occuper, mais personne ne l’embête non plus, et il se débrouille plutôt bien tout seul.
+
+    Les bandelettes pS confirment cette impression, avec un niveau de protection à « très bon », ce qui largement suffisant.
+  bank:
+    default: >-
+      Le quartier d’affaires a beau être toujours considéré comme neuf, il est en réalité sorti de terre voilà plusieurs décennies, et son principal bosquet spirituel date de cette période. Soit après que les relais aient commencé à être standardisés, mais avant que la réglementation ne soit strictement appliquée, et à une période où la mode était de cacher ces protections dont on s’attendait à ce qu’elles soient bientôt désuètes et remplacées par une alternative plus moderne.
+
+      Autrement dit, l’arbre a été tant bien que mal intégré dans l’une des compositions artistiques qui émaillent le lieu, sous la forme d’un saule contraint et taillé pour adopter une silhouette et un visage supposément angélique. De l’avis des passants, le résultat est assez terrifiant le soir dans la pénombre.
+
+      Toutefois, en-dehors de cet aspect esthétique discutable, il est parfaitement entretenu, comme tout dans le quartier, et les bandelettes renvoient un vert bien pétant quel que soit l’endroit où elles sont collées.
+    rashomon: >-
+      – Ça c’est de la colère de premier choix. T’es sûre que t’es pas une bélial ?
+
+      Rashomon n’a pas besoin de baisser les yeux pour examiner celle qui harangue ici car elle lévite à deux bons mètres du sol, nonchalamment allongée sur l’air. Son apparence est celle d’une oni diaphane drapée dans une robe moulante dorée. Rashomon sait cependant pertinemment que l’autre lui montre ce qu’elle veut et non ce qu’elle est.
+
+      – Je ne connais pas bien mon arbre généalogique, donc peut-être bien. Enchantée, je m’appelle Rashomon et…
+
+      – C’est bon, c’est bon, l’interrompt l’être. En vrai, ta vie, je m’en fiche. Est-ce que tu comptes casser des trucs oui ou non ?
+
+      – Non.
+
+      – Sérieux ? C’est du gaspillage. De la bonne colère comme ça, faut en faire quelque chose.
+
+      Insensible à de telles piques, Rashomon s’efforce d’orienter la conversation vers un terrain productif :
+
+      – Tu es une démonique n’est-ce pas ? Une mammon logiquement dans ce secteur. Est-ce que…
+
+      – Non.
+
+      Et elle disparaît dans une explosion de paillettes.
+
+      Évidemment. Les démoniques pures ne sont pas connues pour leur patience. Si ce n’est ni une source de nourriture, ni une d’amusement, ni un danger, cela ne les intéresse pas.
+
+      Ils n’en restent pas moins des êtres aussi puissants qu’ils sont capricieux. Et bien difficile à éradiquer. Rashomon se demande quelle tête ferait la Sécurité si elle savait qu’une de leurs représentantes se cache ici, en plein milieu du quartier le plus protégé de la ville.
+    spirit: >-
+      Le relais fait techniquement son travail. Il empêche bien les esprits de venir d’ailleurs.
+
+      Cependant, imposer une forme humanoïde à un végétal fortement chargé spirituellement dans un environnement pseudo-religieux, n’est pas une idée particulièrement maligne. C’est même le mode d’emploi exact pour inviter ou générer certains esprits particulièrement retors.
+
+      La mammon est invisible à la plupart des yeux, et a appris à se cacher au regard des autres dans le cœur de l’arbre-statue qui l’a enfantée. Cependant, l’observation attentive nécessaire pour repérer d’éventuelles failles a fini par la révéler, d’autant plus qu’elle est particulièrement pleine d’énergie à l’approche du solstice.
+
+      Elle se matérialise dans toute sa gloire cornue sitôt découverte, prête à en découdre d’une façon ou d’une autre. Un regard sur la personne l’ayant réveillée lui suffit cependant à comprendre qu’il faut mieux la jouer profil bas.
+
+      – Bon. Je suppose que si vous vouliez m’exorciser, ce serait déjà fait. Alors qu’est-ce que je peux vous offrir pour que vous fassiez semblant de ne pas m’avoir vue ?
+
+      Après un marchandage de pure forme, elle accepte de se tenir tranquille le jour du solstice, et de s’assurer qu’aucun collègue ne profite de l’occasion pour s’infiltrer sur son territoire. Elle comptait très certainement déjà mettre en œuvre le second point, mais le premier la fait quelque peu bouder.
+  supermarket:
+    default: >-
+      Le bosquet-relais date de la création du centre commercial géant un demi-siècle auparavant, et, comme ce dernier, il se porte toujours bien aujourd’hui.
+
+      Il trône au bout de l’allée principale, dans un espace décoratif agrémenté d’autres arbres et statues, derrière un ruban de sécurité et un écriteau « Ne pas toucher ». Une inspection rapide ne révèle rien de particulier, et l’équipe d’entretien confirme qu’il est en pleine forme.
+    carole: >-
+      – Rainbow Cat ?
+
+      Carole reporte son attention vers la personne qui lui parle. Un groupe d’ados s’est détaché de la foule du magasin, et la regarde avec de grands yeux.
+
+      Elle détestait déjà ces situations avant d’avoir une épée vorpaline au-dessus de la tête. Est-ce que c’est trop demander, à elle qui joue déjà au clown devant sa caméra plus de douze heures par jour, qu’on la laisse vivre sa vie tranquillement le reste du temps ?
+
+      Alors aujourd’hui, là, tout de suite, elle a juste envie de les envoyer bouler d’un geste grossier.
+
+      Mais comme ce n’est quelque chose qu’elle ferait en temps normal, il va bien falloir qu’elle donne le change, comme si de rien n’était, comme si elle n’était pas complètement en train de mourir à l’intérieur.
+
+      Son sourire automatique se met en place, et, d’un geste travaillé, elle passe sa main dans ses cheveux, en faisant disparaître certains et apparaître d’autres, sa tignasse brune devenant brusquement arc-en-ciel au passage de ses doigts.
+
+      – En effet.
+
+      Sourire, serrage de mains, sourire, réponses évasives et courtes aux questions, sourire, autographes, sourire, et au moment opportun, disparition mystérieuse en laissant une carte de visite derrière elle.
