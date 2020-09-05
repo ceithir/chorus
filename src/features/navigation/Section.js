@@ -8,6 +8,7 @@ import Animate from "rc-animate";
 import QueueAnim from "rc-queue-anim";
 import CharacterHeader from "../characters/CharacterHeader";
 import { useTranslation } from "react-i18next";
+import { name } from "../../characters";
 
 const { Paragraph } = Typography;
 
@@ -121,7 +122,9 @@ const Section = ({ text, children, next, character, translated = false }) => {
   const continueRef = useRef();
   const { t } = useTranslation();
 
-  const translatedText = translated ? text : t(text, { name: character });
+  const translatedText = translated
+    ? text
+    : t(text, { name: name({ t, character }) });
   const subsections = translatedText.split(/\n{2,}/);
   const showAll = (() => {
     if (instantText) {

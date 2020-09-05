@@ -14,6 +14,7 @@ import {
   RASHOMON,
   CAMILLA,
   KATRINA,
+  name,
 } from "../../characters";
 import { selectCity, forceAssign } from "./reducer";
 import { POOR, OLD, SUPERMARKET, BANK, LOCATIONS } from "./locations";
@@ -22,7 +23,8 @@ import CitySelector from "./CitySelector";
 import { useTranslation } from "react-i18next";
 
 const adventure = ({ location, character, t }) => {
-  const tplus = (key) => t(`story.city.locations.${key}`, { name: character });
+  const tplus = (key) =>
+    t(`story.city.locations.${key}`, { name: name({ t, character }) });
   const compose = (...keys) => {
     return keys.map((key) => tplus(key)).join("\n\n");
   };

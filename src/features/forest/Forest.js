@@ -16,6 +16,7 @@ import {
   ALECTO,
   KATRINA,
   DEJANIRE,
+  name,
 } from "../../characters";
 import { selectParty } from "../party/reducer";
 import ForestSelector from "./ForestSelector";
@@ -64,7 +65,9 @@ const Forest = () => {
 
           const key = `story.forest.exploration.${character}.${direction}`;
           const fallbackKey = `story.forest.exploration.${character}.default`;
-          return t(key, { defaultValue: t(fallbackKey, { name: character }) });
+          return t(key, {
+            defaultValue: t(fallbackKey, { name: name({ character, t }) }),
+          });
         })();
 
         return { character, text };
