@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectForest, sendTo } from "./reducer";
 import { Card, Radio, List, Typography } from "antd";
-import { CAROLE } from "../../characters";
+import { CAROLE, name } from "../../characters";
 import "./ForestSelector.less";
 import { useTranslation } from "react-i18next";
 
@@ -17,7 +17,7 @@ const ForestRoseWind = ({ character }) => {
 
   return (
     <Card>
-      <Text strong>{t(`characters.${character}.name`)}</Text>
+      <Text strong>{name({ t, character })}</Text>
       <Radio.Group
         onChange={(event) => {
           dispatch(sendTo({ character, direction: event.target.value }));

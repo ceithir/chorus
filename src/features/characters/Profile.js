@@ -11,6 +11,7 @@ import {
   CAMILLA,
   DEJANIRE,
   MAHARAL,
+  name,
 } from "../../characters";
 import "./Profile.less";
 
@@ -187,7 +188,7 @@ const Profile = ({ character }) => {
 
   return (
     <div className="avh-character-profile">
-      <Title level={3}>{t(`characters.${character}.name`)}</Title>
+      <Title level={3}>{name({ t, character })}</Title>
       <List
         dataSource={dataSource({ character, t, i18n })}
         renderItem={({ title, description }) => (

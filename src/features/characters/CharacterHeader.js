@@ -3,6 +3,7 @@ import { Typography, Card, Button, Drawer } from "antd";
 import "./CharacterHeader.less";
 import { useTranslation } from "react-i18next";
 import Profile from "./Profile";
+import { name } from "../../characters";
 
 const { Text } = Typography;
 
@@ -12,7 +13,7 @@ const CharacterHeader = ({ character }) => {
 
   return (
     <Card className="avh-character-header">
-      <Text strong>{t(`characters.${character}.name`)}</Text>
+      <Text strong>{name({ t, character })}</Text>
       <Button shape="circle" size="small" onClick={() => setShowRecord(true)}>
         ?
       </Button>

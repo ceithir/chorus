@@ -4,6 +4,7 @@ import { selectParty, addToParty } from "./reducer";
 import { Typography, Card, List, Button } from "antd";
 import { useTranslation } from "react-i18next";
 import "./PartySelector.less";
+import { name } from "../../characters";
 
 const { Text } = Typography;
 
@@ -12,8 +13,6 @@ const pad = (arr, len, fill) => arr.concat(Array(len).fill(fill)).slice(0, len);
 const PartyCard = ({ party, location, full, onClick }) => {
   const { t } = useTranslation();
   const buttonRef = useRef();
-
-  const name = (character) => t(`characters.${character}.name`);
 
   return (
     <Card
@@ -30,7 +29,7 @@ const PartyCard = ({ party, location, full, onClick }) => {
         dataSource={pad(party, 3, "placeholder")}
         renderItem={(character) => (
           <List.Item>
-            <Text>{name(character)}</Text>
+            <Text>{name({ t, character })}</Text>
           </List.Item>
         )}
       />

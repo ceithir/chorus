@@ -4,6 +4,7 @@ import { selectLibrary, assignList } from "./reducer";
 import { Card, List, Checkbox, Typography, Tooltip } from "antd";
 import { useTranslation } from "react-i18next";
 import { BOOKS, slots, GOOD, BAD } from "./books";
+import { name } from "../../characters";
 
 const { Text, Paragraph } = Typography;
 
@@ -11,7 +12,7 @@ const QualityEvaluation = ({ quality, character }) => {
   const { t } = useTranslation();
   const text = (version) =>
     t(`locations.library.quality.${quality}.${version}`, {
-      name: t(`characters.${character}.name`),
+      name: name({ t, character }),
     });
 
   return (
@@ -52,7 +53,7 @@ const BookCheckList = ({ character, quality, max }) => {
 
   return (
     <Card>
-      <Text strong>{t(`characters.${character}.name`)}</Text>
+      <Text strong>{name({ t, character })}</Text>
       {max && (
         <Text strong={maxedOut}>{` ${currentlyAssigned.length}/${max}`}</Text>
       )}

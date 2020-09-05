@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { LOCATIONS, POOR } from "./locations";
 import { useSelector, useDispatch } from "react-redux";
 import { selectCity, assign } from "./reducer";
-import { TEKELI } from "../../characters";
+import { TEKELI, name } from "../../characters";
 import "./CitySelector.less";
 
 const { Text } = Typography;
@@ -20,7 +20,7 @@ const CityButtons = ({ character }) => {
 
   return (
     <Card>
-      <Text strong>{t(`characters.${character}.name`)}</Text>
+      <Text strong>{name({ t, character })}</Text>
       <Radio.Group
         onChange={(event) => {
           dispatch(assign({ character, location: event.target.value }));
