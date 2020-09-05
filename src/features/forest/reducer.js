@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { DIRECTIONS } from "./directions";
 
 const slice = createSlice({
   name: "forest",
@@ -6,7 +7,7 @@ const slice = createSlice({
   reducers: {
     sendTo: (state, action) => {
       const { character, direction } = action.payload;
-      ["north", "south", "west", "east"].forEach((direction) => {
+      DIRECTIONS.forEach((direction) => {
         if (state[direction] === character) {
           state[direction] = null;
         }

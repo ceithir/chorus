@@ -22,6 +22,7 @@ import { selectParty } from "../party/reducer";
 import ForestSelector from "./ForestSelector";
 import { selectForest } from "./reducer";
 import { Typography } from "antd";
+import { DIRECTIONS, WEST } from "./directions";
 
 const { Paragraph } = Typography;
 
@@ -41,38 +42,36 @@ const Forest = () => {
   if (section === EXPLORATION) {
     const root = "story.forest.exploration";
 
-    const adventures = ["north", "east", "south", "west"]
-      .map((direction) => {
-        const character = forest[direction];
-        if (!character) {
-          return "";
+    const adventures = DIRECTIONS.map((direction) => {
+      const character = forest[direction];
+      if (!character) {
+        return "";
+      }
+      const text = (() => {
+        if (
+          direction === WEST &&
+          [ALECTO, CAMILLA, KATRINA].includes(character)
+        ) {
+          const tree = `${root}.monster`;
+
+          return Object.keys(t(tree, { returnObjects: true }))
+            .map((index) => {
+              return t(`${tree}.${index}.${character}`, {
+                defaultValue: t(`${tree}.${index}.default`),
+              });
+            })
+            .join("\n\n");
         }
-        const text = (() => {
-          if (
-            direction === "west" &&
-            [ALECTO, CAMILLA, KATRINA].includes(character)
-          ) {
-            const tree = `${root}.monster`;
 
-            return Object.keys(t(tree, { returnObjects: true }))
-              .map((index) => {
-                return t(`${tree}.${index}.${character}`, {
-                  defaultValue: t(`${tree}.${index}.default`),
-                });
-              })
-              .join("\n\n");
-          }
+        const key = `story.forest.exploration.${character}.${direction}`;
+        const fallbackKey = `story.forest.exploration.${character}.default`;
+        return t(key, {
+          defaultValue: t(fallbackKey, { name: name({ character, t }) }),
+        });
+      })();
 
-          const key = `story.forest.exploration.${character}.${direction}`;
-          const fallbackKey = `story.forest.exploration.${character}.default`;
-          return t(key, {
-            defaultValue: t(fallbackKey, { name: name({ character, t }) }),
-          });
-        })();
-
-        return { character, text };
-      })
-      .filter(Boolean);
+      return { character, text };
+    }).filter(Boolean);
     return (
       <Section
         text={adventures[step]["text"]}

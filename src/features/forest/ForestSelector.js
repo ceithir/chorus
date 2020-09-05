@@ -5,10 +5,9 @@ import { Card, Radio, List, Typography } from "antd";
 import { CAROLE, name } from "../../characters";
 import "./ForestSelector.less";
 import { useTranslation } from "react-i18next";
+import { DIRECTIONS, SOUTH } from "./directions";
 
 const { Text } = Typography;
-
-const directions = ["north", "west", "east", "south"];
 
 const ForestRoseWind = ({ character }) => {
   const forest = useSelector(selectForest());
@@ -22,11 +21,11 @@ const ForestRoseWind = ({ character }) => {
         onChange={(event) => {
           dispatch(sendTo({ character, direction: event.target.value }));
         }}
-        value={directions.find((direction) => forest[direction] === character)}
+        value={DIRECTIONS.find((direction) => forest[direction] === character)}
       >
-        {directions.map((direction) => {
+        {DIRECTIONS.map((direction) => {
           const disabled = (() => {
-            if (character === CAROLE && direction === "south") {
+            if (character === CAROLE && direction === SOUTH) {
               return true;
             }
             return !!forest[direction] && forest[direction] !== character;
