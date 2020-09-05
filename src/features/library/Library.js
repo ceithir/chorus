@@ -111,7 +111,7 @@ const Library = () => {
 
     return (
       <Section text={`story.library.planning`} next={done && next}>
-        <BookSelector characters={party} />
+        <BookSelector characters={[...party].sort()} />
       </Section>
     );
   }
