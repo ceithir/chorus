@@ -1,13 +1,20 @@
-import { CAMILLA, TEKELI, MAHARAL, CETO } from "../../characters";
+import {
+  CAMILLA,
+  TEKELI,
+  MAHARAL,
+  CETO,
+  KATRINA,
+  ALECTO,
+} from "../../characters";
 
-export const BOOKS = [
-  "mystery",
-  "fantasy",
-  "mimic",
-  "romance",
-  "coffee",
-  "science",
-];
+export const MYSTERY = "mystery";
+export const FANTASY = "fantasy";
+export const MIMIC = "mimic";
+export const ROMANCE = "romance";
+export const COFFEE = "coffee";
+export const SCIENCE = "science";
+
+export const BOOKS = [MYSTERY, FANTASY, MIMIC, ROMANCE, COFFEE, SCIENCE];
 
 const SLOW = [CAMILLA, TEKELI];
 
@@ -56,3 +63,63 @@ export const slots = (characters) => {
     ...assistSlots(characters.filter((character) => character !== MAHARAL)),
   };
 };
+
+export const score = ({ characters, assignations }) => {
+  let result = 0;
+
+  const s = slots(characters);
+  const quality = (book) => s[assignations[book]]["quality"];
+
+  const unusedSlots = (quality) =>
+    characters.reduce((acc, character) => {
+      if (s[character]["quality"] !== quality) {
+        return acc;
+      }
+      return (
+        acc +
+        Math.max(
+          0,
+          s[character]["max"] -
+            Object.values(assignations).filter((char) => char === character)
+              .length
+        )
+      );
+    }, 0);
+
+  const baseScore = (book, mod = 0) => {
+    switch (quality(book)) {
+      case GOOD:
+        return 2 + mod;
+      case AVERAGE:
+        return 1 + mod;
+      default:
+        return 0;
+    }
+  };
+
+  result += unusedSlots(GOOD) * 1; // Leftover bonus
+
+  result += baseScore(MYSTERY, 1);
+  result += baseScore(FANTASY);
+
+  const coffeePenalty = [ALECTO, CETO].includes(assignations[COFFEE]) ? 0 : -1;
+  result += baseScore(COFFEE, coffeePenalty);
+
+  if (assignations[MIMIC] === TEKELI) {
+    result += 1;
+  }
+
+  result += assignations[ROMANCE] === KATRINA ? 3 : baseScore(ROMANCE);
+
+  if (assignations[SCIENCE] !== CAMILLA && quality(SCIENCE) === GOOD) {
+    result += 3;
+  }
+
+  return result;
+};
+
+export const mimicUnveiled = (assignations) =>
+  !!assignations[MIMIC] && ![MAHARAL, CAMILLA].includes(assignations[MIMIC]);
+
+export const ghostFound = (assignations) =>
+  [KATRINA, CETO].includes(assignations[ROMANCE]);
