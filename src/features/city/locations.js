@@ -18,19 +18,15 @@ export const score = (assignations) => {
   let result = 0;
 
   if ([TEKELI, CAROLE].includes(assignations[POOR])) {
-    result += 2;
+    result += 1;
   }
 
   if ([TEKELI, ALECTO].includes(assignations[OLD])) {
-    result += 2;
+    result += 1;
   }
 
   if ([CAMILLA, KATRINA].includes(assignations[BANK])) {
     result += 1;
-  }
-
-  if (assignations[SUPERMARKET] === CAROLE) {
-    result -= 1;
   }
 
   return result;

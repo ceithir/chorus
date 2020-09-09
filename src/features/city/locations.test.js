@@ -19,7 +19,7 @@ test("score", () => {
       [BANK]: CAMILLA,
       [RICH]: RASHOMON,
     })
-  ).toBe(5);
+  ).toBe(3);
   expect(
     score({
       [POOR]: ALECTO,
@@ -35,6 +35,13 @@ test("score", () => {
       [BANK]: KATRINA,
     })
   ).toBe(1);
+  expect(
+    score({
+      [POOR]: RASHOMON,
+      [OLD]: ALECTO,
+      [BANK]: CAMILLA,
+    })
+  ).toBe(2);
 });
 
 test("demon", () => {
