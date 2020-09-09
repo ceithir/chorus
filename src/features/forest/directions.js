@@ -34,6 +34,8 @@ export const score = (assignations) => {
     case TEKELI:
       total += 4;
       break;
+    default:
+      break;
   }
 
   switch (assignations[SOUTH]) {
@@ -51,6 +53,8 @@ export const score = (assignations) => {
     case TEKELI:
       total += 4;
       break;
+    default:
+      break;
   }
 
   switch (assignations[WEST]) {
@@ -61,6 +65,8 @@ export const score = (assignations) => {
     case CETO:
     case DEJANIRE:
       total += 3;
+      break;
+    default:
       break;
   }
 
@@ -80,11 +86,13 @@ export const score = (assignations) => {
     case TEKELI:
       total += 4;
       break;
+    default:
+      break;
   }
 
   return total;
 };
 
-export const divine = (assignations) => {
+export const divineFound = (assignations) => {
   return [DEJANIRE, CAMILLA].includes(assignations[SOUTH]);
 };

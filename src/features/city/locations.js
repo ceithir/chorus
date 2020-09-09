@@ -1,10 +1,3 @@
-export const POOR = "poor";
-export const OLD = "old";
-export const RICH = "rich";
-export const SUPERMARKET = "supermarket";
-export const BANK = "bank";
-export const LOCATIONS = [OLD, RICH, SUPERMARKET, BANK, POOR];
-
 import {
   RASHOMON,
   ALECTO,
@@ -13,6 +6,13 @@ import {
   TEKELI,
   CAROLE,
 } from "../../characters";
+
+export const POOR = "poor";
+export const OLD = "old";
+export const RICH = "rich";
+export const SUPERMARKET = "supermarket";
+export const BANK = "bank";
+export const LOCATIONS = [OLD, RICH, SUPERMARKET, BANK, POOR];
 
 export const score = (assignations) => {
   let result = 0;
@@ -32,5 +32,5 @@ export const score = (assignations) => {
   return result;
 };
 
-export const demon = (assignations) =>
+export const demonFound = (assignations) =>
   [RASHOMON, CAMILLA, KATRINA].includes(assignations[BANK]);

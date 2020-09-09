@@ -1,4 +1,12 @@
-import { score, demon, POOR, OLD, RICH, SUPERMARKET, BANK } from "./locations";
+import {
+  score,
+  demonFound,
+  POOR,
+  OLD,
+  RICH,
+  SUPERMARKET,
+  BANK,
+} from "./locations";
 
 import {
   RASHOMON,
@@ -44,8 +52,8 @@ test("score", () => {
   ).toBe(2);
 });
 
-test("demon", () => {
-  expect(demon({})).toBe(false);
-  expect(demon({ [BANK]: TEKELI })).toBe(false);
-  expect(demon({ [BANK]: RASHOMON })).toBe(true);
+test("demonFound", () => {
+  expect(demonFound({})).toBe(false);
+  expect(demonFound({ [BANK]: TEKELI })).toBe(false);
+  expect(demonFound({ [BANK]: RASHOMON })).toBe(true);
 });

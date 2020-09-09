@@ -1,4 +1,4 @@
-import { score, divine, NORTH, SOUTH, WEST, EAST } from "./directions";
+import { score, divineFound, NORTH, SOUTH, WEST, EAST } from "./directions";
 
 import {
   DEJANIRE,
@@ -20,10 +20,10 @@ test("score", () => {
   expect(score({ [NORTH]: DEJANIRE, [WEST]: CAROLE, [EAST]: KATRINA })).toBe(7);
 });
 
-test("divine", () => {
-  expect(divine({})).toBe(false);
-  expect(divine({ [NORTH]: DEJANIRE })).toBe(false);
-  expect(divine({ [SOUTH]: DEJANIRE })).toBe(true);
-  expect(divine({ [SOUTH]: CAMILLA })).toBe(true);
-  expect(divine({ [SOUTH]: KATRINA })).toBe(false);
+test("divineFound", () => {
+  expect(divineFound({})).toBe(false);
+  expect(divineFound({ [NORTH]: DEJANIRE })).toBe(false);
+  expect(divineFound({ [SOUTH]: DEJANIRE })).toBe(true);
+  expect(divineFound({ [SOUTH]: CAMILLA })).toBe(true);
+  expect(divineFound({ [SOUTH]: KATRINA })).toBe(false);
 });
