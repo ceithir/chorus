@@ -20,12 +20,17 @@ import {
 import Forest from "./features/forest/Forest";
 import Library from "./features/library/Library";
 import City from "./features/city/City";
+import Debrief from "./features/debrief/Debrief";
 
 const Game = () => {
   const section = useSelector(selectSection);
   const dispatch = useDispatch();
   const goTo = (section) => () => dispatch(setSection(section));
   const chapter = useSelector(selectChapter);
+
+  if (chapter === "finale") {
+    return <Debrief />;
+  }
 
   if (chapter === "city") {
     return <City />;

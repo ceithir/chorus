@@ -6,6 +6,7 @@ import {
   setSection,
   selectStep,
   nextStep,
+  setChapter,
 } from "../navigation/reducer";
 import {
   TEKELI,
@@ -82,7 +83,7 @@ const City = () => {
         text={text}
         character={character}
         translated={true}
-        next={parts[step + 1] ? stepUp : () => console.log("TODO")}
+        next={parts[step + 1] ? stepUp : () => dispatch(setChapter("finale"))}
       />
     );
   }
