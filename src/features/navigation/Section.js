@@ -58,6 +58,10 @@ const ContinueButton = React.forwardRef(({ action }, ref) => {
       buttonRef.current.click();
     },
   }));
+  const refDefined = !!buttonRef.current;
+  useEffect(() => {
+    buttonRef.current.focus();
+  }, [refDefined]);
 
   return (
     <Button
