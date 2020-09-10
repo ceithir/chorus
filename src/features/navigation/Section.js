@@ -5,7 +5,6 @@ import { selectSubSection, nextSubSection, selectInstantText } from "./reducer";
 import { Typography, Card, Button } from "antd";
 import "./Section.less";
 import Animate from "rc-animate";
-import QueueAnim from "rc-queue-anim";
 import CharacterHeader from "../characters/CharacterHeader";
 import { useTranslation } from "react-i18next";
 import { name } from "../../characters";
@@ -99,7 +98,7 @@ const SubSections = ({ subsections }) => {
   }
 
   return (
-    <QueueAnim className="avh-subsections" type={["top", "alpha"]}>
+    <div className="avh-subsections">
       <Animate transitionName="fade" transitionAppear>
         <div key={id}>
           {subsections.map((text, index) => {
@@ -107,7 +106,7 @@ const SubSections = ({ subsections }) => {
           })}
         </div>
       </Animate>
-    </QueueAnim>
+    </div>
   );
 };
 
@@ -129,6 +128,11 @@ const Section = ({ text, children, next, character, translated = false }) => {
   const translatedText = translated
     ? text
     : t(text, { name: name({ t, character }) });
+  const id = translatedText.substring(0, 32);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [id]);
+
   const subsections = translatedText.split(/\n{2,}/);
   const showAll = (() => {
     if (instantText) {
