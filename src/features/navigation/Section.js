@@ -99,7 +99,7 @@ const SubSections = ({ subsections }) => {
 
   return (
     <div className="avh-subsections">
-      <Animate transitionName="fade" transitionAppear>
+      <Animate transitionName="fade" transitionAppear transitionLeave={false}>
         <div key={id}>
           {subsections.map((text, index) => {
             return <SubSection key={index.toString()} text={text} />;
@@ -128,11 +128,6 @@ const Section = ({ text, children, next, character, translated = false }) => {
   const translatedText = translated
     ? text
     : t(text, { name: name({ t, character }) });
-  const id = translatedText.substring(0, 32);
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [id]);
-
   const subsections = translatedText.split(/\n{2,}/);
   const showAll = (() => {
     if (instantText) {
