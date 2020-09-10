@@ -17,12 +17,14 @@ import {
   KATRINA,
   DEJANIRE,
   name,
+  TEKELI,
 } from "../../characters";
 import { selectParty } from "../party/reducer";
 import ForestSelector from "./ForestSelector";
 import { selectForest } from "./reducer";
 import { Typography } from "antd";
-import { DIRECTIONS, WEST } from "./directions";
+import { DIRECTIONS, WEST, success, EAST, SOUTH } from "./directions";
+import Results from "../debrief/Results";
 
 const { Paragraph } = Typography;
 
@@ -38,6 +40,57 @@ const Forest = () => {
 
   const PLANNING = "planning";
   const EXPLORATION = "exploration";
+  const RESULTS = "results";
+
+  if (section === RESULTS) {
+    const data = [
+      forestParty.includes(CETO) && {
+        key: "optigirl",
+        character: CETO,
+        type: "success",
+      },
+      forestParty.includes(TEKELI) &&
+        forest[WEST] !== TEKELI && {
+          key: "optigirl",
+          character: TEKELI,
+          type: "success",
+        },
+      [ALECTO, CAMILLA, KATRINA].includes(forest[WEST]) && {
+        key: "beast",
+        character: forest[WEST],
+        type: "warning",
+      },
+      forestParty.includes(ALECTO) &&
+        forest[WEST] !== ALECTO && {
+          key: "citygirl",
+          character: ALECTO,
+          type: "warning",
+        },
+      forestParty.includes(CAROLE) &&
+        forest[EAST] !== CAROLE && {
+          key: "citygirl",
+          character: CAROLE,
+          type: "warning",
+        },
+      [CAROLE, KATRINA].includes(forest[EAST]) && {
+        key: "fairies",
+        character: forest[EAST],
+        type: "success",
+      },
+      forestParty.includes(CETO) && {
+        key: "dream",
+      },
+      [CAMILLA, DEJANIRE].includes(forest[SOUTH]) && {
+        key: `ally.${forest[SOUTH]}`,
+      },
+    ].filter(Boolean);
+
+    return (
+      <Section next={() => dispatch(setChapter("library"))}>
+        <Results context="forest" success={success(forest)} data={data} />
+      </Section>
+    );
+  }
 
   if (section === EXPLORATION) {
     const root = "story.forest.exploration";
@@ -76,11 +129,7 @@ const Forest = () => {
       <Section
         text={adventures[step]["text"]}
         character={adventures[step]["character"]}
-        next={
-          !!adventures[step + 1]
-            ? stepUp
-            : () => dispatch(setChapter("library"))
-        }
+        next={!!adventures[step + 1] ? stepUp : goTo(RESULTS)}
         translated={true}
       />
     );

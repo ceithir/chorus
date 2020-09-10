@@ -96,3 +96,5 @@ export const score = (assignations) => {
 export const divineFound = (assignations) => {
   return [DEJANIRE, CAMILLA].includes(assignations[SOUTH]);
 };
+
+export const success = (assignations) => score(assignations) >= 7;

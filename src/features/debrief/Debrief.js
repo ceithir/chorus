@@ -11,7 +11,11 @@ import { CETO, CAROLE, CAMILLA, ALECTO, KATRINA } from "../../characters";
 import { selectForest } from "../forest/reducer";
 import { selectCity } from "../city/reducer";
 import { selectLibrary } from "../library/reducer";
-import { score as forestScore, WEST, divineFound } from "../forest/directions";
+import {
+  WEST,
+  divineFound,
+  success as forestSuccessFunc,
+} from "../forest/directions";
 import {
   score as libraryScore,
   ROMANCE,
@@ -34,7 +38,7 @@ const Debrief = () => {
   const city = useSelector(selectCity());
   const step = useSelector(selectStep);
 
-  const forestSuccess = forestScore(forest) >= 7;
+  const forestSuccess = forestSuccessFunc(forest);
   const librarySuccess =
     libraryScore({
       characters: libraryParty,

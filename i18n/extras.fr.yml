@@ -70,3 +70,16 @@ profile:
     see_more: "(voir fiche : <strong>{{species}}</strong>)"
     see_all: "Voir la fiche complète"
     error: "Vous n'avez pas les permissions nécessaires pour consulter cette fiche."
+results:
+  title: "Résultats"
+  forest:
+    good: "Beaucoup de plantes ont été récoltées"
+    bad: "Peu de plantes récoltées au final"
+    beast: "La rencontre avec une bête sauvage a écourté l'expédition"
+    citygirl: "{{name}}, hors de son élément, n'a pas ramené grand chose"
+    fairies: "{{name}} a reçu une aide bienvenue des locaux"
+    optigirl: "{{name}} a réalisé une excellente récolte"
+    dream: "Déjanire est à cran après sa discussion avec Céto"
+    ally:
+      dejanire: "Déjanire a remarqué quelque chose d'inhabituel"
+      camilla: "Camilla a fait une rencontre intéressante"

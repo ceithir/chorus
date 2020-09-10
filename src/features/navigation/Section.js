@@ -130,6 +130,9 @@ const Section = ({ text, children, next, character, translated = false }) => {
     : t(text, { name: name({ t, character }) });
   const subsections = translatedText.split(/\n{2,}/);
   const showAll = (() => {
+    if (!text) {
+      return true;
+    }
     if (instantText) {
       return true;
     }
@@ -160,7 +163,7 @@ const Section = ({ text, children, next, character, translated = false }) => {
         hoverable={canClickOnWholeCard}
         onClick={() => canClickOnWholeCard && continueRef.current.click()}
       >
-        <SubSections subsections={visibleSubsections} />
+        {text && <SubSections subsections={visibleSubsections} />}
         {showAll && <FadeInAndScrollTo>{children}</FadeInAndScrollTo>}
         {!!action && <Controls ref={continueRef} action={action} />}
       </Card>
