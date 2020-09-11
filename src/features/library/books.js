@@ -111,7 +111,7 @@ export const score = ({ characters, assignations }) => {
 
   result += assignations[ROMANCE] === KATRINA ? 3 : baseScore(ROMANCE);
 
-  if (assignations[SCIENCE] !== CAMILLA && quality(SCIENCE) === GOOD) {
+  if (testimonyFound({ characters, assignations })) {
     result += 3;
   }
 
@@ -123,3 +123,16 @@ export const mimicUnveiled = (assignations) =>
 
 export const ghostFound = (assignations) =>
   [KATRINA, CETO].includes(assignations[ROMANCE]);
+
+export const quality = ({ book, characters, assignations }) =>
+  slots(characters)[assignations[book]]["quality"];
+
+export const testimonyFound = ({ characters, assignations }) => {
+  if (assignations[SCIENCE] === CAMILLA) {
+    return false;
+  }
+  return quality({ book: SCIENCE, characters, assignations }) === GOOD;
+};
+
+export const success = ({ characters, assignations }) =>
+  mimicUnveiled(assignations) && score({ characters, assignations }) >= 9;

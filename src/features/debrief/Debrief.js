@@ -17,10 +17,10 @@ import {
   success as forestSuccessFunc,
 } from "../forest/directions";
 import {
-  score as libraryScore,
   ROMANCE,
   MIMIC,
   ghostFound,
+  success as librarySuccessFunc,
 } from "../library/books";
 import { score as cityScore, demonFound } from "../city/locations";
 import { selectParty } from "../party/reducer";
@@ -39,11 +39,10 @@ const Debrief = () => {
   const step = useSelector(selectStep);
 
   const forestSuccess = forestSuccessFunc(forest);
-  const librarySuccess =
-    libraryScore({
-      characters: libraryParty,
-      assignations: library,
-    }) >= 9;
+  const librarySuccess = librarySuccessFunc({
+    characters: libraryParty,
+    assignations: library,
+  });
   const citySuccess =
     cityScore(city) + (library[ROMANCE] === KATRINA ? 1 : 0) >= 2;
   const success = forestSuccess && librarySuccess && citySuccess;

@@ -83,3 +83,14 @@ results:
     ally:
       dejanire: "Déjanire a remarqué quelque chose d'inhabituel"
       camilla: "Camilla a fait une rencontre intéressante"
+  library:
+    good: "Les fiches ont, en général, été remplies avec un luxe de détails irréprochable"
+    bad: "Beaucoup trop de paperasse pour qu'un peu n'ait été légèrement bâclée sur les bords"
+    dragon: "Ce dragon de poésie n'effraiera personne"
+    mimic: "Un drame a sans doute été évité en neutralisant cette mimique"
+    dream: "Les facades impassibles de Maharal et Camilla se sont entrouvertes suite à leur rencontre"
+    testimony: "L'un des ouvrages s'est révélé avoir plus de valeur que prévu"
+    overkill: "Certains livres ne valaient guère le temps qui leur a été consacré"
+    ally:
+      katrina: "Katrina a eu une conversation très productive avec un esprit"
+      ceto: "Céto a peut-être mis le doigt sur quelque chose d'intéressant"

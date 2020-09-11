@@ -20,7 +20,22 @@ import {
 import { selectParty } from "../party/reducer";
 import BookSelector from "./BookSelector";
 import { selectLibrary } from "../library/reducer";
-import { BOOKS, slots, BAD, GOOD } from "../library/books";
+import {
+  BOOKS,
+  slots,
+  BAD,
+  GOOD,
+  success,
+  MYSTERY,
+  mimicUnveiled,
+  MIMIC,
+  SCIENCE,
+  testimonyFound,
+  quality,
+  FANTASY,
+  ROMANCE,
+} from "../library/books";
+import Results from "../debrief/Results";
 
 const Library = () => {
   const section = useSelector(selectSection);
@@ -33,6 +48,7 @@ const Library = () => {
 
   const PLANNING = "planning";
   const READING = "reading";
+  const RESULTS = "results";
 
   const nextChapter = () => dispatch(setChapter("city"));
 
@@ -41,8 +57,51 @@ const Library = () => {
       <Section
         text={"story.library.camilla"}
         character={CAMILLA}
-        next={nextChapter}
+        next={goTo(RESULTS)}
       />
+    );
+  }
+
+  if (section === RESULTS) {
+    const defaultParams = { characters: party, assignations: library };
+
+    const data = [
+      library[MYSTERY] !== BAD && {
+        key: "dragon",
+        character: library[MYSTERY],
+        type: "success",
+      },
+      mimicUnveiled(library) && {
+        key: "mimic",
+        character: library[MIMIC],
+        type: "success",
+      },
+      testimonyFound({ ...defaultParams }) && {
+        key: "testimony",
+        character: library[SCIENCE],
+        type: "success",
+      },
+      (quality({ book: FANTASY, ...defaultParams }) ||
+        quality({ book: MYSTERY, ...defaultParams })) && {
+        key: "overkill",
+        type: "warning",
+      },
+      [KATRINA, CETO].includes(library[ROMANCE]) && {
+        key: `ally.${library[ROMANCE]}`,
+      },
+      party.includes(CAMILLA) && {
+        key: "dream",
+      },
+    ].filter(Boolean);
+
+    return (
+      <Section next={nextChapter}>
+        <Results
+          context="library"
+          success={success({ characters: party, assignations: library })}
+          data={data}
+        />
+      </Section>
     );
   }
 
@@ -94,7 +153,7 @@ const Library = () => {
       if (party.includes(CAMILLA)) {
         return goTo(CAMILLA);
       }
-      return nextChapter;
+      return goTo(RESULTS);
     })();
     return (
       <Section
