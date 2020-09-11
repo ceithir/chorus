@@ -71,12 +71,15 @@ const City = () => {
 
   const ACTION = "action";
   if (section === ACTION) {
-    const parts = LOCATIONS.filter((location) => !!city[location]).map(
+    const adventures = LOCATIONS.filter((location) => !!city[location]).map(
       (location) => {
         const character = city[location];
         return { text: adventure({ location, character, t }), character };
       }
     );
+    const parts = party.includes(CAROLE)
+      ? [{ text: t("story.city.carole"), character: CAROLE }, ...adventures]
+      : [...adventures];
     const { text, character } = parts[step];
     return (
       <Section
