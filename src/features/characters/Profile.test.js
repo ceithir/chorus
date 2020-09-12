@@ -9,5 +9,5 @@ test("it lists some interesting facts", () => {
 
   const { getByText } = render(<Profile character={CETO} />);
 
-  expect(getByText(/Venin/)).toBeInTheDocument();
+  expect(getByText(/venin/)).toBeInTheDocument();
 });
