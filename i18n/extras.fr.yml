@@ -94,3 +94,13 @@ results:
     ally:
       katrina: "Katrina a eu une conversation très productive avec un esprit"
       ceto: "Céto a peut-être mis le doigt sur quelque chose d'intéressant"
+  city:
+    good: "Rashomon est très satisfaite des retours de ses subordonnées d'un jour"
+    bad: "Rashomon n'est que partiellement rassérénée parce que leurs explorations leur ont appris sur l'état du réseau"
+    dream: "Carole a été prévenue qu'elle risquait gros"
+    no-access: "Des relais se sont révélés plus difficiles d'accès que prévus"
+    poor: "De gênants obstacles légaux ont été contournés avec succès"
+    old: "La restauration du relais pirate historique s'est bien déroulé"
+    ally: "{{name}} a eu une rencontre intriguante avec un démon"
+    useless: "Du temps et des efforts ont été consacrés pour des lieux déjà parfaitement protégés"
+    spider: "Une alliée spectrale a discrètement apporté son éthérée contribution"

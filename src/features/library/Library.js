@@ -16,6 +16,7 @@ import {
   ALECTO,
   CAROLE,
   CAMILLA,
+  GUEST,
 } from "../../characters";
 import { selectParty } from "../party/reducer";
 import BookSelector from "./BookSelector";
@@ -36,6 +37,8 @@ import {
   ROMANCE,
 } from "../library/books";
 import Results from "../debrief/Results";
+import { forceAssign } from "../city/reducer";
+import { SPECIAL } from "../city/locations";
 
 const Library = () => {
   const section = useSelector(selectSection);
@@ -166,7 +169,12 @@ const Library = () => {
 
   if (section === PLANNING) {
     const done = Object.values(library).filter(Boolean).length === BOOKS.length;
-    const next = goTo(READING);
+    const next = () => {
+      if (library[ROMANCE] === KATRINA) {
+        dispatch(forceAssign({ character: GUEST, location: SPECIAL }));
+      }
+      goTo(READING)();
+    };
 
     return (
       <Section text={`story.library.planning`} next={done && next}>

@@ -18,10 +18,20 @@ import {
   name,
 } from "../../characters";
 import { selectCity, forceAssign } from "./reducer";
-import { POOR, OLD, SUPERMARKET, BANK, LOCATIONS } from "./locations";
+import {
+  POOR,
+  OLD,
+  SUPERMARKET,
+  BANK,
+  LOCATIONS,
+  success,
+  RICH,
+  SPECIAL,
+} from "./locations";
 import { selectParty } from "../party/reducer";
 import CitySelector from "./CitySelector";
 import { useTranslation } from "react-i18next";
+import Results from "../debrief/Results";
 
 const adventure = ({ location, character, t }) => {
   const tplus = (key) =>
@@ -69,6 +79,50 @@ const City = () => {
   const stepUp = () => dispatch(nextStep());
   const { t } = useTranslation();
 
+  const RESULTS = "results";
+  if (section === RESULTS) {
+    const noAccess =
+      (city[POOR] && ![TEKELI, CAROLE].includes(city[POOR])) ||
+      (city[OLD] && ![ALECTO, TEKELI].includes(city[OLD]));
+
+    const data = [
+      [TEKELI, CAROLE].includes(city[POOR]) && {
+        key: "poor",
+        character: city[POOR],
+        type: "success",
+      },
+      [ALECTO, TEKELI].includes(city[OLD]) && {
+        key: "old",
+        character: city[OLD],
+        type: "success",
+      },
+      city[SPECIAL] && {
+        key: "spider",
+        type: "success",
+      },
+      noAccess && {
+        key: "no-access",
+        type: "warning",
+      },
+      (city[RICH] || city[SUPERMARKET]) && {
+        key: "useless",
+        type: "warning",
+      },
+      [(CAMILLA, RASHOMON, KATRINA)].includes(city[BANK]) && {
+        key: "ally",
+        character: city[BANK],
+      },
+      party.includes(CAROLE) && {
+        key: "dream",
+      },
+    ].filter(Boolean);
+    return (
+      <Section next={() => dispatch(setChapter("finale"))}>
+        <Results context="city" success={success(city)} data={data} />
+      </Section>
+    );
+  }
+
   const ACTION = "action";
   if (section === ACTION) {
     const adventures = LOCATIONS.filter((location) => !!city[location]).map(
@@ -86,7 +140,7 @@ const City = () => {
         text={text}
         character={character}
         translated={true}
-        next={parts[step + 1] ? stepUp : () => dispatch(setChapter("finale"))}
+        next={parts[step + 1] ? stepUp : goTo(RESULTS)}
       />
     );
   }
@@ -97,9 +151,15 @@ const City = () => {
       return <Section text={`story.city.split`} next={goTo(TEKELI)} />;
     }
 
-    const completed =
-      Object.values(city).filter(Boolean).length ===
-      (party.includes(TEKELI) ? party.length + 1 : party.length);
+    const completed = party.every((character) => {
+      const assignCount = Object.values(city).filter(
+        (chara) => chara === character
+      ).length;
+      if (character === TEKELI) {
+        return assignCount === 2;
+      }
+      return assignCount === 1;
+    });
     const next = goTo(ACTION);
 
     return (

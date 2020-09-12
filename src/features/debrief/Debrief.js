@@ -7,7 +7,7 @@ import {
   nextStep,
 } from "../navigation/reducer";
 import Section from "../navigation/Section";
-import { CETO, CAROLE, CAMILLA, ALECTO, KATRINA } from "../../characters";
+import { CETO, CAROLE, CAMILLA, ALECTO } from "../../characters";
 import { selectForest } from "../forest/reducer";
 import { selectCity } from "../city/reducer";
 import { selectLibrary } from "../library/reducer";
@@ -17,12 +17,11 @@ import {
   success as forestSuccessFunc,
 } from "../forest/directions";
 import {
-  ROMANCE,
   MIMIC,
   ghostFound,
   success as librarySuccessFunc,
 } from "../library/books";
-import { score as cityScore, demonFound } from "../city/locations";
+import { demonFound, success as citySuccessFunc } from "../city/locations";
 import { selectParty } from "../party/reducer";
 
 const Debrief = () => {
@@ -43,8 +42,7 @@ const Debrief = () => {
     characters: libraryParty,
     assignations: library,
   });
-  const citySuccess =
-    cityScore(city) + (library[ROMANCE] === KATRINA ? 1 : 0) >= 2;
+  const citySuccess = citySuccessFunc(city);
   const success = forestSuccess && librarySuccess && citySuccess;
   const hope =
     success &&

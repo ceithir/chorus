@@ -7,5 +7,6 @@ export const CAROLE = "carole";
 export const KATRINA = "katrina";
 export const TEKELI = "tekeli";
 export const CAMILLA = "camilla";
+export const GUEST = "???";
 
 export const name = ({ character, t }) => t(`characters.${character}.name`);

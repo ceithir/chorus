@@ -6,6 +6,7 @@ import {
   RICH,
   SUPERMARKET,
   BANK,
+  SPECIAL,
 } from "./locations";
 
 import {
@@ -48,6 +49,14 @@ test("score", () => {
       [POOR]: RASHOMON,
       [OLD]: ALECTO,
       [BANK]: CAMILLA,
+    })
+  ).toBe(2);
+  expect(
+    score({
+      [RICH]: RASHOMON,
+      [SUPERMARKET]: CETO,
+      [BANK]: CAMILLA,
+      [SPECIAL]: true,
     })
   ).toBe(2);
 });

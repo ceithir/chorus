@@ -13,6 +13,7 @@ export const RICH = "rich";
 export const SUPERMARKET = "supermarket";
 export const BANK = "bank";
 export const LOCATIONS = [OLD, RICH, SUPERMARKET, BANK, POOR];
+export const SPECIAL = "special";
 
 export const score = (assignations) => {
   let result = 0;
@@ -29,8 +30,14 @@ export const score = (assignations) => {
     result += 1;
   }
 
+  if (assignations[SPECIAL]) {
+    result += 1;
+  }
+
   return result;
 };
 
 export const demonFound = (assignations) =>
   [RASHOMON, CAMILLA, KATRINA].includes(assignations[BANK]);
+
+export const success = (assignations) => score(assignations) >= 2;
