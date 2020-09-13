@@ -58,9 +58,13 @@ const ContinueButton = React.forwardRef(({ action }, ref) => {
     },
   }));
   const refDefined = !!buttonRef.current;
+  const instantText = useSelector(selectInstantText);
   useEffect(() => {
+    if (instantText) {
+      return;
+    }
     buttonRef.current.focus();
-  }, [refDefined]);
+  }, [refDefined, instantText]);
 
   return (
     <Button
