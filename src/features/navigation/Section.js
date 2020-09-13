@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useImperativeHandle } from "react";
+import React, { useEffect, useRef, useImperativeHandle, useState } from "react";
 import sanitizeHtml from "sanitize-html";
 import { useSelector, useDispatch } from "react-redux";
 import { selectSubSection, nextSubSection, selectInstantText } from "./reducer";
@@ -80,36 +80,16 @@ const ContinueButton = React.forwardRef(({ action }, ref) => {
   );
 });
 
-const StaticSubSections = ({ id, subsections }) => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "auto" });
-  }, [id]);
+const SubSections = ({ subsections }) => {
+  if (!subsections.length) {
+    return null;
+  }
 
   return (
     <div className="avh-subsections">
       {subsections.map((text, index) => {
         return <SubSection key={index.toString()} text={text} />;
       })}
-    </div>
-  );
-};
-
-const SubSections = ({ subsections }) => {
-  const instantText = useSelector(selectInstantText);
-  const id = subsections[0].substring(0, 32);
-  if (instantText) {
-    return <StaticSubSections id={id} subsections={subsections} />;
-  }
-
-  return (
-    <div className="avh-subsections">
-      <Animate transitionName="fade" transitionAppear transitionLeave={false}>
-        <div key={id}>
-          {subsections.map((text, index) => {
-            return <SubSection key={index.toString()} text={text} />;
-          })}
-        </div>
-      </Animate>
     </div>
   );
 };
@@ -122,17 +102,113 @@ const Controls = React.forwardRef(({ action }, ref) => {
   );
 });
 
+const AnimationContainer = ({
+  children,
+  animationId,
+  visible,
+  action,
+  fadeOutBeforeAction,
+  scrollUpOnAppear,
+}) => {
+  useEffect(() => {
+    if (!animationId) {
+      return;
+    }
+    if (scrollUpOnAppear) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [animationId, scrollUpOnAppear]);
+
+  if (!animationId) {
+    return <>{children}</>;
+  }
+
+  return (
+    <Animate
+      transitionName="fade"
+      transitionEnter={false}
+      transitionLeave={fadeOutBeforeAction}
+      showProp="visible"
+      onEnd={(_, exists) => {
+        if (!exists) {
+          action();
+        }
+      }}
+    >
+      <div key={animationId} visible={visible}>
+        {children}
+      </div>
+    </Animate>
+  );
+};
+
+const RawSection = ({
+  character,
+  canClickOnWholeCard,
+  animationId,
+  action,
+  fadeOutBeforeAction,
+  children,
+}) => {
+  const continueRef = useRef();
+  const [visible, setVisible] = useState(true);
+  const startFadingOut = () => setVisible(false);
+  const endFadingOutAndContinue = () => {
+    setVisible(true);
+    action();
+  };
+  const actualAction = fadeOutBeforeAction ? startFadingOut : action;
+  const scrollUpOnAppear = animationId && !fadeOutBeforeAction; // FIXME: Arcane rule
+
+  return (
+    <div data-character={character}>
+      {character && <CharacterHeader character={character} />}
+      <Card
+        className="avh-section"
+        hoverable={canClickOnWholeCard}
+        onClick={() => canClickOnWholeCard && continueRef.current.click()}
+      >
+        <AnimationContainer
+          animationId={animationId}
+          visible={visible}
+          action={endFadingOutAndContinue}
+          fadeOutBeforeAction={fadeOutBeforeAction}
+          scrollUpOnAppear={scrollUpOnAppear}
+        >
+          {children}
+        </AnimationContainer>
+        {!!action && <Controls ref={continueRef} action={actualAction} />}
+      </Card>
+    </div>
+  );
+};
+
 const Section = ({ text, children, next, character, translated = false }) => {
   const subSectionIndex = useSelector(selectSubSection);
   const dispatch = useDispatch();
   const instantText = useSelector(selectInstantText);
-  const continueRef = useRef();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
-  const translatedText = translated
-    ? text
-    : t(text, { name: name({ t, character }) });
-  const subsections = translatedText.split(/\n{2,}/);
+  const animationId = (() => {
+    if (!text) {
+      return null;
+    }
+    if (translated) {
+      return text.substring(0, 32);
+    }
+    return `${i18n.language}.${text}`;
+  })();
+
+  const translatedText = (() => {
+    if (!text) {
+      return null;
+    }
+    if (translated) {
+      return text;
+    }
+    return t(text, { name: name({ t, character }) });
+  })();
+  const subsections = translatedText?.split(/\n{2,}/) || [];
   const showAll = (() => {
     if (!text) {
       return true;
@@ -160,18 +236,16 @@ const Section = ({ text, children, next, character, translated = false }) => {
   const canClickOnWholeCard = !!action && (!showAll || !children);
 
   return (
-    <div data-character={character}>
-      {character && <CharacterHeader character={character} />}
-      <Card
-        className="avh-section"
-        hoverable={canClickOnWholeCard}
-        onClick={() => canClickOnWholeCard && continueRef.current.click()}
-      >
-        {text && <SubSections subsections={visibleSubsections} />}
-        {showAll && <FadeInAndScrollTo>{children}</FadeInAndScrollTo>}
-        {!!action && <Controls ref={continueRef} action={action} />}
-      </Card>
-    </div>
+    <RawSection
+      character={character}
+      canClickOnWholeCard={canClickOnWholeCard}
+      animationId={animationId}
+      action={action}
+      fadeOutBeforeAction={!instantText && showAll && animationId && next}
+    >
+      <SubSections subsections={visibleSubsections} />
+      {showAll && <FadeInAndScrollTo>{children}</FadeInAndScrollTo>}
+    </RawSection>
   );
 };
 
