@@ -16,11 +16,14 @@ library:
     science: "Traité"
   quality:
     bad:
-      short: "Ouvrages à bâcler"
+      short: "Livres non critiques"
       long: "Pour tenir les délais, {{name}} se contente de parcourir les ouvrages rapidement. Des détails peuvent lui échapper."
     good:
       short: "Ouvrages à peaufiner"
       long: "Assez de lectrices chevronnées sont présentes pour permettre à {{name}} de prendre le temps de faire les choses bien pour ces ouvrages."
+    average:
+      short: "Textes entre deux eaux"
+      long: "{{name}} s'occupera des ouvrages ni trop importants ni à négliger."
 city:
   title: "Visite du patrimoine"
   locations:

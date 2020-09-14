@@ -15,11 +15,12 @@ const QualityEvaluation = ({ quality, character }) => {
       name: name({ t, character }),
     });
 
+  const type =
+    quality === GOOD ? "success" : quality === BAD ? "warning" : "average";
+
   return (
     <Tooltip placement="top" title={text("long")}>
-      <Paragraph type={quality === GOOD ? "success" : "warning"}>
-        {text("short")}
-      </Paragraph>
+      <Paragraph type={type}>{text("short")}</Paragraph>
     </Tooltip>
   );
 };
@@ -57,9 +58,7 @@ const BookCheckList = ({ character, quality, max }) => {
       {max && (
         <Text strong={maxedOut}>{` ${currentlyAssigned.length}/${max}`}</Text>
       )}
-      {[BAD, GOOD].includes(quality) && (
-        <QualityEvaluation quality={quality} character={character} />
-      )}
+      <QualityEvaluation quality={quality} character={character} />
       <Checkbox.Group
         options={options}
         onChange={onChange}
