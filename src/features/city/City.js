@@ -96,6 +96,10 @@ const City = () => {
         character: city[OLD],
         type: "success",
       },
+      party.includes(ALECTO) && {
+        key: "alecto",
+        type: "success",
+      },
       city[SPECIAL] && {
         key: "spider",
         type: "success",
@@ -125,15 +129,20 @@ const City = () => {
 
   const ACTION = "action";
   if (section === ACTION) {
-    const adventures = LOCATIONS.filter((location) => !!city[location]).map(
-      (location) => {
+    const parts = [
+      party.includes(CAROLE) && {
+        text: t("story.city.carole"),
+        character: CAROLE,
+      },
+      ...LOCATIONS.filter((location) => !!city[location]).map((location) => {
         const character = city[location];
         return { text: adventure({ location, character, t }), character };
-      }
-    );
-    const parts = party.includes(CAROLE)
-      ? [{ text: t("story.city.carole"), character: CAROLE }, ...adventures]
-      : [...adventures];
+      }),
+      party.includes(ALECTO) && {
+        text: t("story.city.alecto"),
+        character: ALECTO,
+      },
+    ].filter(Boolean);
     const { text, character } = parts[step];
     return (
       <Section

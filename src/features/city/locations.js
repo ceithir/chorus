@@ -34,10 +34,14 @@ export const score = (assignations) => {
     result += 1;
   }
 
+  if (Object.values(assignations).includes(ALECTO)) {
+    result += 1;
+  }
+
   return result;
 };
 
 export const demonFound = (assignations) =>
   [RASHOMON, CAMILLA, KATRINA].includes(assignations[BANK]);
 
-export const success = (assignations) => score(assignations) >= 2;
+export const success = (assignations) => score(assignations) >= 3;
