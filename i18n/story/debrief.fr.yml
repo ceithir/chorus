@@ -11,6 +11,7 @@ alecto: >-
 
   – Et c’est d’avoir fait le ménage pour des personnes âgées qui t’a mis dans cet état ?
 
+
   – C’est un peu plus compliqué que ça. Les enfants vont bien ?
 
   – Oui, je les ai eu en visio tout à l’heure. On a joué à leur jeu de cartes aux couleurs archi-pétantes et ils m’ont mis un belle raclée. Ils demandent combien de temps ils vont encore rester chez leurs grand-parents à la campagne.
@@ -20,6 +21,7 @@ alecto: >-
   – Je suis resté évasif et rassurant, qu’est-ce que tu voulais que je leur dise ? Et ne crois pas que je n’ai pas remarqué que toi aussi tu esquives les questions. Qu’est-ce qui s’est passé ?
 
   – J’ai été attaquée par une bestiole affamée.
+
 
   – Hein ?
 
@@ -37,6 +39,7 @@ alecto: >-
 
   – Regarde par la fenêtre.
 
+
   – Je suis pas sûr de bien suivre.
 
   – Fais-le s’il te plaît, tu vas comprendre.
@@ -46,6 +49,7 @@ alecto: >-
   Parc qui est presque vide en dépit du beau temps et de la magnificence du soleil qui se couche derrière l’arbre-monde. Ses portes sont pourtant grandes ouvertes.
 
   Il faut regarder quelques rues plus loin pour comprendre cette absence, remarquer d’un côté la série de barrages sur toutes les voies d’accès du quartier, de l’autre le grand nombre d’appartements à proximité aux volets fermés, aux fleurs mourantes.
+
 
   – Les rafles ont encore empiré.
 
@@ -83,6 +87,7 @@ maharal-success: >-
 
   – Je connais le rationnel derrière cette décision. Mais ça ne change rien à mes sentiments.
 
+
   Sur ces mots, Rashomon laisse échapper un mélange entre un soupir, un grognement et un cri de rage, avant de s’avachir sur une pile de cartons. Maharal la regarde d’un air sceptique :
 
   – Toi aussi tu aurais aussi bien besoin de sommeil.
@@ -91,19 +96,23 @@ maharal-success: >-
 
   – Ça c’est bien passé de ton côté d’ailleurs ?
 
+
   Rashomon sort un ordinateur portable de sa sacoche, le déverouille et le pose à côté d’elle :
 
   – Si y’a quoi que ce soit, ça devrait pas tarder à apparaître.
 
   – Alors dors toi aussi. Je surveille.
 
+
   Rashomon hésite à lui rétorquer qu’elle a encore beaucoup trop de travail pour ça, mais elle est bien trop épuisée pour refuser une telle offre, qu’elle le veuille ou non. Poussant un grognement vaguement affirmatif, elle se laisse sombrer dans un état de semi-conscience.
+
 
   Maharal elle conserve les yeux rivés sur l’écran, pour l’instant encore vierge de toute notification.
 rashomon-success: >-
   Lorsque Rashomon se réveille quelques heures plus tard, son corps lui reproche à grands cris la courtesse et l’inconfort de ce repos. Ces complaintes physiologiques ne parviennent cependant pas à entamer la bonne humeur qui s’empare d’elle lorsqu’elle constate n’avoir reçu que des messages administratifs ordinaires.
 
   – C’est bon. Y’a pas eu de problème, et donc on aura pas de problème. J’ai réussi à négocier sec cette semaine, ils vont tenir parole ce coup-ci.
+
 
   Maharal l’observe, dubitative.
 
@@ -115,6 +124,7 @@ rashomon-success: >-
 
   – J’ai pas dit que c’était génial. Mais on sauve des vies.
 
+
   – Pour le moment. Ça peut pas tenir. On a toujours moins de moyens et plus de restrictions. C’est déjà un miracle que les sérums que j’ai bricolé avec trois plantes et des restes n’aient tué personne.
 
   – Ils cherchent à nous pousser à la faute sur tous les fronts, même les plus minables. J’ai encore dû remplir un pavé supplémentaire de paperasse ce matin.
@@ -123,9 +133,11 @@ rashomon-success: >-
 werebeasts: >-
   C’est la pleine lune, et comme à chaque pleine lune, le couvre-feu est en vigueur. Seuls les agents de la Sécurité arpentent les rues, à pied et en voiture.
 
+
   Soudain, l’alerte est donnée, et voitures et hommes convergent vers un point précis, encerclant complètement une ruelle résidentielle.
 
   En sous-vêtements, rendu blafard par la lumière aveuglante des phares croisés, le garou semble s’être échappé d’un hôpital. De la bave s’échappe de sa muselière mal ajustée et du sang coule de son bras droit, au niveau de la jonction de la chaîne brisée.
+
 
   Une série de rafales retentit dans la nuit. Puis les hommes de la Sécurité ouvrent une enquête pour déterminer l’identité du fauteur de troubles, et donc savoir à qui envoyer la facture pour le nettoyage de la rue.
 book-burning: >-
@@ -133,11 +145,13 @@ book-burning: >-
 
   Déjà au coin de la rue les camionnettes de la Sécurité se profilent. Le tuyau anonyme reçu une demi-heure auparavant était bien vrai, même si trop tardif. Seule une minuscule fraction des ouvrages, pourtant pas si nombreux, a eu le temps d’être évacuée.
 
+
   Maharal abandonne ceux qu’elle tient à la main et se redresse de toute sa taille.
 
   – Je vais les retenir. Sauvez tout ce qui peut l’être.
 
   Quelques hochements de tête répondent à sa déclaration, mais rien de plus. L’heure est trop grave pour les paroles inutiles.
+
 
   La bibliothécaire marche d’un pas plus lourd qu’à l’ordinaire en direction de la porte d’entrée, s’autorisant juste un détour pour plonger sa main dans les plantes vertes et absorber jusqu’à la dernière poussière de terreau. Ce n’est pas de l’argile, mais tout supplément de masse est bon à prendre pour ce qu’elle compte faire.
 
@@ -145,51 +159,69 @@ book-burning: >-
 
   Le parking dispose d’une autre issue, dans la rue adjacente, qu’ils ne connaissent normalement pas encore. Reste à les occuper pour qu’ils se rendent compte de la supercherie le plus tard possible.
 
+
   La première obstruction est bureaucratique. Exiger de voir leur mandat. Demander des explications supplémentaires, le détail des incidents. Ensuite, mendier, supplier, grappiller des secondes d’hésitation avant qu’ils ne se décident à passer en force.
 
+
   Et, enfin, quand ils passent, bien trop vite, à des méthodes musclées et bousculent cette grosse bibliothécaire geignarde qui leur bloque le chemin… Cogner.
+
 
   Maharal n’est pas une combattante. Mais elle pèse son poids en roches tendres, et ses coups, à défaut de faire grand mal aux soldats derrière leur tenue de protection dernier cri, les repoussent au moins temporairement. Sa nature fait aussi que leurs armes ordinaires de maintien de l’ordre sont peu efficaces.
 
   Passée la surprise, un tir d’artillerie lourde en provenance des camions met cependant vite fin à sa dérisoire résistance.
 bad-reports: >-
   La première notification clignote à l’aube. Puis les rapports s’enchaînent sans discontinuer :
+
+
   <ul>
     <li>Une voiture de patrouille a tourné au coin d’une rue et personne ne l’a jamais revue.</li>
     <li>Un haut gradé s’est évaporé alors qu’il se trouvait dans son appartement fermé à clé de l’intérieur, laissant derrière lui ses vêtements.</li>
     <li>Des coups de feu dans la nuit, des agents disparus, sans même la moindre douille pour comprendre ce qui s’est passé.</li>
   </ul>
 
+
   À partir du milieu de la matinée, les messages commencent à parler de représailles, immédiates, sous forme de rafles contre les personnes fichées comme spirituellement potentes.
 
+
   Enfin tombe un mail personnellement destiné à l’attention de Rashomon.
+
 
   Sa convocation.
 tekeli: >-
   Les yeux rivés à l’écran, les doigts posés sur le clavier fréquemment agités d’une série de battements frénétiques, l’arrière du crâne logé dans un des pseudopodes de l’interface Migo qui pend au plafond de la vaste pièce, les observateurs surveillent les rêves du ghetto. Ils sont plus d’une centaine, tous humains ou biologiquement très proches de l’humain.
 
+
   Au tout début, les rlyehiens majeurs assuraient eux-mêmes la surveillance et la neutralisation des personnalités de mauvaise moralité, au cas par cas. Avec l’accroissement du cheptel en leur noble grâce, il a fallu passer à un système moins individualisé, capable de grandir naturellement en parallèle du nombre de suspects.
+
 
   La main de la justice dépend dorénavant d’un autre service, et Howard sait parfaitement qu’il n’est pas de bon ton de chercher à savoir ce qui s’y passe. L’information elle vient d’ici, de ces êtres connectés au réseau onirique par une alliance technologique d’exception. Dans leurs têtes défilent en continu les rêves des habitants de la portion de quartier qui leur est affectée. Tout ce qui est suspect est méticuleusement noté, et les données ainsi acquises sont traitées en direct à l’étage inférieur.
 
+
   Qui est malheureusement celui dont il a la charge, par opposition à la merveille qu’il est monté contempler. Las, le devoir l’appelant, il doit reprendre l’ascenseur pour y retourner.
+
 
   Là où la salle Morphée est frappante de modernité et d’uniformité, avec ses postes de travail tous identiques et ses employés délibérément interchangeables, la salle Maât ressemble à n’importe quel entassement de gratte-papiers tel qu’on en trouvait déjà dans la décadente administration précédente. Des personnes d’origines variées que la fortune a poussé en ces lieux, passant leurs journées à croiser dans d’archaïques feuilles de calcul de confuses données oniriques avec celles de fiches administratives et policières, de façon à identifier précisément les éléments indésirables.
 
+
   Cela dégoûte un peu Howard de devoir chapeauter tous ces incivilisés, et si cela ne tenait qu’à lui il les remplacerait bien tous par des humains, ou, à la rigueur, des formians. Ces gens-là comprennent l’autorité et le respect qui lui est dû au moins. C’est d’ailleurs pour cela qu’ils sont du bon côté du canon, le leur, dans cette guerre entre l’ordre et la pagaille.
+
 
   Mais bon, ces sous-êtres ne coûtent pas chers, et autant faire des économies là où ça ne se voit pas trop de l’extérieur.
 
+
   Howard retourne à son poste, un ordinateur qui lui permet d’observer ce qui se passe sur les ordinateurs des autres. Il passe distraitement de poste en poste, traquant le moindre signe de farniente.
+
 
   L’une des slimes est en train de plancher sur un cas intéressant. Des pics nihilistes particulièrement forts de la part d’individus déjà répertoriés. Si le cas est confirmé, ça sent bon pour sa prime.
 
   Zut. Faux positifs engendrés par les parasites psychiques du solstice. Dommage.
 
+
   Et, tandis que son patron continue d’être un idiot, l’opératrice Tekeli n’a de cesse d’inventer de nouvelles excuses crédibles aux imprudences oniriques de Rashomon, Déjanire et des autres.
 endings:
   bad: >-
     – Il y a eu des incidents. Ce n’est pas ce que nous avions convenu.
+
 
     Rashomon acquiesce, mal à l’aise dans la petite pièce, seule sous l’œil des caméras face au porte-parole de la Sécurité.
 
@@ -197,19 +229,25 @@ endings:
 
     – Je me fiche de vos excuses. Si vous n’êtes pas capable de tenir vos engagements, notre accord est caduc.
 
+
     Rashomon laisse la foudre tomber, le tonnerre tonner, puis elle prend sa plus belle voix conciliante :
 
     – Je suis certaine qu’il y a encore moyen de s’arranger.
 
+
     Sinon nous ne serions pas ici en train de discuter, se retient-elle à grande peine d’ajouter.
+
 
     – Je ne saurais le dire. Cela dépend de vous. De ce que vous êtes prêts à mettre sur la table pour regagner notre confiance.
 
+
     Il n’énonce pas tout de suite ses demandes, la laisse mariner un peu dans son jus. Rashomon garde de même le silence, sachant pertinemment que tout ce qu’elle pourrait proposer ne ferait que s’ajouter à ce qu’ils désirent réellement en ce jour.
+
 
     Au bout d’un long moment, l’homme craque et abat ses cartes le premier :
 
     – En raison d’un contexte défavorable, une pénurie de certaines denrées est à craindre. Il nous faudrait des personnes motivées pour informer la population à ce sujet, les rassurer, éviter qu’ils ne fassent des bêtises.
+
 
     Rashomon avale péniblement cette nouvelle couleuvre.
 
@@ -217,13 +255,16 @@ endings:
 
     – Je comprends tout à fait. L’humanitaire doit rester distinct du politique.
 
+
     L’ironie de cette réplique, jetée à sa figure alors qu’elle est là, justement en train d’accepter de faire le sale boulot au lieu de véritablement aider des gens, manque de la faire sortir de ses gonds.
+
 
     Puis son esprit logique se rappelle qu’au moindre mouvement d’humeur de sa part, ce sont des centaines de personnes qui en subiront les conséquences. Alors elle serre les poings et les dents très fort tandis que son interlocuteur reprend la litanie de ses exigences :
 
     – Humanitaire justement. Plusieurs cas de fièvre maligne ont été repérés dans le quartier nord. Il faudrait que quelqu’un s’occupe des soins, voire des vaccins, sinon nous serons contraints de mettre en quarantaine la zone pour éviter une épidémie…
   respite: >-
     Dans un premier temps, seul un silence pesant lui répond.
+
 
     Puis, Déjanire finit par reprendre la parole, d’une voix suppliante :
 
@@ -245,15 +286,18 @@ endings:
 
     – Il nous faudrait quelque chose d’au moins aussi costaud à leur opposer.
 
+
     – Tu penses aux quelques factions mineures qu’ils ont rejetées, comme les Masques ? C’est pas vraiment les plus costauds de la bande. Et la plupart des gens les détestent presque autant, par amalgame.
 
     – Non. Je pense aux autres puissantes familles spirituelles. Celles sur lesquelles on en sait encore moins. Les célestes. Les chthoniens. Les revenants.
 
     – Dieu, le Diable, la Mort, et leurs sujets. Insérez les pluriels nécessaires selon votre religion.
 
+
     – Ils sont toujours restés prudemment neutres, sachant que de toute façon ils risquaient pas grand-chose. Qu’est-ce qui les ferait changer d’avis aujourd’hui ?
 
     – Ils sont plus proches de nous qu’ils veulent bien l’admettre. On se retrouve souvent à en croiser lors de nos errements. Beaucoup trop souvent pour que ce soit purement accidentel. Je ne pense pas qu’ils soient aussi détachés de tout cela qu’ils ne le prétendent.
+
 
     Rashamon se lève.
 
@@ -261,9 +305,12 @@ endings:
 
     – Oui. Je ne veux rien entendre de plus à ce sujet.
 
+
     Deux regards courroucés se posent sur elle.
 
+
     – Quoi qu’il arrive, je vais devoir continuer à m’agiter partout pendant encore un certain temps, ne serait-ce que pour donner le change. Alors moins j’en saurais, moins je risque de révéler quelque chose.
+
 
     Une lueur malsaine brille dans ses yeux, celle de mois d’une rage accumulée et méticuleusement refoulée :
 
