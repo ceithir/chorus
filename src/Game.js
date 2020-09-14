@@ -5,6 +5,8 @@ import {
   setSection,
   selectChapter,
   setChapter,
+  setFadingOut,
+  selectInstantText,
 } from "./features/navigation/reducer";
 import Section from "./features/navigation/Section";
 import PartySelector from "./features/party/PartySelector";
@@ -27,6 +29,7 @@ const Game = () => {
   const dispatch = useDispatch();
   const goTo = (section) => () => dispatch(setSection(section));
   const chapter = useSelector(selectChapter);
+  const instantText = useSelector(selectInstantText);
 
   if (chapter === "finale") {
     return <Debrief />;
@@ -47,11 +50,18 @@ const Game = () => {
   const meetingOrder = [CETO, ALECTO, CAROLE, KATRINA, TEKELI, CAMILLA];
   const i = meetingOrder.indexOf(section);
   if (i > -1) {
+    const next = goTo(meetingOrder[i + 1] || RASHOMON);
+
     return (
-      <Section text={`story.meeting.${section}`} character={meetingOrder[i]}>
+      <Section
+        text={`story.meeting.${section}`}
+        character={meetingOrder[i]}
+        next={next}
+        hideLastButton={true}
+      >
         <PartySelector
           character={section}
-          next={goTo(meetingOrder[i + 1] || RASHOMON)}
+          next={instantText ? next : () => dispatch(setFadingOut(true))}
         />
       </Section>
     );

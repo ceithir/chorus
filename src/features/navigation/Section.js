@@ -109,7 +109,7 @@ const Controls = React.forwardRef(({ action }, ref) => {
 });
 
 const AnimationBlock = ({ children }) => {
-  return <>{children}</>;
+  return <div>{children}</div>;
 };
 
 const AnimationContainer = ({
@@ -159,6 +159,7 @@ const RawSection = ({
   action,
   fadeOutBeforeAction,
   children,
+  hideButton,
 }) => {
   const continueRef = useRef();
   const dispatch = useDispatch();
@@ -189,13 +190,22 @@ const RawSection = ({
         >
           {children}
         </AnimationContainer>
-        {!!action && <Controls ref={continueRef} action={actualAction} />}
+        {!!action && !hideButton && (
+          <Controls ref={continueRef} action={actualAction} />
+        )}
       </Card>
     </div>
   );
 };
 
-const Section = ({ text, children, next, character, translated = false }) => {
+const Section = ({
+  text,
+  children,
+  next,
+  character,
+  translated = false,
+  hideLastButton = false,
+}) => {
   const subSectionIndex = useSelector(selectSubSection);
   const dispatch = useDispatch();
   const instantText = useSelector(selectInstantText);
@@ -254,6 +264,7 @@ const Section = ({ text, children, next, character, translated = false }) => {
       animationId={animationId}
       action={action}
       fadeOutBeforeAction={!instantText && showAll && animationId && next}
+      hideButton={showAll && hideLastButton}
     >
       <SubSections subsections={visibleSubsections} />
       {showAll && <FadeInAndScrollTo>{children}</FadeInAndScrollTo>}
