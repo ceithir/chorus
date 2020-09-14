@@ -102,6 +102,10 @@ const Controls = React.forwardRef(({ action }, ref) => {
   );
 });
 
+const AnimationBlock = ({ children }) => {
+  return <>{children}</>;
+};
+
 const AnimationContainer = ({
   children,
   animationId,
@@ -135,9 +139,9 @@ const AnimationContainer = ({
         }
       }}
     >
-      <div key={animationId} visible={visible}>
+      <AnimationBlock key={animationId} visible={visible}>
         {children}
-      </div>
+      </AnimationBlock>
     </Animate>
   );
 };
