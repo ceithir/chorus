@@ -1,7 +1,13 @@
-import React, { useEffect, useRef, useImperativeHandle, useState } from "react";
+import React, { useEffect, useRef, useImperativeHandle } from "react";
 import sanitizeHtml from "sanitize-html";
 import { useSelector, useDispatch } from "react-redux";
-import { selectSubSection, nextSubSection, selectInstantText } from "./reducer";
+import {
+  selectSubSection,
+  nextSubSection,
+  selectInstantText,
+  selectFadingOut,
+  setFadingOut,
+} from "./reducer";
 import { Typography, Card, Button } from "antd";
 import "./Section.less";
 import Animate from "rc-animate";
@@ -155,7 +161,9 @@ const RawSection = ({
   children,
 }) => {
   const continueRef = useRef();
-  const [visible, setVisible] = useState(true);
+  const dispatch = useDispatch();
+  const visible = !useSelector(selectFadingOut);
+  const setVisible = (visible) => dispatch(setFadingOut(!visible));
   const startFadingOut = () => setVisible(false);
   const endFadingOutAndContinue = () => {
     setVisible(true);

@@ -6,6 +6,7 @@ const initialState = {
   subsection: 0,
   instantText: false,
   step: 0,
+  fadingOut: false,
 };
 
 const slice = createSlice({
@@ -32,6 +33,9 @@ const slice = createSlice({
     nextStep: (state) => {
       state.step++;
     },
+    setFadingOut: (state, action) => {
+      state.fadingOut = action.payload;
+    },
   },
 });
 
@@ -41,11 +45,13 @@ export const {
   toggleInstantText,
   setChapter,
   nextStep,
+  setFadingOut,
 } = slice.actions;
 export const selectSection = (state) => state.navigation.section;
 export const selectSubSection = (state) => state.navigation.subsection;
 export const selectInstantText = (state) => state.navigation.instantText;
 export const selectChapter = (state) => state.navigation.chapter;
 export const selectStep = (state) => state.navigation.step;
+export const selectFadingOut = (state) => state.navigation.fadingOut;
 
 export default slice.reducer;
