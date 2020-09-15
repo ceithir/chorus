@@ -6,6 +6,7 @@ import { CAROLE, name } from "../../characters";
 import "./ForestSelector.less";
 import { useTranslation } from "react-i18next";
 import { DIRECTIONS, SOUTH, NORTH, WEST, EAST } from "./directions";
+import ColumnsList from "../design/ColumnsList";
 
 const { Text } = Typography;
 
@@ -46,9 +47,8 @@ const ForestRoseWind = ({ character }) => {
 
 const ForestSelector = ({ characters }) => {
   return (
-    <List
+    <ColumnsList
       className="avh-forest-selector"
-      grid={{ gutter: 16, column: characters.length }}
       dataSource={characters}
       renderItem={(character) => (
         <List.Item key={character}>

@@ -5,6 +5,7 @@ import { Typography, Card, List, Button } from "antd";
 import { useTranslation } from "react-i18next";
 import "./PartySelector.less";
 import { name } from "../../characters";
+import ColumnsList from "../design/ColumnsList";
 
 const { Text } = Typography;
 
@@ -67,9 +68,8 @@ const PartySelector = ({ character, next }) => {
   const locations = ["forest", "library", "city"];
 
   return (
-    <List
+    <ColumnsList
       className="avh-party-selector"
-      grid={{ gutter: 16, column: locations.length }}
       dataSource={locations}
       renderItem={(location) => (
         <List.Item key={location}>

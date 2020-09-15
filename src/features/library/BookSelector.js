@@ -5,6 +5,7 @@ import { Card, List, Checkbox, Typography, Tooltip } from "antd";
 import { useTranslation } from "react-i18next";
 import { BOOKS, slots, GOOD, BAD } from "./books";
 import { name } from "../../characters";
+import ColumnsList from "../design/ColumnsList";
 
 const { Text, Paragraph } = Typography;
 
@@ -70,9 +71,8 @@ const BookCheckList = ({ character, quality, max }) => {
 
 const BookSelector = ({ characters }) => {
   return (
-    <List
+    <ColumnsList
       className="avh-library-selector"
-      grid={{ gutter: 16, column: characters.length }}
       dataSource={characters}
       renderItem={(character) => (
         <List.Item key={character}>
