@@ -135,4 +135,4 @@ export const testimonyFound = ({ characters, assignations }) => {
 };
 
 export const success = ({ characters, assignations }) =>
-  mimicUnveiled(assignations) && score({ characters, assignations }) >= 9;
+  mimicUnveiled(assignations) && score({ characters, assignations }) >= 8;
