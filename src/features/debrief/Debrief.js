@@ -52,7 +52,7 @@ const Debrief = () => {
       forestParty.includes(CETO),
       libraryParty.includes(CAMILLA),
       cityParty.includes(CAROLE),
-    ].filter(Boolean).legnth >= 2;
+    ].filter(Boolean).length >= 2;
   const alectoSpecial = forest[WEST] === ALECTO || library[MIMIC] === ALECTO;
 
   if (section === "ending") {
