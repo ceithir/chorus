@@ -23,6 +23,7 @@ import {
 } from "../library/books";
 import { demonFound, success as citySuccessFunc } from "../city/locations";
 import { selectParty } from "../party/reducer";
+import EndingSection from "./EndingSection";
 
 const Debrief = () => {
   const section = useSelector(selectSection);
@@ -43,9 +44,7 @@ const Debrief = () => {
     assignations: library,
   });
   const citySuccess = citySuccessFunc(city);
-  const success = forestSuccess && librarySuccess && citySuccess;
-  const hope =
-    success &&
+  const entitiesFound =
     [divineFound(forest), demonFound(city), ghostFound(library)].filter(Boolean)
       .length >= 2;
   const tekeliSpecial =
@@ -57,15 +56,14 @@ const Debrief = () => {
   const alectoSpecial = forest[WEST] === ALECTO || library[MIMIC] === ALECTO;
 
   if (section === "ending") {
-    if (!success) {
-      return <Section text={`story.debrief.endings.bad`} />;
-    }
-
-    if (!hope) {
-      return <Section text={`story.debrief.endings.respite`} />;
-    }
-
-    return <Section text={`story.debrief.endings.hope`} />;
+    return (
+      <EndingSection
+        forestSuccess={forestSuccess}
+        librarySuccess={librarySuccess}
+        citySuccess={citySuccess}
+        entitiesFound={entitiesFound}
+      />
+    );
   }
 
   const parts = (() => {

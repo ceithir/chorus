@@ -105,3 +105,18 @@ results:
     useless: "Du temps et des efforts ont été consacrés pour des lieux déjà parfaitement protégés"
     spider: "Une alliée spectrale a discrètement apporté son éthérée contribution"
     alecto: "La mobilité et les contacts d'Alecto lui confèrent une efficacité remarquable"
+endings:
+  title: "Fin {{index}}/{{total}} : {{name}}"
+  hints: "Indices pour une autre fin"
+  bad:
+    name: "Conséquences"
+    hints:
+      forest: "Certaines bénévoles sont capables de se débrouiller à la perfection en pleine nature quel que soit le chemin choisi, tandis d'autres auront besoin d'y faire une bonne rencontre pour briller. Dans tous les cas, essayez d'éviter les bêtes sauvages, rien de bon n'en ressortira."
+      library: "Certains livres ne sont rien de plus que ce qu'ils paraissent et peuvent être expédiés par Maharal sans perte. Coupler une excellente lectrice avec une bénévole moins bibliovore permet de débloquer du temps de lecture attentive pour cette dernière."
+      city: "Seules des personnalités assez flexibles pour contourner les règles de la jungle urbaine sauront en venir à bout. Certains quartiers n'ont réellement besoin d'aucune aide, mais l'un d'eux pourrait bien cacher un secret."
+  respite:
+    name: "Attente"
+    hint: "Pour débloquer la meilleure fin, essayez, dans chacune des missions, de rencontrer, ou de trouver trace, du passage d'êtres hors-normes même dans le référentiel de ce petit groupe."
+  hope:
+    name: "Espoir"
+thanks: "Merci à vous d'avoir lu <em>Fanfare</em>."

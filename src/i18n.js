@@ -15,6 +15,9 @@ i18n
       escapeValue: false, // not needed for React
     },
     resources: { en: { all: en }, fr: { all: fr } },
+    react: {
+      transKeepBasicHtmlNodesFor: ["br", "p", "strong", "em"],
+    },
   });
 
 export default i18n;
