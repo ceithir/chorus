@@ -4,6 +4,7 @@ import Game from "./Game";
 import { useTranslation } from "react-i18next";
 import "./transitions.less";
 import Settings from "./Settings";
+import About from "./About";
 
 const App = () => {
   const { t } = useTranslation();
@@ -15,6 +16,7 @@ const App = () => {
     <>
       <header>
         <Settings />
+        <About />
       </header>
       <main>
         <Game />

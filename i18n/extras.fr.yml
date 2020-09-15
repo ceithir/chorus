@@ -120,3 +120,6 @@ endings:
   hope:
     name: "Espoir"
 thanks: "Merci à vous d'avoir lu <em>Fanfare</em>."
+credits:
+  0: "Texte original (français) : Skarn"
+  1: "Traduction : Romain"
