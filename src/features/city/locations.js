@@ -44,4 +44,4 @@ export const score = (assignations) => {
 export const demonFound = (assignations) =>
   [RASHOMON, CAMILLA, KATRINA].includes(assignations[BANK]);
 
-export const success = (assignations) => score(assignations) >= 3;
+export const success = (assignations) => score(assignations) >= 2;
