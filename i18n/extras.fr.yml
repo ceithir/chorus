@@ -70,6 +70,8 @@ profile:
     see_more: "(voir fiche : <strong>{{species}}</strong>)"
     see_all: "Voir la fiche complète"
     error: "Vous n'avez pas les permissions nécessaires pour consulter cette fiche."
+  names:
+    error: "Vous n'avez pas les permissions nécessaires pour accéder à cette information."
 results:
   title: "Résultats"
   forest:

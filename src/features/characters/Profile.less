@@ -2,4 +2,13 @@
 
 .avh-character-profile {
   padding-bottom: @padding-md;
+
+  .avh-censored-text {
+    cursor: not-allowed;
+    background-color: black;
+    &::selection {
+      color: black;
+      background-color: black;
+    }
+  }
 }

@@ -106,6 +106,16 @@ const FakeLink = ({ children }) => {
   );
 };
 
+const FakeName = () => {
+  const { t } = useTranslation();
+
+  return (
+    <Tooltip title={t("extras.profile.names.error")}>
+      <span className="avh-censored-text">XXXXXXX</span>
+    </Tooltip>
+  );
+};
+
 const dataSource = ({ character, t, i18n }) => {
   const profile = profiles[character];
   if (!profile) {
@@ -188,7 +198,9 @@ const Profile = ({ character }) => {
 
   return (
     <div className="avh-character-profile">
-      <Title level={3}>{name({ t, character })}</Title>
+      <Title level={3}>
+        {name({ t, character })} <FakeName />
+      </Title>
       <List
         dataSource={dataSource({ character, t, i18n })}
         renderItem={({ title, description }) => (
