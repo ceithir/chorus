@@ -1,7 +1,117 @@
 @import "../../default.less";
 
 .avh-character-header {
-  button {
-    margin-left: @padding-sm;
+  &.ant-card-bordered {
+    border-width: 2px;
+  }
+
+  .ant-card-body {
+    display: flex;
+    padding: @padding-md;
+
+    .ant-typography {
+      flex: 1;
+      text-align: center;
+      font-size: @font-size-lg;
+    }
+  }
+}
+
+[data-character="rashomon"] {
+  .avh-character-header {
+    border-color: @red-3;
+    background-color: @red-2;
+
+    .ant-btn-circle {
+      background-color: @red-1;
+    }
+  }
+}
+
+[data-character="ceto"] {
+  .avh-character-header {
+    border-color: @green-3;
+    background-color: @green-2;
+
+    .ant-btn-circle {
+      background-color: @green-1;
+    }
+  }
+}
+
+[data-character="alecto"] {
+  .avh-character-header {
+    border-color: @geekblue-3;
+    background-color: @geekblue-2;
+
+    .ant-btn-circle {
+      background-color: @geekblue-1;
+    }
+  }
+}
+
+[data-character="carole"] {
+  .avh-character-header {
+    border-color: @magenta-3;
+    background-color: @magenta-2;
+
+    .ant-btn-circle {
+      background-color: @magenta-1;
+    }
+  }
+}
+
+[data-character="katrina"] {
+  .avh-character-header {
+    border-color: @cyan-3;
+    background-color: @cyan-2;
+
+    .ant-btn-circle {
+      background-color: @cyan-1;
+    }
+  }
+}
+
+[data-character="tekeli"] {
+  .avh-character-header {
+    border-color: @lime-3;
+    background-color: @lime-2;
+
+    .ant-btn-circle {
+      background-color: @lime-1;
+    }
+  }
+}
+
+[data-character="camilla"] {
+  .avh-character-header {
+    border-color: @gold-3;
+    background-color: @gold-2;
+
+    .ant-btn-circle {
+      background-color: @gold-1;
+    }
+  }
+}
+
+[data-character="dejanire"] {
+  .avh-character-header {
+    border-color: @orange-3;
+    background-color: @orange-2;
+
+    .ant-btn-circle {
+      background-color: @orange-1;
+    }
+  }
+}
+
+[data-character="maharal"] {
+  .avh-character-header {
+    border-color: @volcano-3;
+    background-color: @volcano-2;
+
+    .ant-btn-circle {
+      background-color: @volcano-1;
+    }
   }
 }
