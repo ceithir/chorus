@@ -19,7 +19,7 @@ library:
       short: "Non-critical books"
       long: "To meet the deadline, {{name}} will have to skim these books really quickly. She might miss some important details."
     good:
-      short: "Books requiring attention"
+      short: "Books to dissect"
       long: "There are enough expert readers in the room to give {{name}} the opportunity to dig deeper for a few select books."
     average:
       short: "Other books"

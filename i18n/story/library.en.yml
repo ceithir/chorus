@@ -1,0 +1,329 @@
+introduction:
+  maharal: >-
+    The library is a modern building of concrete and glass, with books of all colors and sizes. The plastic shelves are well-spaced and their content is highly varied. The storage room is in the same vein, and is much closer to a tidy, well-lit warehouse than to a mysterious treasure cave.
+
+
+
+    Several cardboard boxes have been set apart from the rest. Maharal brings them to the center of the room and opens them, revealing a few handful of well-worn books. Some of the hardcover ones are so damaged they had to be reinforced with rubber bands to hold their pages together.
+
+
+
+    "The sorting process is fairly simple. Pick a book, flip through it, read a few passages, then fill the form. In theory, I could probably do it entirely by myself, but my peculiar nature and the force of habit could make me overlook important details that someone with a fresh perpective won’t miss."
+
+    She illustrates her remark with a deadpan anecdote – that she thinks might lighten the mood – about a book saturated with microscopic spores that caused fits of coughing in all readers except herself, as she doesn’t have a respiratory system.
+
+
+
+    She then hands over a thick bundle of freshly-printed sheets. Each page is double-sided, and covered in ridiculously tiny characters. Each form is spread over ten such pages. And one form has to be filled for each book.
+
+    Most of the questions are very mundane: "Genre", "Recommended age", "Year of publication"… But some, especially regarding the historical context of the book ("Who wrote it?", "On what occasion?", "For what purpose?"), ask for an absurd level of detail, and will require attentive analysis and extra research to be answered correctly.
+
+
+
+    Maharal also brings a box full of tools that could help repair a faulty binding, reinforce a cover or chain down an uncooperative book. Some of them are strange contraptions and their purposes aren't at all obvious to the uninitiated.
+
+    "Better be prepared for any eventuality. Warn me immediately if you see a book move by itself, if you realize that it’s not made of paper, if it communicates with you in some way other than unchanging written words, or if you notice anything else that seems weird."
+
+
+
+    After giving it some thought, she brings a few more tools that must have been at the cutting edge of technology a few decades ago.
+
+    "We’ll need these if any of the books turns out to be in tune with another plane of existence. It’s not very likely for modern publications that are not handwritten or related to a cult, but it’s not completely impossible either. Remain watchful for any spectral, infernal or celestial manifestations."
+
+
+
+    The cautious prelude now at an end, everyone sits down and the reading session begins.
+  ceto: >-
+    Ceto shakes her head wearily. The library can't afford to refuse contributions these days, but this one was obviously fished out of a trash can. They're not rare old books, just ordinary ones that have suffered from the passage of time.
+
+    While Maharal is busy giving explanations and making preparations, she quickly leafs through all the books, hoping that her very negative impression may prove wrong.
+
+
+
+    The picture book for vain grown-ups is worthless. Clearly meant to be a gift book and utterly superficial.
+
+    The scientific booklet seems out of date, though she would have to read it in more detail to be sure.
+
+    The romance novel is really old. And fragile. And damaged. It's perhaps the only collector's item in this jumble.
+
+    The other books are mangy paperbacks, of the kind that can be found for a dime a dozen in flea markets.
+
+
+
+    None of them looks like an evil grimoire likely to do physical harm to someone who opened it without permission. But a book doesn't really have to be dangerous to displease the new administration, it just has to be out of the ordinary.
+
+    Ceto remembers the case of a book that couldn't be read to the end, as new pages would simply keep appearing. A post-it note mentioning that frustrating feature had been stuck to its cover. But that didn't save the book from being pulped, along with all other works by the same author for good measure.
+  katrina: >-
+    Katrina hates being reduced to her sensorial abilities, but she won't refrain from using them just to avoid reaffirming stereotypes.
+
+
+
+    Life clearly exists in both the mystery and the second fantasy novel. It could simply mean that they're eaten by mold, but she doubts that very much.
+
+
+
+    There's a third, more ambiguous presence. An elusive will she can't quite place. An echo, a memory permeating its environment.
+
+
+
+    And now, she has to convey all that to the other two women, something rather similar to describing colors to someone who's been blind from birth.
+
+    Rather than waste her time with explanations that afata would find abstruse, she decides to resort to metaphors based on more normal senses. That'll make them utterly inaccurate, but understandable.
+
+    Thus, she says that two of the books obviously look shady, and that something else smells bad, though she can't quite tell what it is.
+
+
+
+    Maharal listens to those explanations with her usual polite stolidity. Difficult to say how she'll take them into account.
+planning: >-
+  A mystery novel almost as old as the genre itself, with yellowed pages and a cover worn down by countless hands.
+
+  A thick, heavy fantasy novel, printed in small characters on cheap paper. Almost as new, aside from the creased cover.
+
+  The sequel to that fantasy novel. Everything from the front illustration to the back cover appears excessively similar to the first volume, even recycling the original title and merely adding "Return to" before it.
+
+  A luxury edition of a romance novel, in which all characters have a name with a particle and speak in verse. Has met with an unfortunate accident involving water, leaving many of the pages wrinkled and fragile.
+
+  A booklet published back in a time when front covers could consist merely of a black latin title printed on a white background. Seems to be a treatise about non-euclidian creatures, though the names by which they are referred to are obsolete.
+
+  A coffee table book, rich in photographs and not trying to be highly encyclopedic. Meant to be leafed through rather than read from one end to the other. Its main theme seems to be ancient monuments lost in the desert.
+books:
+  mystery: >-
+    One of the pages doesn’t seem to fit. Its texture, color and font are slightly different from the rest of the book.
+
+    It could merely be a late addendum. However, closer examination reveals that the text itself is meaningless. The words are similar to the ones found on the other pages, but they’re put together without any logic, as if the writer had tried to compose sentences by copying and pasting, despite not understanding the grammar of the language and the meaning of some terms.
+
+
+
+    The strange page suddenly quivers under {{name}}’s fingers, its letters rearranging themselves to form a poem written backwards, itself arranged in a surprising calligram depicting a draconic silhouette.
+
+
+
+    Immediately after that first transformation, the paper starts folding in on itself, taking the shape of a three-dimensional dragon that comes off the book and starts flying around the room.
+
+
+
+    After the initial surprise, Maharal picks a book entirely made of metal out of her toolbox, opens it, and then closes it sharply on the creature, as one would swat a fly. When she opens it again, there is no paper corpse, but a steel page on which poetry is now engraved backwards.
+
+    "A poetry dragon. A parasitic species, almost extinct, but that can still be found in old books. Not truly dangerous, but it can easily frighten people."
+  fantasy:
+    default: >-
+      In a world where all places and characters have a celtic name (preferably one beginning with "Gw"), a small band of heroes with one-dimensional personalities must cross hostile regions that can easily be described with a single word (the city, the forest, the desert, the mountain, the fortress) to find and put to the sword a sorcerer-dragon that threatens to conquer the world.
+
+      That’s the general impression that {{name}} gets by quickly skimming through the book. Original ideas may be hidden somewhere in this mire of hackneyed platitudes, but they certainly don’t stand out.
+    good: >-
+      If a machine had been ordered to put together in a random order all of fantasy’s most over-used clichés, it would probably have produced this book. This muddle would almost be touching in its naïveté, if it didn’t rely so much on narrative tropes that were already dubious half a century ago and are now quite rank.
+
+      A bit of research brings up the fact that this novel – the only book written by the author, who happened to be related to the publisher – was released during a bubble of popularity the genre was enjoying due to a then-recent movie. It might be conjectured that all the right boxes were deliberately checked, with little regard for actual quality, in order to get on the bandwagon. The form has a sub-sub-sub-section in which such elements can be mentioned ; {{name}} makes her opinion on the subject quite clear, though she presents it as a mere theory.
+
+      Aside from that rather unoriginal detail, the book is so shallow that it’ll be difficult to describe it extensively.
+  mimic:
+    default: >-
+      Maharal notices that {{name}} is nodding off. She lays a hand on her shoulder:
+
+      "Don’t hesitate to take a break. Your organism seems to need it."
+
+
+
+      {{name}} doesn’t answer. Maharal hesitates, then gets closer and bends forward to examine her. Dilated pupils. Irregular breathing.
+
+
+
+      Maharal looks down at the book that {{name}} is holding… then grabs it suddenly. The book thrashes about between her powerful clay hands, but is quickly neutralized by two lengths of chain.
+
+
+
+      Maharal fetches a glass of water as {{name}} starts waking up, still feeling drowsy.
+
+      "What was…"
+
+      "A mimic. A variety specialized in imitating small objects; it anesthetizes the person holding it in order to suck her blood. There must be something resembling a big mosquito bite on your hand."
+
+
+
+      {{name}} slowly raises her hand. That’s indeed the case. Maharal hands her the glass of water and she takes a sip.
+
+      "Their poison acts fast, but its effects don’t last long. Take a short nap and you’ll be just fine afterwards."
+
+      {{name}} nods and lies down to sleep next to a pile of cardboard boxes.
+    tekeli: >-
+      Tekeli puts down the book she's holding and raises her hand timidly. Maharal, however, is absorbed in her own forms and doesn’t notice. The situation remains that way for a few awkward minutes.
+
+
+
+      Tekeli finally gathers her courage and speaks:
+
+      "Mrs Maharal?"
+
+      "Yes?"
+
+      "I believe that this book contains substances that could be toxic to some people."
+
+
+
+      Maharal nods, gets up and comes closer.
+
+      "What makes you say that?"
+
+      Tekeli takes off one of her gloves and holds out her hand, in which a colored bubble is floating.
+
+
+
+      "Your immune system, of course. It could be a toxic product used in the coloring of the cover. But how could it have gone through your glove in such quantity ? Let me take a closer look."
+
+      She takes the glove and raises it before her eyes. There’s a tiny yet easily recognizable hole in the palm area.
+
+
+
+      A huge clay hand abruptly slams down on the book, holding it against the table. It immediately starts thrashing about and keeps at it until Maharal neutralizes it with two lengths of chain.
+
+
+
+      "A mimic. A variety specialized in imitating small objects ; it anesthetizes the person holding it in order to suck her blood. Good job. I wouldn’t have felt anything, and someone else would have been affected by its venom."
+
+
+
+      Tekeli nods silently. Deep down, though, she thinks that she just happened to be in the right place at the right time, and that the praise for that should go to Lady Luck.
+  romance:
+    ceto: >-
+      Ceto hesitates. The very faint stains on the edge of several pages could be dried blood. The name written on the flyleaf could belong, according to a quick check, to the father of a noblewoman who was murdered several centuries ago. In short, this book may have witnessed tragic events. And if that is the case, it could be haunted by a tormented spirit.
+
+
+
+      Mere suppositions. But why take any risks? Ceto writes down that the book shouldn’t be shelved before being examined by a spiritually able person. Better to appear overly cautious than to be careless.
+    katrina: >-
+      Katrina skims the book – a romance novel written in an overblown style, neither very interesting nor aggressively bad – and patiently fills in the lengthy form.
+
+
+
+      The task is as easy as it is unexciting. But as she progresses, a slight feeling of uneasiness begins to replace boredom.
+
+      At first, she attributes it to some weird choices in words, including several metaphors that are much too drawn out. After a while, that explanation no longer satisfies her, and she decides to take action to clear the matter up.
+
+
+
+      Picking the book between her thumb and her index finger, she plunges it in the dark emptiness inside her neck. When she takes it out a few moment later, it’s covered by a thin layer of ice. The white smoke now emanating from it slowly condenses into a translucent figure with eight legs and two arms, dressed like a noblewoman from a distant past.
+
+
+
+      Katrina checks the "Haunted" box on the form, then reads the follow-up questions:
+
+      "Circumstances of death and motive for possession?"
+
+
+
+      The ghost pulls a fan out of her sleeve and uses it to show some poise.
+
+      "Murdered. Revenge."
+
+
+
+      "Murder’s no longer really allowed these days, even to settle matters of honor. I’ll have to ask you to give up your revenge."
+
+      The ghost lets out a small, haughty laugh.
+
+      "I was under the impression that society had become quite dull after my passing, but if a dullahan is asking me to be reasonable, then things must be worse than I thought."
+
+      "Quite a few explanations may indeed be necessary."
+
+
+
+      Used to interacting with disoriented spirits, Katrina provides a quick yet detailed account of recent events. The woman listens attentively, though she loses nothing of her arrogance.
+
+
+
+      "I see. Some of those evolutions are for the better. Others not so much. I understand how it would be in my interest to cooperate, at least for a while."
+
+      "I’m glad to hear that, for we could use the help of a person of your nature with a specific task."
+  coffee:
+    default: >-
+      This book is a collective work, featuring texts and photographs by several different people. As a consequence, filling in the form according to the rules is painfully time-consuming. And not worth the effort : the words and the illustrations of the book have been intentionally picked to be as insipid as possible, leaving behind themselves but a pervading impression of vacuity.
+    good: >-
+      To a reader somewhat familiar with its subject matters, the book is not merely uninteresting, it’s dishonest, preferring pretty lies to plain truths. Many anecdotes are strongly embellished, urban legends are presented as historical facts, and some photographs have been subtly retouched to erase the traces of ancient or recent damage.
+
+
+
+      It’s consequently quite difficult to describe the book in detail while refraining from cutting remarks that might not be to the taste of the people who will review these forms. {{name}} decides that a safely mediocre analysis is for the best.
+  science:
+    camilla: >-
+      It's not truly possible to perceive an emotion on Camilla's face, or in her gestures. Yet... yet the other two women are acutely aware of the fact that she's currently seething, in her own way. The book she's reading has put her in such a terrible mood that it shows through her usually impenetrable facade.
+
+
+
+      It's so surprising that Maharal starts developing complicated theories about this newcomer, about whom she knows nothing except for her name.
+    default: >-
+      The book is an ancient treatise about the peoples that modern science collectively refers to as Rlyehans. It probably offers a valuable insight about how they were viewed at the time by a certain community. Nowadays, however, it's difficult to view it as more than a hodgepodge of stereotypes and highly racist superstitions.
+
+      {{name}} checks the appropriate boxes on the form, ensuring that the book will end in the archives. It will only be available, on demand, by historians and other researchers.
+    good: >-
+      Examining this work in detail is a thankless task. The writing style is heavy – perhaps one should say "cyclopean" – and it’s full of hare-brained ideas that may have been commonplace at the time of publication, but are quite rancid from a modern point of view.
+
+      The book aims to be a treatise about the peoples nowadays referred to as Rlyehans. But it mainly turns out to be an excellent testimony of its time, unintentionally illustrating the fears and obsessions of an era through the legends and the rumors it mentions.
+
+
+
+      And then, almost accidentally, in the midst of all that nonsense, the book reveals what seems to be an authentic first-hand account by a chaoptile of that period, turning the work into a priceless archeological piece.
+
+
+
+      And/Or a useful bartering tool with a community that has an ambiguous relation to its own past.
+camilla: >-
+  Camilla and Maharal watch each other, both their faces as inexpressive as usual.
+
+
+
+  Camilla feels disturbed by the weird ritual undertone of all this. A collective creation of paper shields meant to protect from destruction a place exclusively at the service of the community. And even stranger, the mistress of ceremony is a being with a heart of words.
+
+
+
+  Maharal is wondering about the obvious unease displayed by the volunteer regarding books, and beginning to come up with dark explanations that could explain it.
+
+
+
+  Perceiving compassion aimed at her in one of her study subjects unsettles Camilla. Trying to break the spell, she asks :
+
+  "Why?"
+
+
+
+  Maharal’s face remains inscrutable, but a hint of amusement appears in her aura.
+
+  "Why what?"
+
+
+
+  "Why do you invest so much in preserving this temple? The other two, I understand. They fight against physical threats, direct or indirect, aimed at the people they care about. You’re fighting to ensure that a handful of books don’t end up rotting in a cellar or as a pile of ashes."
+
+
+
+  Cold determination, sharp as steel, suddenly fills Maharal, making Camilla feel like a biological suddenly immersed in icy water. Yet the librarian’s voice remains even and neutral:
+
+  "How is your relation with the written word?"
+
+
+
+  The questioner, now finding herself the questionee, takes a moment to allow her senses to get used to an emotional atmosphere stronger than expected. Then she answers with a detachment that, for once, she doesn’t truly feel :
+
+  "Bad. We’re a people of change, of oral tradition. The play must be improvised, not recited. To write is to imprison the moment in ink, to freeze movement on paper."
+
+
+
+  Camilla suddenly realizes that she’s afraid. In her people’s legends – highly ethnocentric, of course – to write down something that is not purely utilitarian doesn’t only result in self-destruction, it also brings down an eternal curse on the entire community. The downfall of the Masks, turned into a minor house, is attributed to the ill-fated creation of a few romantic short stories by an infatuated fool.
+
+
+
+  Maharal brings her out of her transe, a mix of pity and passion behind her clay facade :
+
+  "I could make a long speech about the power of books and the need to protect them even in difficult circumstances. Especially in difficult circumstances. But I see that you feel all of that down to your bones right now."
+
+
+
+  She lays a compassionate hand on Camilla’s shoulder :
+
+  "Books don’t have to be a threat to you. Your upbringing has taught you to fear them, and yet you are here."
+
+
+
+  Then, in a whisper full of pure hatred :
+
+  "But believe me, great Cthulhu will have many more nightmares about the words that remain."
