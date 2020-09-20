@@ -1,0 +1,56 @@
+alecto:
+  name: "Alecto"
+  profile:
+    job: "Adviser"
+    appearance: "Feathers entirely removed above the neck to give the face a more human appearance."
+    of-note: "Authorization required before any intervention."
+camilla:
+  name: "Camilla"
+  profile:
+    job: "Unknown"
+    appearance: "No information (unveiling has not been authorized)."
+    of-note: "Authorization required before any intervention."
+carole:
+  name: "Carole"
+  profile:
+    job: "Video maker"
+    appearance: "Hair dyed in extremely bright colors."
+    of-note: "Intervention status: planned; proceed as with a non-euclidian"
+ceto:
+  name: "Ceto"
+  profile:
+    job: "Teacher"
+    appearance: "Smaller and thinner than the average of her type; still qualifies as large-sized. "
+    of-note: "Petrifying abilities are mythical, no need for countermeasures."
+dejanire:
+  name: "Déjanire"
+  profile:
+    job: "Pharmacist"
+    appearance: "Strong nervous twitches."
+    of-note: "Nothing to report"
+katrina:
+  name: "Katrina"
+  profile:
+    job: "Hairdresser"
+    appearance: "No personal distinguishing features."
+    of-note: "The extent of the subject’s abilities as a psychopomp couldn’t be measured."
+maharal:
+  name: "Maharal"
+  profile:
+    job: "Librarian"
+    appearance: "Mineral shell; deep layers are stiffened by age."
+    of-note: "Heavy artillery is to be used"
+rashomon:
+  name: "Rashomon"
+  profile:
+    job: "Senior civil servant (attached to the Department of Security)"
+    appearance: "Crimson skin."
+    of-note: "Extensive knowledge of the procedures of the Department of Security"
+tekeli:
+  name: "Tekeli"
+  profile:
+    job: "Administrative agent"
+    appearance: "Marked with a turquoise dye."
+    of-note: "Can only be neutralized by chemical means or extreme temperatures."
+placeholder:
+  name: "..."

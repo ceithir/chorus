@@ -1,0 +1,75 @@
+profile:
+  nature:
+    title: "Nature"
+    flesh: "Biological"
+    dream: "Rlyehan"
+    mixed: "To be reclassified (previously: Biological/Rlyehan)"
+    half-fay: "Biological/Fey"
+    composite: "Composite"
+  humanoid:
+    title: "Resemblance to humanity"
+    class-1: "Class 1 (can pass as a human)"
+    class-2: "Class 2 (distinguishable from humans by conspicuous tertiary characteristics)"
+    class-3: "Class 3 (part of the body is non-humanoid)"
+    class-7: "Class 7 (non-humanoid able to imitate a humanoid shape)"
+  impetus:
+    title: "Motivation level"
+    good: "Green"
+    average: "Orange"
+    bad: "Red"
+    degraded: "Red (previously: Green)"
+  bookishness:
+    title: "Type-451 corruption"
+    null: "Insignificant"
+    low: "Low"
+    medium: "Average"
+    high: "High"
+  appearance:
+    title: "Distinguishing features for identification"
+    oni:
+      name: "Oni"
+      features: "Horns, on forehead, can be cut short."
+    lamia:
+      name: "Lamia"
+      features: "Single prehensile tail instead of legs. Squamous skin. Carnivorous jaws with venom fangs."
+    gorgon:
+      name: "Gorgon"
+      features: "Lives in symbiosis with a colony of snakes inhabiting her body "
+    harpy:
+      name: "Harpy"
+      features: "Covered with feathers. Arms paired with functional wings."
+    catgirl:
+      name: "Felis"
+      features: "Small number of superficial feline characteristics, usually vestigial."
+    cheshire:
+      name: "Cheshire"
+      features: "Quantum ubiquity (position in space is non-deterministic)"
+    dullahan:
+      name: "Dullahan"
+      features: "Can freely detach her head from her body"
+    slime:
+      name: "Slime"
+      features: >
+        Similar to a giant ameba, able to warp her shape in order to acquire ""arms", "legs" and a "face"
+    mask:
+      name: "Mask"
+      features: "Refer to file."
+    centaur:
+      name: "Centaur"
+      features: "Six limbs: two arms and four legs (moves as a quadruped)."
+    elemental:
+      name: "Elemental"
+      features: "Mass of lifeless materials animated by a thaumaturgic heart. Often tries to imitate biological lifeforms"
+    golem:
+      name: "Golem"
+      features: "Holds writings in its heart (not figuratively)."
+  of-note:
+    title: "To be taken into consideration in the context of an intervention"
+  job:
+    title: "Function"
+  links:
+    see_more: "(see file: <strong>{{species}}</strong>)"
+    see_all: "See complete file"
+    error: "Access denied: Insufficient permissions"
+  names:
+    error: "Access denied: Insufficient permissions"

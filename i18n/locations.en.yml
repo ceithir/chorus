@@ -1,0 +1,34 @@
+forest:
+  title: "A forest trip"
+  directions:
+    west: "West"
+    east: "East"
+    north: "North"
+    south: "South"
+library:
+  title: "A bit of reading"
+  books:
+    mystery: "Mystery"
+    fantasy: "Fantasy, vol. 1"
+    mimic: "Fantasy, vol. 2"
+    romance: "Romance"
+    coffee: "Coffee-table"
+    science: "Treatise"
+  quality:
+    bad:
+      short: "Non-critical books"
+      long: "To meet the deadline, {{name}} will have to skim these books really quickly. She might miss some important details."
+    good:
+      short: "Books requiring attention"
+      long: "There are enough expert readers in the room to give {{name}} the opportunity to dig deeper for a few select books."
+    average:
+      short: "Other books"
+      long: "{{name}} will look at the books that are neither critical nor unimportant."
+city:
+  title: "Heritage Day"
+  locations:
+    poor: "Dormitory district"
+    old: "Historic district"
+    rich: "Residential suburb"
+    supermarket: "Shopping mall"
+    bank: "Business district"
