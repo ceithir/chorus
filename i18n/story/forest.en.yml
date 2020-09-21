@@ -28,7 +28,7 @@ introduction:
 
     None of them is a threatened species, so pick as many as you can."
   ceto: >-
-    Ceto clicks her tongue loudly after checking her notebook. The peculiar sound brings instant silence inside the vehicule. A few awkward seconds go by before she says :
+    Ceto clicks her tongue loudly after checking her notebook. The peculiar sound brings instant silence inside the vehicule. A few awkward seconds go by before she says:
 
     "Neon highlighter? Really?"
 
@@ -36,31 +36,31 @@ introduction:
 
     "The notebooks date back from the time when the association was focused on organizing discovery activities for kids," replies Dejanire.
 
-    Her icy tone conveys a clear message : "I don't want to talk about this and you should drop the subject right about now."
+    Her icy tone conveys a clear message: "I don’t want to talk about this and you should drop the subject right about now."
 
 
 
-    Faced with this sudden blizzard, Ceto decides - for once - that it would be best to put her biting cynicism aside. She answers meekly :
+    Faced with this sudden blizzard, Ceto decides - for once - that it would be best to put her biting cynicism aside. She answers meekly:
 
     "Sorry. I know that you cared about those activities."
 
 
 
-    "Don't apologize. It's not your fault we had to focus on other priorities."
+    "Don’t apologize. It’s not your fault we had to focus on other priorities."
 
 
 
-    Ceto winces. The bitterness hiding behind Dejanire's mild words is intense. Close to boiling over, in fact. In the very near future, she could snap and do something stupid.
+    Ceto winces. The bitterness hiding behind Dejanire’s mild words is intense. Close to boiling over, in fact. In the very near future, she could snap and do something stupid.
 
-    And if even Dejanire, with her calm and poised nature, is now getting close to her breaking point, then the other two can't be far from theirs.
-
-
-
-    Ceto can't imagine how such a scenario could possibly lead to a happy ending.
+    And if even Dejanire, with her calm and poised nature, is now getting close to her breaking point, then the other two can’t be far from theirs.
 
 
 
-    After a while, to dispel the tension that she now perceives behind her, Dejanire adds with a strained smile :
+    Ceto can’t imagine how such a scenario could possibly lead to a happy ending.
+
+
+
+    After a while, to dispel the tension that she now perceives behind her, Dejanire adds with a strained smile:
 
     "Besides, I happen to really like neon colors."
   camilla: >-
@@ -117,7 +117,7 @@ planning: >-
   To the east, the vegetation is more humid and the trees more sparse; there are small, easily flooded glades, and no path to speak of.
 
   The landscape to the south has been strongly shaped by civilization; its paths are straight, there are trail markers, and the outline of a sports course can clearly be seen.
-split: "Now that they've all agreed on a strategy, Dejanire claps and they all leave in a different direction."
+split: "Now that they’ve all agreed on a strategy, Dejanire claps and they all leave in a different direction."
 exploration:
   monster:
     1:
@@ -222,10 +222,10 @@ exploration:
 
         "You’re probably right. We’re focused on so many things these days that we often fail to spot the obvious before it’s too late."
 
-        "I know. It's not your fault. We just have to make do."
+        "I know. It’s not your fault. We just have to make do."
   alecto:
     default: >-
-      Alecto had thought that picking flowers would prove to be more enjoyable than shelving books or cleaning up old relics. But this dense forest, with its branches too low and numerous to allow proper flight, with its ground too treacherous for someone who doesn't naturally favor walking, is really making her regret her decision.
+      Alecto had thought that picking flowers would prove to be more enjoyable than shelving books or cleaning up old relics. But this dense forest, with its branches too low and numerous to allow proper flight, with its ground too treacherous for someone who doesn’t naturally favor walking, is really making her regret her decision.
 
       Moving slowly amidst the countless roots and stones, she wishes that time would go by faster and that this ordeal would finally end.
   camilla:
@@ -335,17 +335,17 @@ exploration:
     default: >-
       Dejanire slowly trots through the woods, just as nervous as she was feeling before. She tries to focus entirely on the task at hand, but the worries bouncing in her brain make it quite impossible.
 
-      Yet it's not the first time she's come here looking for plants. Her experience and automatic reflexes compensate for her lack of attentiveness.
+      Yet it’s not the first time she’s come here looking for plants. Her experience and automatic reflexes compensate for her lack of attentiveness.
     south: >-
       Dejanire has already come to these woods several times. And, being high-strung by nature, she always pays close attention to weird details, no matter how small.
 
 
 
-      Thus, it doesn't take long for her to realize that something's wrong. Burnt twigs. A faint smell of ozone. Fleeting flashes of light at the corner of her eyes. Something - or someone - stormy is in the vicinity.
+      Thus, it doesn’t take long for her to realize that something’s wrong. Burnt twigs. A faint smell of ozone. Fleeting flashes of light at the corner of her eyes. Something - or someone - stormy is in the vicinity.
 
 
 
-      There's no way of telling whether the thing or being means to watch her, to harm her or one of her assistants, or if it has absolutely nothing to do with them. Whatever the truth may be, there's definitely something there, and it worries Dejanire so much that she has a very hard time focusing on the task at hand.
+      There’s no way of telling whether the thing or being means to watch her, to harm her or one of her assistants, or if it has absolutely nothing to do with them. Whatever the truth may be, there’s definitely something there, and it worries Dejanire so much that she has a very hard time focusing on the task at hand.
   katrina:
     default: >-
       Katrina can’t even remember the preceding occasion when the association organized an activity outside of the city. In fact, she’s not quite sure how much time has elapsed since she last left the city. Too much.
@@ -358,7 +358,7 @@ exploration:
 
 
 
-      "Hello. I'm looking for these plants. Do you know where I can find them?"
+      "Hello. I’m looking for these plants. Do you know where I can find them?"
 
 
 
@@ -381,12 +381,12 @@ exploration:
     west: >-
       Tekeli gets back on time, embarrassed, having lost her basket and holding but a handful of flowers.
 
-      "I'm sorry, I had an accident."
+      "I’m sorry, I had an accident."
 
 
 
       "What happened?" asks Dejanire, worried.
 
-      "Oh, a big lizard-snake attacked me. I slipped through its coils, but lost everything I'd gathered. I'm really sorry, I should have been more careful."
+      "Oh, a big lizard-snake attacked me. I slipped through its coils, but lost everything I’d gathered. I’m really sorry, I should have been more careful."
 
-      "You really don't have to apologize for that. Now, tell me about that snake in more detail."
+      "You really don’t have to apologize for that. Now, tell me about that snake in more detail."
