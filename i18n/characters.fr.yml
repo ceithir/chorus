@@ -15,12 +15,12 @@ carole:
   profile:
     job: "Vidéaste"
     appearance: "Cheveux teints dans des couleurs extrêmement vives"
-    of-note: "Intervention déjà programmée ; même protocole que pour une non-euclidienne"
+    of-note: "Intervention déjà programmée ; même protocole que pour une non-euclidienne"
 ceto:
   name: "Céto"
   profile:
     job: "Enseignante"
-    appearance: "Petite et fluette (par rapport à la moyenne de sa catégorie ; reste classée en très grande taille)"
+    appearance: "Petite et fluette (par rapport à la moyenne de sa catégorie ; reste classée en très grande taille)"
     of-note: "La pétrification tient du mythe, inutile de prévoir en conséquence"
 dejanire:
   name: "Déjanire"
@@ -33,12 +33,12 @@ katrina:
   profile:
     job: "Coiffeuse"
     appearance: "Aucun signe particulier personnel utilisable"
-    of-note: "L'étendue des capacités psychopompes du sujet n'a pu être mesurée"
+    of-note: "L’étendue des capacités psychopompes du sujet n’a pu être mesurée"
 maharal:
   name: "Maharal"
   profile:
     job: "Bibliothécaire"
-    appearance: "Enveloppe minérale ; couches profondes rigidifiées par l'âge"
+    appearance: "Enveloppe minérale ; couches profondes rigidifiées par l’âge"
     of-note: "Artillerie lourde nécessaire"
 rashomon:
   name: "Rashomon"

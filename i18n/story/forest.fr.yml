@@ -93,7 +93,7 @@ introduction:
 
     Cela les rendait parfois d’une suffisance irritante, mais Déjanire regrette mille fois leurs sourires hautains d’alors quand elle contemple les traits déformés par l’effroi de son assistante d’un jour.
 planning: >-
-  Les explications terminées, Déjanire se met d'accord avec sa petite troupe sur la direction que chacune va explorer.
+  Les explications terminées, Déjanire se met d’accord avec sa petite troupe sur la direction que chacune va explorer.
 
   La façade nord de la forêt semble être la plus fréquentée par les promeneurs, avec un mélange de chemins dégagés et de déchets sur le bas-côté.
 
@@ -102,7 +102,7 @@ planning: >-
   À l’est, la végétation haute est plus clairsemée, humide et spongieuse, avec de petites clairières qui se changent en mares après la pluie, et rien ne s’apparentant à un véritable chemin.
 
   Au sud, la nature a été fortement remodelée par la civilisation, les sentiers sont bien droits, certains troncs affichent des indications kilométriques et les détails d’un parcours d’obstacles se découpent même nettement.
-split: "Maintenant que tout le monde sait ce qu'il a à faire, Déjanire tape dans ses mains et chacune part alors dans une direction différente."
+split: "Maintenant que tout le monde sait ce qu’il a à faire, Déjanire tape dans ses mains et chacune part alors dans une direction différente."
 exploration:
   monster:
     1:
@@ -116,7 +116,7 @@ exploration:
 
         – Au secours ! Y’a une bestiole qui tente de me manger !
       camilla: >-
-        Au bout du fil, Camilla et son habituelle voix monocorde. Le ton paraît cependant plus forcé qu'à l’accoutumé :
+        Au bout du fil, Camilla et son habituelle voix monocorde. Le ton paraît cependant plus forcé qu’à l’accoutumé :
 
         – Déjanire ? Une créature biologique non-sentiente tente de m’infliger des dommages physiques. Vous serait-il possible de me venir en aide ?
       katrina: >-
@@ -143,7 +143,7 @@ exploration:
       alecto: >-
         Alecto hoche la tête, blanche comme un linge :
 
-        – Ça devrait aller. J’ai réussi à m'envoler à moitié avant qu’il soit totalement sur moi.
+        – Ça devrait aller. J’ai réussi à m’envoler à moitié avant qu’il soit totalement sur moi.
       camilla: >-
         Un long silence s’installe avant que Camilla ne réponde simplement :
 
@@ -195,7 +195,7 @@ exploration:
       Progressant à pas lents entre les racines et les cailloux, elle n’a qu’une envie : que les minutes s’écoulent plus vite et que le calvaire prenne fin.
   camilla:
     default: >-
-      Camilla considère, perplexe, la série de choix qui l'ont amenée à ramasser des fleurs en solitaire alors qu’elle recherchait une expérience communautaire et sociale.
+      Camilla considère, perplexe, la série de choix qui l’ont amenée à ramasser des fleurs en solitaire alors qu’elle recherchait une expérience communautaire et sociale.
 
       Elle attendait beaucoup des réactions des autres à une épreuve, même modérée, en dehors de leur milieu habituel. Cette séparation du groupe l’empêche malheureusement de goûter leurs émotions avec l’intensité qu’elle désirerait.
 
@@ -298,7 +298,7 @@ exploration:
       Impossible de savoir si cela n’a aucun rapport avec elle, si c’est là pour la surveiller, ou même pour faire du mal à elle ou à une de ses protégées. Dans tous les cas, c’est là, et son esprit obsédé par ce fait ne se concentre qu’à grand peine sur la cueillette initialement prévue.
   katrina:
     default: >-
-      Katrina n'arrive même plus à se souvenir quand pour la dernière fois l'association a réalisé une activité en-dehors de la ville. En fait, elle a même un doute sur depuis combien de temps elle-même n’était pas sortie de la cité. Trop longtemps.
+      Katrina n’arrive même plus à se souvenir quand pour la dernière fois l’association a réalisé une activité en-dehors de la ville. En fait, elle a même un doute sur depuis combien de temps elle-même n’était pas sortie de la cité. Trop longtemps.
 
 
       Aussi, apprécie-t-elle particulièrement cette balade en solitaire dans les bois, loin du béton et des caméras, et qui plus est pour la bonne cause.

@@ -14,7 +14,7 @@ library:
     fantasy: "Fantasy, tome 1"
     mimic: "Fantasy, tome 2"
     romance: "Romance"
-    coffee: "« Beau livre »"
+    coffee: "« Beau livre »"
     science: "Traité"
   quality:
     bad:
@@ -25,7 +25,7 @@ library:
       long: "Assez de lectrices chevronnées sont présentes pour permettre à {{name}} de prendre le temps de faire les choses bien pour ces ouvrages."
     average:
       short: "Textes entre deux eaux"
-      long: "{{name}} s'occupera des ouvrages ni trop importants ni à négliger."
+      long: "{{name}} s’occupera des ouvrages ni trop importants ni à négliger."
 city:
   title: "Visite du patrimoine"
   name: "Ville"
@@ -34,4 +34,4 @@ city:
     old: "Quartier historique"
     rich: "Zone résidentielle"
     supermarket: "Centre commercial"
-    bank: "Quartier d'affaires"
+    bank: "Quartier d’affaires"

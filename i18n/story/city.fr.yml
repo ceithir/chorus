@@ -155,7 +155,7 @@ locations:
 
       C’est pas génial, mais c’est mieux que rien, et c’est toujours un sursis.
     failure: >-
-      Malgré tous ses efforts, {{name}} ne parvient pas à trouver une solution pour contourner le problème et s'en retourne dépitée.
+      Malgré tous ses efforts, {{name}} ne parvient pas à trouver une solution pour contourner le problème et s’en retourne dépitée.
   old:
     intro: >-
       Pour comprendre ce quartier, il faut revenir à sa fondation, et donc à celle de la ville, deux millénaires auparavant.
@@ -204,7 +204,7 @@ locations:
 
       La bénévole remonte chercher des outils d’entretien et des sacs-poubelles, et le grand nettoyage commence.
     failure: >-
-      Malgré tous ses efforts, {{name}} ne parvient pas à trouver une solution pour contourner le problème et s'en retourne dépitée.
+      Malgré tous ses efforts, {{name}} ne parvient pas à trouver une solution pour contourner le problème et s’en retourne dépitée.
   rich: >-
     Le quartier résidentiel moderne est une succession de petits pavillons tous construits sur le même modèle et différenciés à la marge, par la couleur des volets, le modèle du portail du jardin, la présence de fleurs sous les fenêtres.
 

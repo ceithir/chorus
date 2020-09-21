@@ -7,9 +7,9 @@ profile:
     half-fay: "Biologique/Féérique"
     composite: "Composite"
   humanoid:
-    title: "Similarité à l'humain"
+    title: "Similarité à l’humain"
     class-1: "Classe 1 (peut se faire passer pour un humain)"
-    class-2: "Classe 2 (diffère de l'humain par des caractéristiques tertiaires difficiles à masquer)"
+    class-2: "Classe 2 (diffère de l’humain par des caractéristiques tertiaires difficiles à masquer)"
     class-3: "Classe 3 (silhouette en partie humanoïde seulement)"
     class-7: "Classe 7 (non-humanoïde pouvant simuler une forme humanoïde)"
   impetus:
@@ -43,13 +43,13 @@ profile:
       features: "Quelques attributs félins superficiels, le plus souvent vestigiaux."
     cheshire:
       name: "Cheshire"
-      features: "Ubiquité quantique (position dans l'espace non déterministe)"
+      features: "Ubiquité quantique (position dans l’espace non déterministe)"
     dullahan:
       name: "Dullahan"
       features: "Peut librement détacher sa tête de son corps"
     slime:
       name: "Slime"
-      features: "Sorte d'amibe géante capable de se déformer pour se doter de « bras », de « jambes » et d'un « visage »."
+      features: "Sorte d’amibe géante capable de se déformer pour se doter de « bras », de « jambes » et d’un « visage »."
     mask:
       name: "Masque"
       features: "Voir fiche"
@@ -63,65 +63,65 @@ profile:
       name: "Golem"
       features: "Abrite (littéralement) des écrits dans son cœur"
   of-note:
-    title: "À prendre en compte en cas d'intervention"
+    title: "À prendre en compte en cas d’intervention"
   job:
     title: "Occupation"
   links:
     see_more: "(voir fiche : <strong>{{species}}</strong>)"
     see_all: "Voir la fiche complète"
-    error: "Vous n'avez pas les permissions nécessaires pour consulter cette fiche."
+    error: "Vous n’avez pas les permissions nécessaires pour consulter cette fiche."
   names:
-    error: "Vous n'avez pas les permissions nécessaires pour accéder à cette information."
+    error: "Vous n’avez pas les permissions nécessaires pour accéder à cette information."
 results:
   title: "Résultats"
   forest:
     good: "Beaucoup de plantes ont été récoltées"
     bad: "Peu de plantes récoltées au final"
-    beast: "La rencontre avec une bête sauvage a écourté l'expédition"
-    citygirl: "{{name}}, hors de son élément, n'a pas ramené grand chose"
+    beast: "La rencontre avec une bête sauvage a écourté l’expédition"
+    citygirl: "{{name}}, hors de son élément, n’a pas ramené grand chose"
     fairies: "{{name}} a reçu une aide bienvenue des locaux"
     optigirl: "{{name}} a réalisé une excellente récolte"
     dream: "Déjanire est à cran après sa discussion avec Céto"
     ally:
-      dejanire: "Déjanire a remarqué quelque chose d'inhabituel"
+      dejanire: "Déjanire a remarqué quelque chose d’inhabituel"
       camilla: "Camilla a fait une rencontre intéressante"
   library:
     good: "Les fiches ont, en général, été remplies avec un luxe de détails irréprochable"
-    bad: "Beaucoup trop de paperasse pour qu'un peu n'ait été légèrement bâclée sur les bords"
-    dragon: "Ce dragon de poésie n'effraiera personne"
+    bad: "Beaucoup trop de paperasse pour qu’un peu n’ait été légèrement bâclée sur les bords"
+    dragon: "Ce dragon de poésie n’effraiera personne"
     mimic: "Un drame a sans doute été évité en neutralisant cette mimique"
     dream: "Les facades impassibles de Maharal et Camilla se sont entrouvertes suite à leur rencontre"
-    testimony: "L'un des ouvrages s'est révélé avoir plus de valeur que prévu"
+    testimony: "L’un des ouvrages s’est révélé avoir plus de valeur que prévu"
     overkill: "Certains livres ne valaient guère le temps qui leur a été consacré"
     ally:
       katrina: "Katrina a eu une conversation très productive avec un esprit"
-      ceto: "Céto a peut-être mis le doigt sur quelque chose d'intéressant"
+      ceto: "Céto a peut-être mis le doigt sur quelque chose d’intéressant"
   city:
-    good: "Rashomon est très satisfaite des retours de ses subordonnées d'un jour"
-    bad: "Rashomon n'est que partiellement rassérénée par ce que leurs explorations leur ont appris sur l'état du réseau"
-    dream: "Carole a été prévenue qu'elle risquait gros"
-    no-access: "Des relais se sont révélés plus difficiles d'accès que prévus"
+    good: "Rashomon est très satisfaite des retours de ses subordonnées d’un jour"
+    bad: "Rashomon n’est que partiellement rassérénée par ce que leurs explorations leur ont appris sur l’état du réseau"
+    dream: "Carole a été prévenue qu’elle risquait gros"
+    no-access: "Des relais se sont révélés plus difficiles d’accès que prévus"
     poor: "De gênants obstacles légaux ont été contournés avec succès"
-    old: "La restauration du relais pirate historique s'est bien déroulé"
+    old: "La restauration du relais pirate historique s’est bien déroulé"
     ally: "{{name}} a eu une rencontre intriguante avec un démon"
     useless: "Du temps et des efforts ont été consacrés pour des lieux déjà parfaitement protégés"
     spider: "Une alliée spectrale a discrètement apporté son éthérée contribution"
-    alecto: "La mobilité et les contacts d'Alecto lui confèrent une efficacité remarquable"
+    alecto: "La mobilité et les contacts d’Alecto lui confèrent une efficacité remarquable"
 endings:
   title: "Fin {{index}}/{{total}} : {{name}}"
   hints: "Indices pour une autre fin"
   bad:
     name: "Conséquences"
     hints:
-      forest: "Certaines bénévoles sont capables de se débrouiller à la perfection en pleine nature quel que soit le chemin choisi, tandis d'autres auront besoin d'y faire une bonne rencontre pour briller. Dans tous les cas, essayez d'éviter les bêtes sauvages, rien de bon n'en ressortira."
-      library: "Certains livres ne sont rien de plus que ce qu'ils paraissent et peuvent être expédiés par Maharal sans perte. Coupler une excellente lectrice avec une bénévole moins bibliovore permet de débloquer du temps de lecture attentive pour cette dernière."
-      city: "Seules des personnalités assez flexibles pour contourner les règles de la jungle urbaine sauront en venir à bout. Certains quartiers n'ont réellement besoin d'aucune aide, mais l'un d'eux pourrait bien cacher un secret."
+      forest: "Certaines bénévoles sont capables de se débrouiller à la perfection en pleine nature quel que soit le chemin choisi, tandis d’autres auront besoin d’y faire une bonne rencontre pour briller. Dans tous les cas, essayez d’éviter les bêtes sauvages, rien de bon n’en ressortira."
+      library: "Certains livres ne sont rien de plus que ce qu’ils paraissent et peuvent être expédiés par Maharal sans perte. Coupler une excellente lectrice avec une bénévole moins bibliovore permet de débloquer du temps de lecture attentive pour cette dernière."
+      city: "Seules des personnalités assez flexibles pour contourner les règles de la jungle urbaine sauront en venir à bout. Certains quartiers n’ont réellement besoin d’aucune aide, mais l’un d’eux pourrait bien cacher un secret."
   respite:
     name: "Attente"
-    hint: "Pour débloquer la meilleure fin, essayez, dans chacune des missions, de rencontrer, ou de trouver trace, du passage d'êtres hors-normes même dans le référentiel de ce petit groupe."
+    hint: "Pour débloquer la meilleure fin, essayez, dans chacune des missions, de rencontrer, ou de trouver trace, du passage d’êtres hors-normes même dans le référentiel de ce petit groupe."
   hope:
     name: "Espoir"
-thanks: "Merci à vous d'avoir lu <em>Fanfare</em>."
+thanks: "Merci à vous d’avoir lu <em>Fanfare</em>."
 credits:
   0: "Texte original (français) : Skarn"
   1: "Traduction : Romain"
