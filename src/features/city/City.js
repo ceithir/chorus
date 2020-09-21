@@ -134,6 +134,10 @@ const City = () => {
         text: t("story.city.carole"),
         character: CAROLE,
       },
+      party.includes(ALECTO) && {
+        text: t("story.city.alecto"),
+        character: ALECTO,
+      },
       ...LOCATIONS.filter((location) => !!city[location]).map((location) => {
         const character = city[location];
         return {
@@ -144,10 +148,6 @@ const City = () => {
           )}`,
         };
       }),
-      party.includes(ALECTO) && {
-        text: t("story.city.alecto"),
-        character: ALECTO,
-      },
     ].filter(Boolean);
     const { text, character, heading } = parts[step];
     return (
