@@ -30,10 +30,14 @@ const importFolder = (folder, regexpToMatch) => {
   return result;
 };
 
-supportedLanguages.forEach((language) => {
+const loadTranslations = (language) => {
   const regexpToMatch = new RegExp(`^(.+)\\.${language}\\.yml$`);
+  return importFolder(yamlFolder, regexpToMatch);
+};
+
+supportedLanguages.forEach((language) => {
   fs.writeFileSync(
     `${jsonFolder}/${language}.json`,
-    JSON.stringify(importFolder(yamlFolder, regexpToMatch))
+    JSON.stringify(loadTranslations(language))
   );
 });
