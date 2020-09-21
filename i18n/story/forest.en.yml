@@ -317,20 +317,26 @@ exploration:
 
       And maybe she should start picking flowers at a faster pace, or word of mouth won’t do her reputation any good.
     east: >-
-      Dans la clairière, au cœur d’un rond de sorcière, les fées dansent, invisibles aux yeux des créatures physiques.
+      Inside a ring of mushrooms in the middle of a glade, fairies are dancing, invisible to the eyes of corporeal beings.
 
-      – Bonjour. Je cherche ces plantes-là. Vous sauriez où je pourrais les trouver ?
 
-      Enfin, de la plupart des créatures physiques. Réprimant un soupir, la plus ancienne des fées fournit à l’intruse au livre grand ouvert les renseignements qu’elle désire, sachant pertinemment que c’est encore le moyen le plus rapide de s’en débarrasser.
+
+      “Hello. I’m looking for these plants. Do you know where I can find them?”
+
+
+
+      Well, invisible to the eyes of most corporeal beings. Suppressing a sigh, the eldest of the fairies provides {{name}} with all the information she might desire, knowing it to be the quickest way to get rid of her.
   ceto:
     default: >-
-      Céto n’est pas du genre à laisser son environnement lui dicter ce qu’elle doit faire, et c’est également vrai quand il s’agit de tracer son chemin à travers bois.
+      Ceto doesn’t let her environment tells her what to do, and that remains true when it comes to finding a path through a forest.
 
 
-      Là où quelqu’un de moins imposant, ou n’ayant pas ses facilité à conserver son équilibre, ou pourvu d’une peau plus fragile, aurait choisi de contourner ce buisson de ronces, ce rocher moussu, ce fossé abrupt, elle continue tout droit, laissant derrière elle une large trace sinueuse caractéristique.
+
+      Someone less imposing, with less balance or with a more fragile skin would have chosen to go around this bramble bush, this mossy rock, this steep ditch, all obstacles that she ignores, moving straight forward and leaving behind herself a large sinuous track.
 
 
-      N’ayant pas à se soucier du terrain, ni d’ailleurs de la faune qui se carapate à son approche, elle peut consacrer toute son attention à chercher les plantes demandées.
+
+      Not having to worry about the unevenness of the ground – or for that matter about the local fauna, that runs away at her approach – Ceto’s free to focus entirely on the plants that she’s looking for.
   dejanire:
     default: >-
       Dejanire slowly trots through the woods, just as nervous as she was feeling before. She tries to focus entirely on the task at hand, but the worries bouncing in her brain make it quite impossible.
