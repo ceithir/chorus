@@ -4,7 +4,7 @@
 
 const fs = require("fs");
 
-const supportedLanguages = ["fr"];
+const supportedLanguages = ["fr", "en"];
 const yamlFolder = "i18n";
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Escaping
@@ -29,6 +29,23 @@ const rules = {
     [" ;", " ;"],
     [" :", " :"],
     [" :", " :"],
+  ],
+  en: [
+    ["'", "’"],
+    ["« ", "“"],
+    ["« ", "“"],
+    ["« ", "“"],
+    ["« ", "“"],
+    [" »", "”"],
+    [" »", "”"],
+    [" !", "!"],
+    [" !", "!"],
+    [" ?", "?"],
+    [" ?", "?"],
+    [" ;", ";"],
+    [" ;", ";"],
+    [" :", ":"],
+    [" :", ":"],
   ],
 };
 
