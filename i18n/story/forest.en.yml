@@ -14,7 +14,7 @@ introduction:
   part-3: >-
     Her legs stiff, Dejanire struggles a bit to get out of her seat. She then does a last minute check-up :
 
-    "You both have a working GPS on your phone? You both get cell reception? You both have my number?"
+    “You both have a working GPS on your phone? You both get cell reception? You both have my number?”
 
     The two members of her tiny group nod. Even here, far from everything, that link with civilization still exists.
 
@@ -30,11 +30,11 @@ introduction:
   ceto: >-
     Ceto clicks her tongue loudly after checking her notebook. The peculiar sound brings instant silence inside the vehicule. A few awkward seconds go by before she says:
 
-    "Neon highlighter? Really?"
+    “Neon highlighter? Really?”
 
 
 
-    "The notebooks date back from the time when the association was focused on organizing discovery activities for kids," replies Dejanire.
+    “The notebooks date back from the time when the association was focused on organizing discovery activities for kids,” replies Dejanire.
 
     Her icy tone conveys a clear message: "I don’t want to talk about this and you should drop the subject right about now."
 
@@ -42,11 +42,11 @@ introduction:
 
     Faced with this sudden blizzard, Ceto decides - for once - that it would be best to put her biting cynicism aside. She answers meekly:
 
-    "Sorry. I know that you cared about those activities."
+    “Sorry. I know that you cared about those activities.”
 
 
 
-    "Don’t apologize. It’s not your fault we had to focus on other priorities."
+    “Don’t apologize. It’s not your fault we had to focus on other priorities.”
 
 
 
@@ -62,7 +62,7 @@ introduction:
 
     After a while, to dispel the tension that she now perceives behind her, Dejanire adds with a strained smile:
 
-    "Besides, I happen to really like neon colors."
+    “Besides, I happen to really like neon colors.”
   camilla: >-
     Camilla immediately gets out of the minibus and starts soaking in the atmosphere of this unknown area, her mind tracking noises, smells and emotions down to their distant points of origin, beyond the cover of the trees. It’s essential that she understand the balance of power in this new environment as quickly as possible, before doing anything that might upset a bigwig.
 
@@ -78,27 +78,27 @@ introduction:
   carole: >-
     Carole hasn’t been paying much attention. It doesn’t take long for Dejanire to notice that she keeps casting glances all around.
 
-    "Is there a problem?" she asks in a low voice.
+    “Is there a problem?” she asks in a low voice.
 
 
 
-    "We’re being watched."
+    “We’re being watched.”
 
 
 
     Dejanire’s face grows stern :
 
-    "Are you sure? We’re far from everything, and I’ve kept our exact destination a secret so we could work in peace."
+    “Are you sure? We’re far from everything, and I’ve kept our exact destination a secret so we could work in peace.”
 
 
 
-    "I’m positive. Look over there: if you pay close attention, you’ll notice very brief flashes of light."
+    “I’m positive. Look over there: if you pay close attention, you’ll notice very brief flashes of light.”
 
     Carole nods toward the south. Squinting in that direction, Dejanire gets the unpleasant feeling that something is moving very fast at the edge of her field of vision. It could be a real being or merely the product of her worried imagination.
 
 
 
-    "I don’t care what you do, but I’m not getting any closer to whatever that is," adds the multicolor-haired woman, all her senses on alert.
+    “I don’t care what you do, but I’m not getting any closer to whatever that is,” adds the multicolor-haired woman, all her senses on alert.
 
     Dejanire somberly takes note of her remark, and of her naked fear.
 
@@ -131,18 +131,18 @@ exploration:
       alecto: >-
         Over a background of loud noises, Alecto’s panicked voice can be heard:
 
-        "Help! There’s a beast trying to eat me!"
+        “Help! There’s a beast trying to eat me!”
       camilla: >-
         Camilla’s voice is as monotonous as usual, yet it seems somewhat more strained than usual:
 
-        "Dejanire? A non-sentient, biological creature is attempting to harm me physically. Could you provide me with some help?"
+        “Dejanire? A non-sentient, biological creature is attempting to harm me physically. Could you provide me with some help?”
       katrina: >-
-        "Dej? It’s Kat. My body’s fighting against something. Sorry I can’t be more precise, my head has rolled to the ground and is stuck looking in the wrong direction."
+        “Dej? It’s Kat. My body’s fighting against something. Sorry I can’t be more precise, my head has rolled to the ground and is stuck looking in the wrong direction.”
     3:
       default: >-
         Dejanire glances at the GPS telling her the location of the call and corrects her course, useless pieces of advice rushing out of her mouth :
 
-        "I’m coming! Don’t move! Keep it away!"
+        “I’m coming! Don’t move! Keep it away!”
 
 
 
@@ -158,16 +158,16 @@ exploration:
 
         Dejanire immediately bends forward to help Alecto stand up.
 
-        "Are you okay?"
+        “Are you okay?”
     4:
       alecto: >-
         Alecto nods, though she’s white as a sheet :
 
-        "I think so. I didn’t manage to take flight quite in time, but it couldn’t grab me correctly."
+        “I think so. I didn’t manage to take flight quite in time, but it couldn’t grab me correctly.”
       camilla: >-
         There’s a long silence before Camilla answers:
 
-        "Yes."
+        “Yes.”
 
 
 
@@ -177,10 +177,10 @@ exploration:
       katrina: >-
         Katrina picks her head up, sets it on her neck, blinks a few time, tests the joints of her arms and legs.
 
-        "Seems so. More fear than harm."
+        “Seems so. More fear than harm.”
     5:
       default: >-
-        "Good. Get on my back, I’ll carry you."
+        “Good. Get on my back, I’ll carry you.”
 
 
 
@@ -189,12 +189,12 @@ exploration:
 
 
 
-        "I’m terribly sorry. I was convinced that the place held no danger. The girls and I never had any trouble on the previous occasions," Dejanire says, stumbling over words.
+        “I’m terribly sorry. I was convinced that the place held no danger. The girls and I never had any trouble on the previous occasions,” Dejanire says, stumbling over words.
     6:
       alecto: >-
         Alecto nods.
 
-        "Think nothing of it. Accidents… happen."
+        “Think nothing of it. Accidents… happen.”
 
 
 
@@ -204,25 +204,25 @@ exploration:
 
         Then again, does such a thing even exist anymore?
       camilla: >-
-        "The fault is mine. I’d detected the beast, but mistakenly thought that it could not threaten my physical integrity."
+        “The fault is mine. I’d detected the beast, but mistakenly thought that it could not threaten my physical integrity.”
 
 
 
         Sensing Dejanire’s puzzlement, Camilla adds :
 
-        "The rules governing us are complex, even for ourselves. Errors of interpretation can happen."
+        “The rules governing us are complex, even for ourselves. Errors of interpretation can happen.”
       katrina: >-
-        "Did we organize outings in this area back in the day?"
+        “Did we organize outings in this area back in the day?”
 
-        "Not here. But Maharal, Ceto and I have come several times since the reorganization."
+        “Not here. But Maharal, Ceto and I have come several times since the reorganization.”
 
 
 
-        "Sorry to say that, but the make-up of your reconnaissance team was biased. Given how big the three of you are, I don’t think that anything smaller than a T-Rex would take the risk to attack you."
+        “Sorry to say that, but the make-up of your reconnaissance team was biased. Given how big the three of you are, I don’t think that anything smaller than a T-Rex would take the risk to attack you.”
 
-        "You’re probably right. We’re focused on so many things these days that we often fail to spot the obvious before it’s too late."
+        “You’re probably right. We’re focused on so many things these days that we often fail to spot the obvious before it’s too late.”
 
-        "I know. It’s not your fault. We just have to make do."
+        “I know. It’s not your fault. We just have to make do.”
   alecto:
     default: >-
       Alecto had thought that picking flowers would prove to be more enjoyable than shelving books or cleaning up old relics. But this dense forest, with its branches too low and numerous to allow proper flight, with its ground too treacherous for someone who doesn’t naturally favor walking, is really making her regret her decision.
@@ -238,7 +238,7 @@ exploration:
 
       Being by nature almost incapable of questioning instructions, let alone of disobeying them, she nevertheless performs the uninteresting task with diligence.
     south: >-
-      "I’m the door, I’m the key, I’m picking flowers."
+      “I’m the door, I’m the key, I’m picking flowers.”
 
 
 
@@ -252,11 +252,11 @@ exploration:
 
 
 
-      "Do we know each other?"
+      “Do we know each other?”
 
-      "Not personally, but I have some yog-sothothesque friends. And as a rule, I get worried when I see them wandering around in these woods. What are you doing here?"
+      “Not personally, but I have some yog-sothothesque friends. And as a rule, I get worried when I see them wandering around in these woods. What are you doing here?”
 
-      "I’m picking flowers."
+      “I’m picking flowers.”
 
 
 
@@ -264,7 +264,7 @@ exploration:
 
 
 
-      "Let’s do without ambiguous questions and cryptic answers, okay? I just want to know if I can finish my jogging in peace, or if things are about to go pear-shaped, with bigwigs turning up and general pandemonium."
+      “Let’s do without ambiguous questions and cryptic answers, okay? I just want to know if I can finish my jogging in peace, or if things are about to go pear-shaped, with bigwigs turning up and general pandemonium.”
 
       The atmosphere becomes literally electric in response to her fit of temper, agitating the forest around her. The grass and leaves bend under a magnetic wind. Insects flee.
 
@@ -276,7 +276,7 @@ exploration:
 
       Her explanation is answered by a doubtful frown, followed by a shrug.
 
-      "I don’t think I understand the great cosmic design behind all that, but okay, it does seem harmless."
+      “I don’t think I understand the great cosmic design behind all that, but okay, it does seem harmless.”
 
       A flash, movement almost as fast as light, and in an instant, the jogger is…
 
@@ -284,15 +284,15 @@ exploration:
 
       … Still in the same place, with Camilla’s hand idly laying on her shoulder:
 
-      "Time has been lost. Time must be repaid."
+      “Time has been lost. Time must be repaid.”
 
 
 
       All her arrogance gone, the raiju agrees with a lump in her throat:
 
-      "I help you pick flowers and we’re quits?"
+      “I help you pick flowers and we’re quits?”
 
-      "That is acceptable."
+      “That is acceptable.”
   carole:
     default: >-
       Carole idly picks a few flowers, her mind elsewhere.
@@ -358,7 +358,7 @@ exploration:
 
 
 
-      "Hello. I’m looking for these plants. Do you know where I can find them?"
+      “Hello. I’m looking for these plants. Do you know where I can find them?”
 
 
 
@@ -381,12 +381,12 @@ exploration:
     west: >-
       Tekeli gets back on time, embarrassed, having lost her basket and holding but a handful of flowers.
 
-      "I’m sorry, I had an accident."
+      “I’m sorry, I had an accident.”
 
 
 
-      "What happened?" asks Dejanire, worried.
+      “What happened?” asks Dejanire, worried.
 
-      "Oh, a big lizard-snake attacked me. I slipped through its coils, but lost everything I’d gathered. I’m really sorry, I should have been more careful."
+      “Oh, a big lizard-snake attacked me. I slipped through its coils, but lost everything I’d gathered. I’m really sorry, I should have been more careful.”
 
-      "You really don’t have to apologize for that. Now, tell me about that snake in more detail."
+      “You really don’t have to apologize for that. Now, tell me about that snake in more detail.”

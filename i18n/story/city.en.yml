@@ -47,7 +47,7 @@ split: >-
 
   The business district, packed on weekdays."
 carole: >-
-  "Rainbow Cat has been added to the black list."
+  “Rainbow Cat has been added to the black list.”
 
 
 
@@ -59,21 +59,21 @@ carole: >-
 
 
 
-  "What am I accused of?"
+  “What am I accused of?”
 
-  "Trifles, along with a large helping of fabrication. I don’t think they really care about your activities.  You just had the misfortune to draw attention to yourself at a time when they were looking for semi-euclidians to target."
+  “Trifles, along with a large helping of fabrication. I don’t think they really care about your activities.  You just had the misfortune to draw attention to yourself at a time when they were looking for semi-euclidians to target.”
 
-  "I made a burbling propaganda video clip for those raths and this is how they repay me?"
+  “I made a burbling propaganda video clip for those raths and this is how they repay me?”
 
-  "You must have known that you were, at best, buying a little time at the cost of your conscience."
+  “You must have known that you were, at best, buying a little time at the cost of your conscience.”
 
-  "And you’re behaving a whole lot better, I suppose?"
+  “And you’re behaving a whole lot better, I suppose?”
 
 
 
   Carole keeps speaking softly - out of instinctive caution, for no one else is near - but her voice is heavy-laden with rage and terror.
 
-  "Seriously, do you realize the situation we’re in? We have to fix everything they break with the few pieces of tape they leave us, and we have to do it with a smile and pretend everything is perfectly normal?!"
+  “Seriously, do you realize the situation we’re in? We have to fix everything they break with the few pieces of tape they leave us, and we have to do it with a smile and pretend everything is perfectly normal?!”
 
 
 
@@ -81,11 +81,11 @@ carole: >-
 
 
 
-  "What matters is that you still have a little bit of time. Not much. A few days at best, less if you do anything that would draw their attention. Use that time to plan your escape."
+  “What matters is that you still have a little bit of time. Not much. A few days at best, less if you do anything that would draw their attention. Use that time to plan your escape.”
 
-  "Why shouldn’t I leave today?"
+  “Why shouldn’t I leave today?”
 
-  "Because I have no doubt that our small group is being watched and your absence would be discovered much too quickly."
+  “Because I have no doubt that our small group is being watched and your absence would be discovered much too quickly.”
 
   "What a haighabrained plan…
 
@@ -133,23 +133,23 @@ alecto: >-
 locations:
   poor:
     intro: >-
-      "There it is."
+      “There it is.”
 
       The caretaker has led {{name}} to something that looks like a maritime container, at the bottom of one of the high-rise blocks. It’s a large iron cube, covered in graffitis, with a single door held shut by an imposing padlock.
 
 
 
-      "The tree’s inside. They boxed it in about six months ago, saying that there had been damages and that it should be better protected."
+      “The tree’s inside. They boxed it in about six months ago, saying that there had been damages and that it should be better protected.”
 
-      "Do you have the key?"
+      “Do you have the key?”
 
-      "No. I don’t even know who has it. Ah, and there’s an alarm, so don’t get any ideas."
+      “No. I don’t even know who has it. Ah, and there’s an alarm, so don’t get any ideas.”
     carole: >-
-      "I need to be on the other side of this door. But if I go to the other side, the other side will be this side. So, in a way, I’m already on the other side."
+      “I need to be on the other side of this door. But if I go to the other side, the other side will be this side. So, in a way, I’m already on the other side.”
 
       The caretaker, having already heard about the absurdities of shrewding logic, lets Carole spout her nonsense.
 
-      "And in fact, I am on the other side."
+      “And in fact, I am on the other side.”
 
 
 
@@ -165,9 +165,9 @@ locations:
 
       {{name}} exits the metal cube the same way she entered it.
 
-      "Is there no way to get the tree out of there? It’s really going to die if it remains inside for much longer."
+      “Is there no way to get the tree out of there? It’s really going to die if it remains inside for much longer.”
 
-      "Don’t you think I know that? We tried to get rid of this freaking box without having to be told. But it turns out the Security Department doesn’t like it when people reject their brilliant ideas. So you should look for a different approach, unless you want both of us to be taken to the station."
+      “Don’t you think I know that? We tried to get rid of this freaking box without having to be told. But it turns out the Security Department doesn’t like it when people reject their brilliant ideas. So you should look for a different approach, unless you want both of us to be taken to the station.”
 
 
 
@@ -204,7 +204,7 @@ locations:
 
       The local caretaker opens the grate for {{name}}.
 
-      "Good luck. Nobody has gone down there for years. Too dangerous."
+      “Good luck. Nobody has gone down there for years. Too dangerous.”
 
       The rusty rungs that disappear into the darkness below certainly don’t inspire a lot of trust. Some of them even appear to be missing.
     alecto: >-
@@ -243,26 +243,26 @@ locations:
 
       Aside from dubious esthetic choices, the tree is well cared for, like everything in this district. No matter where {{name}} sticks them, the test strips show a bright green color.
     rashomon: >-
-      "Now that’s top-quality anger. Sure you aren’t a belial?"
+      “Now that’s top-quality anger. Sure you aren’t a belial?”
 
       Rashomon doesn’t have to lower her eyes to look at the person addressing her, for she’s levitating two full meters above the ground, nonchalantly reclining in the air. She looks like a translucent oni in a tight-fitting golden dress. However, Rashomon knows quite well that she only shows what she wants to show, not what she truly is.
 
 
 
-      "I don’t know my family tree very well, so it’s possible. Nice to meet you, my name is Rashomon and…"
+      “I don’t know my family tree very well, so it’s possible. Nice to meet you, my name is Rashomon and…”
 
-      "Yeah, yeah, I didn’t ask for your life story. Are you going to start breaking things or aren’t you?"
+      “Yeah, yeah, I didn’t ask for your life story. Are you going to start breaking things or aren’t you?”
 
-      "I’m not."
+      “I’m not.”
 
-      "Seriously? That’s a waste. Nice anger like this should be put to good use."
+      “Seriously? That’s a waste. Nice anger like this should be put to good use.”
 
 
       Indifferent to such digs, Rashomon tries to switch to a more interesting subject:
 
-      "You’re a demonic, aren’t you? Probably a mammon, in this district. Do you…"
+      “You’re a demonic, aren’t you? Probably a mammon, in this district. Do you…”
 
-      "No."
+      “No.”
 
       And she vanishes in a burst of glitter.
 
@@ -284,7 +284,7 @@ locations:
 
       As soon as she’s detected, she appears in her full horned glory, ready for a fight. But a glance at {{name}} is enough to convince her to play it safe.
 
-      "All right. If you meant to exorcize me, I guess you would have already done it. So what will it take for you to forget that you saw me?"
+      “All right. If you meant to exorcize me, I guess you would have already done it. So what will it take for you to forget that you saw me?”
 
 
 
@@ -295,7 +295,7 @@ locations:
 
       The tree stands at the end of the central aisle, in a decorative area full of vegetation and statues, protected by brightly colored tape and a "Do not touch" sign. A quick examination doesn’t reveal anything out of the ordinary, and the cleaning operatives confirm that it’s perfectly healthy.
     carole: >-
-      "Rainbow Cat?"
+      “Rainbow Cat?”
 
       Carole looks at the person who just addressed her. A group of teenagers has come close and is staring at her with wide eyes.
 
@@ -313,6 +313,6 @@ locations:
 
       Her usual smile comes to her lips and, with a practiced gesture, she runs her hand through her brown hair, turning it into a rainbow mane.
 
-      "That’s me."
+      “That’s me.”
 
       Smile, shake hands, smile, give short and evasive answers to all questions, smile, sign a few bags, smile, and – at the right moment – disappear mysteriously, leaving only a calling card behind.
