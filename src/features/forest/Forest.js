@@ -123,7 +123,7 @@ const Forest = () => {
         });
       })();
 
-      return { character, text };
+      return { character, text, direction };
     }).filter(Boolean);
     return (
       <Section
@@ -131,6 +131,9 @@ const Forest = () => {
         character={adventures[step]["character"]}
         next={!!adventures[step + 1] ? stepUp : goTo(RESULTS)}
         translated={true}
+        heading={`${t(`locations.forest.name`)} – ${t(
+          `locations.forest.directions.${adventures[step]["direction"]}`
+        )}`}
       />
     );
   }

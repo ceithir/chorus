@@ -1,5 +1,6 @@
 forest:
   title: "Balade en forêt"
+  name: "Forêt"
   directions:
     west: "Ouest"
     east: "Est"
@@ -7,6 +8,7 @@ forest:
     south: "Sud"
 library:
   title: "Un peu de lecture"
+  name: "Livres"
   books:
     mystery: "Policier"
     fantasy: "Fantasy, tome 1"
@@ -26,6 +28,7 @@ library:
       long: "{{name}} s'occupera des ouvrages ni trop importants ni à négliger."
 city:
   title: "Visite du patrimoine"
+  name: "Ville"
   locations:
     poor: "Cité dortoir"
     old: "Quartier historique"

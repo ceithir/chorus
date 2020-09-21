@@ -15,7 +15,7 @@ import CharacterHeader from "../characters/CharacterHeader";
 import { useTranslation } from "react-i18next";
 import { name } from "../../characters";
 
-const { Paragraph } = Typography;
+const { Paragraph, Title } = Typography;
 
 const FadeInAndScrollTo = ({ children }) => {
   const instantText = useSelector(selectInstantText);
@@ -198,6 +198,14 @@ const RawSection = ({
   );
 };
 
+const Heading = ({ text }) => {
+  return (
+    <Title level={5} className="avh-section-heading">
+      {text}
+    </Title>
+  );
+};
+
 const Section = ({
   text,
   children,
@@ -205,6 +213,7 @@ const Section = ({
   character,
   translated = false,
   hideLastButton = false,
+  heading,
 }) => {
   const subSectionIndex = useSelector(selectSubSection);
   const dispatch = useDispatch();
@@ -266,6 +275,7 @@ const Section = ({
       fadeOutBeforeAction={!instantText && showAll && animationId && next}
       hideButton={showAll && hideLastButton}
     >
+      {heading && <Heading text={heading} />}
       <SubSections subsections={visibleSubsections} />
       {showAll && <FadeInAndScrollTo>{children}</FadeInAndScrollTo>}
     </RawSection>

@@ -1,5 +1,6 @@
 forest:
   title: "A forest trip"
+  name: "Forest"
   directions:
     west: "West"
     east: "East"
@@ -7,6 +8,7 @@ forest:
     south: "South"
 library:
   title: "A bit of reading"
+  name: "Books"
   books:
     mystery: "Mystery"
     fantasy: "Fantasy, vol. 1"
@@ -26,6 +28,7 @@ library:
       long: "{{name}} will look at the books that are neither critical nor unimportant."
 city:
   title: "Heritage Day"
+  name: "City"
   locations:
     poor: "Dormitory district"
     old: "Historic district"

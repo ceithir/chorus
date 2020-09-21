@@ -136,20 +136,27 @@ const City = () => {
       },
       ...LOCATIONS.filter((location) => !!city[location]).map((location) => {
         const character = city[location];
-        return { text: adventure({ location, character, t }), character };
+        return {
+          text: adventure({ location, character, t }),
+          character,
+          heading: `${t(`locations.city.name`)} – ${t(
+            `locations.city.locations.${location}`
+          )}`,
+        };
       }),
       party.includes(ALECTO) && {
         text: t("story.city.alecto"),
         character: ALECTO,
       },
     ].filter(Boolean);
-    const { text, character } = parts[step];
+    const { text, character, heading } = parts[step];
     return (
       <Section
         text={text}
         character={character}
         translated={true}
         next={parts[step + 1] ? stepUp : goTo(RESULTS)}
+        heading={heading}
       />
     );
   }

@@ -39,6 +39,7 @@ import {
 import Results from "../debrief/Results";
 import { forceAssign } from "../city/reducer";
 import { SPECIAL } from "../city/locations";
+import { useTranslation } from "react-i18next";
 
 const Library = () => {
   const section = useSelector(selectSection);
@@ -48,6 +49,7 @@ const Library = () => {
   const stepUp = () => dispatch(nextStep());
   const party = useSelector(selectParty("library"));
   const library = useSelector(selectLibrary());
+  const { t } = useTranslation();
 
   const PLANNING = "planning";
   const READING = "reading";
@@ -146,7 +148,7 @@ const Library = () => {
             return false;
         }
       })();
-      return key && { text: `story.library.books.${key}`, character };
+      return key && { text: `story.library.books.${key}`, character, book };
     }).filter(Boolean);
 
     const next = (() => {
@@ -163,6 +165,9 @@ const Library = () => {
         text={results[step]["text"]}
         character={results[step]["character"]}
         next={next}
+        heading={`${t(`locations.library.name`)} – ${t(
+          `locations.library.books.${results[step]["book"]}`
+        )}`}
       />
     );
   }
