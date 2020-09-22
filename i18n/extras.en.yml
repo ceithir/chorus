@@ -73,3 +73,56 @@ profile:
     error: "Access denied: Insufficient permissions"
   names:
     error: "Access denied: Insufficient permissions"
+results:
+  title: "Results"
+  forest:
+    good: "Many plants have been harvested"
+    bad: "Not that many plants have been harvested"
+    beast: "An encounter with a wild beast has cut the expedition short"
+    citygirl: "{{name}}, finding herself out of her element, didn’t gather many plants"
+    fairies: "{{name}} received some welcome help from the locals"
+    optigirl: "{{name}} had an excellent harvest"
+    dream: "Dejanire is feeling tense after her discussion with Ceto"
+    ally:
+      dejanire: "Dejanire has noticed something unusual"
+      camilla: "Camilla has made an interesting encounter"
+  library:
+    good: "The forms have generally been filled with an excellent level of detail"
+    bad: "The amount of paperwork makes it likely that some details were neglected here and there"
+    dragon: "The poetry dragon won’t get a chance to scare someone"
+    mimic: "That mimic could have caused serious trouble if it hadn’t been neutralized"
+    dream: "Despite their impenetrable facades, Maharal et Camilla have somewhat opened up to each other"
+    testimony: "One of the books turned out to be more valuable than anticipated"
+    overkill: "Some books weren’t worth the time that was spent on them"
+    ally:
+      katrina: "Katrina has had a very productive conversation with a spirit"
+      ceto: "Ceto may have discovered something interesting"
+  city:
+    good: "Rashomon is very satisfied with the situation reported by her temporary subordinates"
+    bad: "Rashomon doesn’t find her team’s observations about the state of the relay trees to be reassuring"
+    dream: "Carole has been warned that she’s in danger"
+    no-access: "Some relay trees turned out to be more difficult to reach than expected"
+    poor: "Some annoying legal obstacles were successfully bypassed"
+    old: "The historical relay tree has received proper maintenance"
+    ally: "{{name}} has had an intriguing encounter with a demon"
+    useless: "Time and efforts were spent on places that were already well protected"
+    spider: "A ghostly ally discreetly provided some ethereal assistance"
+    alecto: "Alecto’s mobility and connections made her especially efficient"
+endings:
+  title: "Ending {{index}}/{{total}}: {{name}}"
+  hints: "Hints for reaching a different ending"
+  bad:
+    name: "Consequences"
+    hints:
+      forest: "Some volunteers will do just fine in a natural environment no matter what path they choose, others won’t distinguish themselves unless they make a lucky encounter. In any case, wild beasts are bad news and you should try to avoid them."
+      library: "Some books are nothing more than what they seem to be and can be left to Maharal. Pairing an excellent reader with a more average one may grant the latter enough time to be attentive to details."
+      city: "The urban jungle has its laws and only characters flexible enough to bypass them will do well. Some districts don’t really need any help, but one of them may be hiding a secret."
+  respite:
+    name: "Waiting"
+    hint: "To unlock the best ending, you should try in each of the three missions to encounter or at least find some traces of especially unusual beings."
+  hope:
+    name: "Hope"
+thanks: "Thank you for reading <em>Chorus</em>!"
+credits:
+  0: "Orignal French: Skarn"
+  1: "Translation: Romain"
