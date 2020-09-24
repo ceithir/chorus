@@ -16,6 +16,7 @@ library:
     romance: "Romance"
     coffee: "« Beau livre »"
     science: "Traité"
+    rest: "Sieste"
   quality:
     bad:
       short: "Livres non critiques"

@@ -277,6 +277,8 @@ books:
 
 
       And/Or a useful bartering tool with a community that has an ambiguous relation to its own past.
+  rest: >-
+    {{name}} wakes up, still slighty dazed, and returns to work.
 camilla: >-
   Camilla and Maharal watch each other, both their faces as inexpressive as usual.
 

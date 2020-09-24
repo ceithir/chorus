@@ -16,6 +16,7 @@ library:
     romance: "Romance"
     coffee: "Coffee-table"
     science: "Treatise"
+    rest: "Nap"
   quality:
     bad:
       short: "Non-critical books"

@@ -114,43 +114,82 @@ const Library = () => {
   if (section === READING) {
     const qualities = slots(party);
 
-    const results = BOOKS.map((book) => {
-      const character = library[book];
-      const attentiveness = qualities[character]["quality"];
+    const REST = "rest";
+    const poisoned = [ALECTO, KATRINA, CETO, CAROLE].includes(library[MIMIC]);
+    const orderedBooks = (() => {
+      if (!poisoned) {
+        return BOOKS;
+      }
 
-      const key = (() => {
-        switch (book) {
-          case MYSTERY:
-            return attentiveness !== BAD && "mystery";
-          case FANTASY:
-            return `fantasy.${attentiveness === GOOD ? "good" : "default"}`;
-          case MIMIC:
-            if (character === TEKELI) {
-              return "mimic.tekeli";
-            }
-            return (
-              [ALECTO, KATRINA, CETO, CAROLE].includes(character) &&
-              "mimic.default"
-            );
-          case COFFEE:
-            return `coffee.${
-              [ALECTO, CETO].includes(character) ? "good" : "default"
-            }`;
-          case ROMANCE:
-            return (
-              [CETO, KATRINA].includes(character) && `romance.${character}`
-            );
-          case SCIENCE:
-            if (character === CAMILLA) {
-              return "science.camilla";
-            }
-            return `science.${attentiveness === GOOD ? "good" : "default"}`;
-          default:
-            return false;
-        }
-      })();
-      return key && { text: `story.library.books.${key}`, character, book };
-    }).filter(Boolean);
+      const poisonedCharacter = library[MIMIC];
+
+      let list = [MYSTERY, FANTASY, MIMIC];
+      let remainder = [];
+
+      [COFFEE, ROMANCE, SCIENCE].forEach((book) => {
+        library[book] === poisonedCharacter
+          ? remainder.push(book)
+          : list.push(book);
+      });
+
+      if (remainder.length === 0) {
+        return list;
+      }
+
+      return [...list, REST, ...remainder];
+    })();
+
+    const chara = (book) => {
+      if (book === REST) {
+        return library[MIMIC];
+      }
+      return library[book];
+    };
+    const att = (character) => {
+      return qualities[character] ? qualities[character]["quality"] : BAD;
+    };
+
+    const results = orderedBooks
+      .map((book) => {
+        const character = chara(book);
+        const attentiveness = att(character);
+
+        const key = (() => {
+          switch (book) {
+            case MYSTERY:
+              return attentiveness !== BAD && "mystery";
+            case FANTASY:
+              return `fantasy.${attentiveness === GOOD ? "good" : "default"}`;
+            case MIMIC:
+              if (character === TEKELI) {
+                return "mimic.tekeli";
+              }
+              return (
+                [ALECTO, KATRINA, CETO, CAROLE].includes(character) &&
+                "mimic.default"
+              );
+            case COFFEE:
+              return `coffee.${
+                [ALECTO, CETO].includes(character) ? "good" : "default"
+              }`;
+            case ROMANCE:
+              return (
+                [CETO, KATRINA].includes(character) && `romance.${character}`
+              );
+            case SCIENCE:
+              if (character === CAMILLA) {
+                return "science.camilla";
+              }
+              return `science.${attentiveness === GOOD ? "good" : "default"}`;
+            case REST:
+              return "rest";
+            default:
+              return false;
+          }
+        })();
+        return key && { text: `story.library.books.${key}`, character, book };
+      })
+      .filter(Boolean);
 
     const next = (() => {
       if (results[step + 1]) {

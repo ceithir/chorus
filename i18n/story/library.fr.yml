@@ -247,6 +247,8 @@ books:
       Et puis, presque par accident, au milieu d’un ensemble de bêtises, il dévoile ce qui semble être un véritable témoignage de première main d’un reptachaotique contemporain de son écriture, le changeant soudain en une pièce archéologique inestimable.
 
       Et/ou une intéressante monnaie d’échange auprès d’un groupe qui a une relation ambigüe à son passé.
+  rest: >-
+    {{name}} se réveille, encore peu groggy, et se remet au travail.
 camilla: >-
   Camilla et Maharal s’observent mutuellement, leurs expressions respectives comme à l’accoutumée indéchiffrables.
 
