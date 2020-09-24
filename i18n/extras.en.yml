@@ -70,9 +70,9 @@ profile:
   links:
     see_more: "(see file: <strong>{{species}}</strong>)"
     see_all: "See complete file"
-    error: "Access denied: Insufficient permissions"
+    error: "You do not have the required clearance to access this information"
   names:
-    error: "Access denied: Insufficient permissions"
+    error: "You do not have the required clearance to access this information"
 results:
   title: "Results"
   forest:
