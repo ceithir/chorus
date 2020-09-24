@@ -100,7 +100,7 @@ const FakeLink = ({ children }) => {
   const { t } = useTranslation();
 
   return (
-    <Tooltip title={t("extras.profile.links.error")}>
+    <Tooltip title={t("extras.profile.links.error")} trigger="click">
       <Link disabled>{children}</Link>
     </Tooltip>
   );
@@ -110,7 +110,7 @@ const FakeName = () => {
   const { t } = useTranslation();
 
   return (
-    <Tooltip title={t("extras.profile.names.error")}>
+    <Tooltip title={t("extras.profile.names.error")} trigger="click">
       <span className="avh-censored-text">XXXXXXX</span>
     </Tooltip>
   );
