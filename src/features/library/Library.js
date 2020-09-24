@@ -35,6 +35,7 @@ import {
   quality,
   FANTASY,
   ROMANCE,
+  COFFEE,
 } from "../library/books";
 import Results from "../debrief/Results";
 import { forceAssign } from "../city/reducer";
@@ -119,11 +120,11 @@ const Library = () => {
 
       const key = (() => {
         switch (book) {
-          case "mystery":
+          case MYSTERY:
             return attentiveness !== BAD && "mystery";
-          case "fantasy":
+          case FANTASY:
             return `fantasy.${attentiveness === GOOD ? "good" : "default"}`;
-          case "mimic":
+          case MIMIC:
             if (character === TEKELI) {
               return "mimic.tekeli";
             }
@@ -131,15 +132,15 @@ const Library = () => {
               [ALECTO, KATRINA, CETO, CAROLE].includes(character) &&
               "mimic.default"
             );
-          case "coffee":
+          case COFFEE:
             return `coffee.${
               [ALECTO, CETO].includes(character) ? "good" : "default"
             }`;
-          case "romance":
+          case ROMANCE:
             return (
               [CETO, KATRINA].includes(character) && `romance.${character}`
             );
-          case "science":
+          case SCIENCE:
             if (character === CAMILLA) {
               return "science.camilla";
             }
