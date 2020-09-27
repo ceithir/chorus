@@ -12,7 +12,7 @@ introduction:
 
     The road finally starts climbing, the sun disappears behind a thick row of trees and, after a short distance in the shade, the vehicle stops on a parking lot in the middle of nowhere.
   part-3: >-
-    Her legs stiff, Dejanire struggles a bit to get out of her seat. She then does a last minute check-up :
+    Her legs stiff, Dejanire struggles a bit to get out of her seat. She then does a last minute check-up:
 
     “You both have a working GPS on your phone? You both get cell reception? You both have my number?”
 
@@ -70,7 +70,7 @@ introduction:
 
     Her caution proves unnecessary. Neither Shub’ nor any other major power holds strong ties to this place. That’s probably due to the existence of a Seelie protectorate to the east. Though she doesn’t play such an important role in the game of dominions, Titania knows how to take advantage of rivalries and vassalages to ensure that her own lands are left in peace.
 
-    This principality is however but a very minor one, an outpost of little importance. In fact, the western part of the woods has completely escaped from its control and returned to wildness ; it reeks of a large predator, blood and urine without the slightest hint of sentience.
+    This principality is however but a very minor one, an outpost of little importance. In fact, the western part of the woods has completely escaped from its control and returned to wildness; it reeks of a large predator, blood and urine without the slightest hint of sentience.
 
 
 
@@ -86,7 +86,7 @@ introduction:
 
 
 
-    Dejanire’s face grows stern :
+    Dejanire’s face grows stern:
 
     “Are you sure? We’re far from everything, and I’ve kept our exact destination a secret so we could work in peace.”
 
@@ -140,7 +140,7 @@ exploration:
         “Dej? It’s Kat. My body’s fighting against something. Sorry I can’t be more precise, my head has rolled to the ground and is stuck looking in the wrong direction.”
     3:
       default: >-
-        Dejanire glances at the GPS telling her the location of the call and corrects her course, useless pieces of advice rushing out of her mouth :
+        Dejanire glances at the GPS telling her the location of the call and corrects her course, useless pieces of advice rushing out of her mouth:
 
         “I’m coming! Don’t move! Keep it away!”
 
@@ -161,7 +161,7 @@ exploration:
         “Are you okay?”
     4:
       alecto: >-
-        Alecto nods, though she’s white as a sheet :
+        Alecto nods, though she’s white as a sheet:
 
         “I think so. I didn’t manage to take flight quite in time, but it couldn’t grab me correctly.”
       camilla: >-
@@ -208,7 +208,7 @@ exploration:
 
 
 
-        Sensing Dejanire’s puzzlement, Camilla adds :
+        Sensing Dejanire’s puzzlement, Camilla adds:
 
         “The rules governing us are complex, even for ourselves. Errors of interpretation can happen.”
       katrina: >-
@@ -297,11 +297,11 @@ exploration:
     default: >-
       Carole idly picks a few flowers, her mind elsewhere.
 
-      What is she titled her video "In the forest : I take on weres!" ?
+      What is she titled her video "In the forest: I take on weres!"?
 
 
 
-      Rather hyperbolic, but she’s done a lot worse. A dynamic introduction with grandiose pictures related to cosmology and whatever ; hinting at gore and nasty, hairy creatures.
+      Rather hyperbolic, but she’s done a lot worse. A dynamic introduction with grandiose pictures related to cosmology and whatever; hinting at gore and nasty, hairy creatures.
 
       Then, of course, she’ll talk about herself. Abundantly. Explain at very great length the reason why the things she did are so important.
 
