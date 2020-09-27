@@ -52,6 +52,7 @@ const rules = {
       /\s{3,}(?!: )"((?!").)+"/g,
       (match) => match.replace('"', "“").replace('"', "”"),
     ],
+    [/\s+-\s+/g, " – "],
   ],
 };
 
