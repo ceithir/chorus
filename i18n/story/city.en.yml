@@ -1,7 +1,7 @@
 introduction: >-
-  "Protection against spirits is a bit like electricity or running water. Everyone enjoys having it and has a vague idea of how it works, but very few can explain it in detail.
+  “Protection against spirits is a bit like electricity or running water. Everyone enjoys having it and has a vague idea of how it works, but very few can explain it in detail.
 
-  So let’s review the basics, shall we?"
+  So let’s review the basics, shall we?”
 
 
 
@@ -9,7 +9,7 @@ introduction: >-
 
 
 
-  "According to the Ayscough model, reality is divided into countless planes that repel each other like the identical poles of magnets. The fact that their number is astronomically large and that each one influences all the others has resulted in an almost stable structure, where all planes are separated by a certain distance.
+  “According to the Ayscough model, reality is divided into countless planes that repel each other like the identical poles of magnets. The fact that their number is astronomically large and that each one influences all the others has resulted in an almost stable structure, where all planes are separated by a certain distance.
 
   Almost stable because, in special circumstances, two planes can nevertheless brush against each other. When that happens, a being can force their way through to a reality other than their own, though it may harm them, as well as their plane of origin and their destination.
 
@@ -29,13 +29,13 @@ introduction: >-
 
 
 
-  The goal of today’s operation is to check as many of the city’s relay trees as possible, with the help of pS test strips. If the result is bad, check whether it can be improved with a bit of cleaning up. If that’s not the case, make a note of the tree’s position so it can be communicated to the appropriate authorities."
+  The goal of today’s operation is to check as many of the city’s relay trees as possible, with the help of pS test strips. If the result is bad, check whether it can be improved with a bit of cleaning up. If that’s not the case, make a note of the tree’s position so it can be communicated to the appropriate authorities.”
 
   Rashomon hands over packs of test strips. The user instructions are written on the back and can be summed up in a few words: stick the test strips directly on the tree, in several spots, and compare their color to the chart.
 split: >-
   Rashomon unfolds an old paper map on which the locations of the city’s relay trees are shown with precision.
 
-  "The likelihood of an incident is directly proportional to the number of people who spend time in an area with a defective relay tree. Five places are consequently priorities.
+  “The likelihood of an incident is directly proportional to the number of people who spend time in an area with a defective relay tree. Five places are consequently priorities.
 
   The dormitory district, by far the most densely populated at night.
 
@@ -45,7 +45,7 @@ split: >-
 
   The shopping mall, packed during weekends.
 
-  The business district, packed on weekdays."
+  The business district, packed on weekdays.”
 carole: >-
   “Rainbow Cat has been added to the black list.”
 
@@ -87,7 +87,7 @@ carole: >-
 
   “Because I have no doubt that our small group is being watched and your absence would be discovered much too quickly.”
 
-  "What a haighabrained plan…
+  “What a haighabrained plan…”
 
 
 
@@ -249,7 +249,7 @@ locations:
 
     The relay tree is a stout chestnut tree in the middle of a traffic circle. Nobody seems to take care of it, but nobody bothers it either, and it seems to be doing fairly well.
 
-    The pS test strips confirm that impression, revealing its level of protection to be "very good", which is more than enough.
+    The pS test strips confirm that impression, revealing its level of protection to be “very good”, which is more than enough.
   bank:
     default: >-
       Though the business district remains thought of as a recent one, it was in fact created several decades ago, and so was its relay tree.
@@ -317,7 +317,7 @@ locations:
     default: >-
       The relay tree was created at the same time as the shopping mall, half a century ago. Both of them still fare quite well.
 
-      The tree stands at the end of the central aisle, in a decorative area full of vegetation and statues, protected by brightly colored tape and a "Do not touch" sign. A quick examination doesn’t reveal anything out of the ordinary, and the cleaning operatives confirm that it’s perfectly healthy.
+      The tree stands at the end of the central aisle, in a decorative area full of vegetation and statues, protected by brightly colored tape and a “Do not touch” sign. A quick examination doesn’t reveal anything out of the ordinary, and the cleaning operatives confirm that it’s perfectly healthy.
     carole: >-
       “Rainbow Cat?”
 

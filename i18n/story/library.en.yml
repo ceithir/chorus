@@ -16,7 +16,7 @@ introduction:
 
     She then hands over a thick bundle of freshly-printed sheets. Each page is double-sided, and covered in ridiculously tiny characters. Each form is spread over ten such pages. And one form has to be filled for each book.
 
-    Most of the questions are very mundane: "Genre", "Recommended age", "Year of publication"… But some, especially regarding the historical context of the book ("Who wrote it?", "On what occasion?", "For what purpose?"), ask for an absurd level of detail, and will require attentive analysis and extra research to be answered correctly.
+    Most of the questions are very mundane: “Genre”, “Recommended age”, “Year of publication”… But some, especially regarding the historical context of the book (“Who wrote it?”, “On what occasion?”, “For what purpose?”), ask for an absurd level of detail, and will require attentive analysis and extra research to be answered correctly.
 
 
 
@@ -90,7 +90,7 @@ planning: >-
 
   A thick, heavy fantasy novel, printed in small characters on cheap paper. Almost as new, aside from the creased cover.
 
-  The sequel to that fantasy novel. Everything from the front illustration to the back cover appears excessively similar to the first volume, even recycling the original title and merely adding "Return to" before it.
+  The sequel to that fantasy novel. Everything from the front illustration to the back cover appears excessively similar to the first volume, even recycling the original title and merely adding “Return to” before it.
 
   A luxury edition of a romance novel, in which all characters have a name with a particle and speak in verse. Has met with an unfortunate accident involving water, leaving many of the pages wrinkled and fragile.
 
@@ -118,7 +118,7 @@ books:
     “A poetry dragon. A parasitic species, almost extinct, but that can still be found in old books. Not truly dangerous, but it can easily frighten people.”
   fantasy:
     default: >-
-      In a world where all places and characters have a celtic name (preferably one beginning with "Gw"), a small band of heroes with one-dimensional personalities must cross hostile regions that can easily be described with a single word (the city, the forest, the desert, the mountain, the fortress) to find and put to the sword a sorcerer-dragon that threatens to conquer the world.
+      In a world where all places and characters have a celtic name (preferably one beginning with “Gw”), a small band of heroes with one-dimensional personalities must cross hostile regions that can easily be described with a single word (the city, the forest, the desert, the mountain, the fortress) to find and put to the sword a sorcerer-dragon that threatens to conquer the world.
 
       That’s the general impression that {{name}} gets by quickly skimming through the book. Original ideas may be hidden somewhere in this mire of hackneyed platitudes, but they certainly don’t stand out.
     good: >-
@@ -216,7 +216,7 @@ books:
 
 
 
-      Katrina checks the "Haunted" box on the form, then reads the follow-up questions:
+      Katrina checks the “Haunted” box on the form, then reads the follow-up questions:
 
       “Circumstances of death and motive for possession?”
 
@@ -266,7 +266,7 @@ books:
 
       {{name}} checks the appropriate boxes on the form, ensuring that the book will end in the archives. It will only be available, on demand, by historians and other researchers.
     good: >-
-      Examining this work in detail is a thankless task. The writing style is heavy – perhaps one should say "cyclopean" – and it’s full of hare-brained ideas that may have been commonplace at the time of publication, but are quite rancid from a modern point of view.
+      Examining this work in detail is a thankless task. The writing style is heavy – perhaps one should say “cyclopean” – and it’s full of hare-brained ideas that may have been commonplace at the time of publication, but are quite rancid from a modern point of view.
 
       The book aims to be a treatise about the peoples nowadays referred to as Rlyehans. But it mainly turns out to be an excellent testimony of its time, unintentionally illustrating the fears and obsessions of an era through the legends and the rumors it mentions.
 
