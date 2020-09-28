@@ -32,6 +32,7 @@ const slice = createSlice({
     },
     nextStep: (state) => {
       state.step++;
+      state.subsection = initialState.subsection;
     },
     setFadingOut: (state, action) => {
       state.fadingOut = action.payload;
