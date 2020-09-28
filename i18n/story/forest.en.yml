@@ -321,11 +321,85 @@ exploration:
 
 
 
-      “Hello. I’m looking for these plants. Do you know where I can find them?”
+      “Hello guys! How are you?”
 
 
 
-      Well, invisible to the eyes of most corporeal beings. Suppressing a sigh, the eldest of the fairies provides {{name}} with all the information she might desire, knowing it to be the quickest way to get rid of her.
+      Well, invisible to the eyes of <em>most</em> corporeal beings.
+
+      One of the fairies leaves the dance and flies up to the noisy intruder leaning over them.
+
+      “Welcome, stranger, to our modest glade. To what do we owe the pleasure of your visit?”
+
+
+
+      “Well it’s like a total stroke of luck, actually.”
+
+      Carole starts telling her story, illustrating it with hand gestures and pulling exaggerated faces, posing in front of an imaginary camera:
+
+
+
+      “There I was, struggling through the bushes.
+
+      On all four, with mud up to my elbows, I was trying to pick an uncooperative plant when bam!
+
+      I got hit in the face by a wall of confusion.
+
+
+
+      Now it didn’t have much effect on me, as confusion’s pretty much my natural element.
+
+      But it’s still not nice when it takes you by surprise.
+
+
+
+      I grumbled a bit, and then I realized there was a mystery to solve if something so outdated was still in working order, especially in the middle of nowhere.
+
+      And not the kind of mysteries that are <em>really</em> dangerous. Perfect for a short clip!
+
+      So I kind of elbowed my way through and hey presto! Here I am.”
+
+
+
+      The garrulous explanation leaves the fairy cold:
+
+      “The rules of etiquette would require someone finding herself in such a situation to either move on or to make her presence known and request admittance, not to damage a venerable spell of distraction.”
+
+
+
+      “All right, all right, how was I supposed to know that such an archaic thing was more than an archeological find? It’s not something anybody would use these days.”
+
+      “It nevertheless retains a symbolic importance for people of good breeding.”
+
+      “You’re not very fun, you know that?”
+
+
+
+      “Intransigence is a necessity when the independence of our community depends on the respect of good faith agreements between the court of the Dreamer and ours.”
+
+      “Hey, I’m not a Rlyehan.”
+
+      “Close enough that I have to give a warning, at the risk of creating a dangerous precedent.”
+
+
+
+      Realizing that she’s entering a minefield, Carole stops playing around:
+
+      “Okay, okay, don’t get worked up. I don’t want you to get into trouble with those people.”
+
+
+
+      “Though it is clumsy, your apology seems sincere and is thus accepted.
+
+      Now, is there anything I can do for you?”
+
+
+
+      “Yes, actually there is.”
+
+      “I was mainly asking out of courtesy.”
+
+      “Yes, but actually no, I really need a hand. And what’s more, for once, I’m not just asking for my own sake. Let me explain the situation to you…”
   ceto:
     default: >-
       Ceto doesn’t let her environment tells her what to do, and that remains true when it comes to finding a path through a forest.
@@ -360,15 +434,43 @@ exploration:
 
       Thus, she greatly enjoys this solitary stroll through the woods, far from concrete and camera, and all the more because it’s for a good cause.
     east: >-
-      Inside a ring of mushrooms in the middle of a glade, fairies are dancing, invisible to the eyes of corporeal beings.
+      Katrina doesn’t immediately realize what causes the feeling of unease that’s suddenly started plaguing her.
 
 
 
-      “Hello. I’m looking for these plants. Do you know where I can find them?”
+      And then, the answer strikes her: she’s currently walking on the edge of a seelie territory, recognizable by many small details, seemingly natural oddities, and visual and auditive incoherences.
+
+      Neither her human ancestry nor her unseelie nature appreciate the enchantments at work here, and the mix of those influences is making her head spin.
 
 
 
-      Well, invisible to the eyes of most corporeal beings. Suppressing a sigh, the eldest of the fairies provides {{name}} with all the information she might desire, knowing it to be the quickest way to get rid of her.
+      She considers simply walking away from her discovery. But under the current circumstances, they can’t afford to neglect any opportunity.
+
+      And so, Katrina makes herself stand in front of the not-quite-invisible wall and say in an even voice:
+
+      “I, Katrina Irving, request an audience with the court.”
+
+
+
+      In answer to her words, the air before her becomes cloudy and takes on a milky hue, before condensing into a frail ethereal figure.
+
+      “The court cannot grant your request due to the agreements passed with Yog-Sothoth and his kin. You are however allowed to talk with me, who’ll be acting as an emissary of the court.”
+
+
+
+      “Is it possible that you’ll provide me with some help?”
+
+      “Only out of courtesy and within very reasonable limits.”
+
+      “Meaning?”
+
+
+
+      “I can offer you tea and answer your questions about this forest, for instance regarding the best path to follow. Nothing more.”
+
+      “It’s not much, but under the circumstances, it can nevertheless be valuable help. I would have enjoyed your first present, but I do not have enough time at my disposal.
+
+      As for the second one, I indeed have a few questions concerning this forest, and especially certain plants that can be found in it…”
   tekeli:
     default: >-
       As soon as she’s left the group, Tekeli extends a pseudopod and ingests the specimens of her herbarium one after the other. The dry flowers are swallowed inside her liquid body, carefully tasted, then spit back between the pages.
