@@ -87,8 +87,8 @@ const Library = () => {
         character: library[SCIENCE],
         type: "success",
       },
-      (quality({ book: FANTASY, ...defaultParams }) ||
-        quality({ book: MYSTERY, ...defaultParams })) && {
+      (quality({ book: FANTASY, ...defaultParams }) === GOOD ||
+        quality({ book: COFFEE, ...defaultParams }) === GOOD) && {
         key: "overkill",
         type: "warning",
       },
